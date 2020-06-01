@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Wht If
 image: /img/home-jumbotron.jpg
-heading: Wht If
+heading: Wht Ifffff
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Why Kaldi
