@@ -10,13 +10,14 @@ export default class RetreatsIndexPage extends React.Component {
         <div
           className="full-width-image-container margin-top-0"
           style={{
-            backgroundImage: `url('/img/open-book.png')`,
+            backgroundImage: `url('/img/dragon.jpg')`,
+            backgroundPosition: 'center',
           }}
         >
           <h1
             className="page-header has-text-weight-bold is-size-1"
           >
-            Latest Updates
+            Retreats
           </h1>
         </div>
         <section className="section">
