@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
+// import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 const imageStyle = { margin: '30px 10%', ßborderRadius: '5px', height: '100%', width: '100%', }
 

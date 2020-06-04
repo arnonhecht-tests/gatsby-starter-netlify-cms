@@ -9,7 +9,7 @@ const MainEvent = ({ entry, getAsset }) => {
     return (
       <IndexPageTemplate
         image={getAsset(data.image)}
-        image={getAsset(data.circleimage)}
+        circleimage={getAsset(data.circleimage)}
         title={data.title}
         heading={data.heading}
         subheading={data.subheading}
