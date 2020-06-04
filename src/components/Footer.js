@@ -15,7 +15,7 @@ const Footer = class extends React.Component {
           <img
             src={logo}
             alt="WhtIf"
-            style={{ width: '14em', height: '10em' }}
+            className="logo"
           />
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">

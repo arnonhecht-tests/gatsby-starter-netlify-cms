@@ -40,7 +40,7 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="header-backdrop has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="page-header has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
             lineHeight: '1',
             padding: '0.25em',
@@ -50,7 +50,7 @@ export const IndexPageTemplate = ({
           {title}
         </h1>
         <h3
-          className="header-backdrop has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          className="page-header has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             lineHeight: '1',
             padding: '0.25em',
