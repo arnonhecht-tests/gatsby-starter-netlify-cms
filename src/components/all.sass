@@ -3,7 +3,7 @@
 // Config vars
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
-$kaldi-red-invert: #fff
+$kaldi-red-invert: #874176
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
@@ -57,14 +57,14 @@ $black: #2b2523
     font-size: 18px
     font-size: 1rem
     line-height: 1.25
-    background-color: #fff
+    background-color: rgba(231, 166, 26, 0.3)
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: rgba(231, 166, 26, 1)
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    -webkit-box-shadow: inset 0 0 0 2px rgba(231, 166, 26, 1)
+    box-shadow: inset 0 0 0 2px rgba(231, 166, 26, 1)
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -121,6 +121,13 @@ $menu-label-color: $white-ter
 .blog-list-item .featured-thumbnail
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
+
+
+.page-header
+  padding: 1rem;
+  box-shadow: -1px -1px 20px 1px rgba(231, 166, 26,0.58);
+  background-color: rgba(231, 166, 26, 0.6);
+  color: black;
 
 
 @import "~bulma"

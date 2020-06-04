@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+const imageStyle = { margin: '30px 10%', ßborderRadius: '5px', height: '100%', width: '100%', }
 
 export const IndexPageTemplate = ({
   image,
@@ -12,6 +14,7 @@ export const IndexPageTemplate = ({
   heading,
   subheading,
   mainpitch,
+  circleimage,
   description,
   intro,
 }) => (
@@ -37,27 +40,21 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="header-backdrop has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
             lineHeight: '1',
             padding: '0.25em',
+            textAlign: 'center',
           }}
         >
           {title}
         </h1>
         <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          className="header-backdrop has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
             lineHeight: '1',
             padding: '0.25em',
+            textAlign: 'center',
           }}
         >
           {subheading}
@@ -71,11 +68,11 @@ export const IndexPageTemplate = ({
             <div className="column is-10 is-offset-1">
               <div className="content">
                 <div className="content">
-                  <div className="tile">
+                  {/* <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
-                  </div>
+                  </div> */}
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
+                    <Img style={imageStyle} fluid={circleimage.childImageSharp.fluid} alt="Wht If Circle" /> 
                   </div>
                 </div>
                 <div className="columns">
@@ -86,17 +83,17 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
+                {/* <Features gridItems={intro.blurbs} /> */}
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
+                    <Link className="btn" to="/main-event">
+                      Go to Main Event
                     </Link>
                   </div>
                 </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                    Latest Updates
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
@@ -120,6 +117,7 @@ IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
+  circleimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
@@ -137,6 +135,7 @@ const IndexPage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
+        circleimage={frontmatter.circleimage}
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
@@ -160,6 +159,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        circleimage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
