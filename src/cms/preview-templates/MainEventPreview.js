@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { IndexPageTemplate } from '../../templates/index-page'
+import { EventPageTemplate } from '../../templates/event-page'
 
 const MainEvent = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
     return (
-      <IndexPageTemplate
+      <EventPageTemplate
         image={getAsset(data.image)}
         circleimage={getAsset(data.circleimage)}
         title={data.title}

@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
 
-import BlogRoll from '../components/BlogRoll'
+import MainEventRoll from '../components/MainEventRoll'
 
 const imageStyle = { borderRadius: '5px', height: '100%', width: '100%', }
 
@@ -48,7 +48,7 @@ export const EventPageTemplate = ({
             textAlign: 'center',
           }}
         >
-          {title}
+          {title} 
         </h1>
         <h3
           className="page-header has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
@@ -68,11 +68,6 @@ export const EventPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <Img style={imageStyle} fluid={circleimage.childImageSharp.fluid} alt="Wht If Circle" /> 
-                  </div>
-                </div>
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
@@ -81,23 +76,11 @@ export const EventPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/main-event">
-                      Go to Main Event
-                    </Link>
-                  </div>
-                </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest Updates
                   </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
+                  <MainEventRoll />
                 </div>
               </div>
             </div>
@@ -121,7 +104,7 @@ EventPageTemplate.propTypes = {
   }),
 }
 
-const IndexPage = ({ data }) => {
+const EventPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
@@ -140,7 +123,7 @@ const IndexPage = ({ data }) => {
   )
 }
 
-IndexPage.propTypes = {
+EventPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -148,11 +131,11 @@ IndexPage.propTypes = {
   }),
 }
 
-export default IndexPage
+export default EventPage
 
 export const pageQuery = graphql`
   query EventPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "event-page" } }) {
       frontmatter {
         title
         image {
