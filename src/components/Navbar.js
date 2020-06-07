@@ -71,7 +71,7 @@ const Navbar = class extends React.Component {
                 Retreats
               </Link>
               <Link className="navbar-item" to="/about">
-                About
+                Culture
               </Link>
               {/* <Link className="navbar-item" to="/products">
                 Products

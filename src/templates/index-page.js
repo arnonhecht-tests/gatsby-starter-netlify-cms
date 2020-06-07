@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
+import Header from '../components/Header'
 import Layout from '../components/Layout'
 // import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
@@ -19,48 +20,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
-        <h1
-          className="page-header has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            lineHeight: '1',
-            padding: '0.25em',
-            textAlign: 'center',
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="page-header has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            lineHeight: '1',
-            padding: '0.25em',
-            textAlign: 'center',
-          }}
-        >
-          {subheading}
-        </h3>
-      </div>
-    </div>
+    <Header title={title} subheading={subheading} image={image} />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
