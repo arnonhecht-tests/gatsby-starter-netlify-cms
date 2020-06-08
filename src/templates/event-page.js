@@ -1,14 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 
 import Header from '../components/Header'
 import MainEventRoll from '../components/MainEventRoll'
 
-const imageStyle = { borderRadius: '5px', height: '100%', width: '100%', }
 
 export const EventPageTemplate = ({
   image,

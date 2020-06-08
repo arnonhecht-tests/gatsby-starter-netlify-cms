@@ -1,6 +1,6 @@
 ---
 templateKey: "event-page"
-path: /products
+path: /event-page
 title: Wht If Main Event
 subheading: Desert creations...
 image: /img/agora.jpg
