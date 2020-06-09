@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const imageStyle = { margin: '30px 10%', ßborderRadius: '5px', height: '100%', width: '100%', }
 
@@ -24,9 +25,10 @@ export const AboutPageTemplate = ({ title, content, circleimage, contentComponen
                   {/* <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div> */}
-                  <div className="tile">
+                  <PreviewCompatibleImage imageInfo={circleimage} />
+                  {/* <div className="tile">
                     <Img style={imageStyle} fluid={circleimage.childImageSharp.fluid} alt="Wht If Circle" /> 
-                  </div>
+                  </div> */}
                 </div>
               <PageContent className="content" content={content} />
             </div>
