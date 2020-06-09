@@ -11,7 +11,9 @@ const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
 
   // a bit hackish - should consider different site
-  const isMainEventSite = window.location.href.includes('main-event');
+  const windowGlobal = typeof window !== 'undefined' && window
+
+  const isMainEventSite = windowGlobal.location.href.includes('main-event');
   const Navigation = isMainEventSite ? MainEventNavbar : Navbar;
 
   return (
