@@ -10,10 +10,10 @@ import { withPrefix } from 'gatsby'
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
 
-  // a bit hackish - should consider different site
   const windowGlobal = typeof window !== 'undefined' && window
 
-  const isMainEventSite = windowGlobal.location.href.includes('main-event');
+  // a bit hackish - should consider different site
+  const isMainEventSite = windowGlobal && windowGlobal.location.href.includes('main-event');
   const Navigation = isMainEventSite ? MainEventNavbar : Navbar;
 
   return (
