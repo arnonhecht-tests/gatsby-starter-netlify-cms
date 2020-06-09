@@ -1,7 +1,8 @@
 ---
 templateKey: index-page
-title: Wht If
+title: Wht Iffff
 image: /img/desert-sand-dunes-landscape.jpg
+circleimage: /img/whtif-circle.png
 heading: Wht If Main Event comming soon
 subheading: Dream Fear Believe Dare Fly Grow Know
 mainpitch:
@@ -12,7 +13,6 @@ mainpitch:
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
 description: This year's main event is going to be the first.. don't miss on it
-circleimage: /img/whtif-circle.png
 intro:
   blurbs:
     - image: /img/coffee.png
