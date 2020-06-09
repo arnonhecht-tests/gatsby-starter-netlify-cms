@@ -31,9 +31,9 @@ export const IndexPageTemplate = ({
                   {/* <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div> */}
-                  <div className="tile">
+                  {/* <div className="tile">
                     <Img style={imageStyle} fluid={circleimage.childImageSharp.fluid} alt="Wht If Circle" /> 
-                  </div>
+                  </div> */}
                 </div>
                 <div className="columns">
                   <div className="column is-12">
