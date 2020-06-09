@@ -14,7 +14,6 @@ export const EventPageTemplate = ({
   heading,
   subheading,
   mainpitch,
-  circleimage,
   description,
   intro,
 }) => (
@@ -55,7 +54,6 @@ EventPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
-  circleimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
@@ -73,7 +71,6 @@ const EventPage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
-        circleimage={frontmatter.circleimage}
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
@@ -97,13 +94,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        circleimage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid

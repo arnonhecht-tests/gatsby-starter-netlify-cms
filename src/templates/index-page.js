@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import Layout from '../components/Layout'
 // import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 const imageStyle = { margin: '30px 10%', ßborderRadius: '5px', height: '100%', width: '100%', }
 
 export const IndexPageTemplate = ({
@@ -31,8 +32,10 @@ export const IndexPageTemplate = ({
                   {/* <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div> */}
+
+                  <PreviewCompatibleImage imageInfo={circleimage} />
                   {/* <div className="tile">
-                    <Img style={imageStyle} fluid={circleimage.childImageSharp.fluid} alt="Wht If Circle" /> 
+                    {circleimage.childImageSharp && <Img style={imageStyle} fluid={circleimage.childImageSharp.fluid} alt="Wht If Circle" /> }
                   </div> */}
                 </div>
                 <div className="columns">
@@ -126,9 +129,12 @@ export const pageQuery = graphql`
           }
         }
         circleimage {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }

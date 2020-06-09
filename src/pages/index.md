@@ -12,7 +12,9 @@ mainpitch:
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
 description: This year's main event is going to be the first.. don't miss on it
-circleimage: /img/whtif-circle.png
+circleimage:
+  alt: A close-up of a paper filter filled with ground coffee
+  image: /img/whtif-circle.png
 intro:
   blurbs:
     - image: /img/coffee.png

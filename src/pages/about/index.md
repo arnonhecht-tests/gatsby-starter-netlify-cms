@@ -2,7 +2,9 @@
 templateKey: "about-page"
 path: /about
 title: About our values
-circleimage: /img/whtif-circle.png
+circleimage:
+  alt: A close-up of a paper filter filled with ground coffee
+  image: /img/whtif-circle.png
 ---
 
 ### Dream

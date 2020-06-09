@@ -9,7 +9,6 @@ const MainEvent = ({ entry, getAsset }) => {
     return (
       <EventPageTemplate
         image={getAsset(data.image)}
-        circleimage={getAsset(data.circleimage)}
         title={data.title}
         heading={data.heading}
         subheading={data.subheading}
