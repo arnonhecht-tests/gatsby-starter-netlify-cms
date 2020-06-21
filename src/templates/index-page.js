@@ -34,9 +34,6 @@ export const IndexPageTemplate = ({
                   </div> */}
 
                   <PreviewCompatibleImage imageInfo={circleimage} />
-                  {/* <div className="tile">
-                    {circleimage.childImageSharp && <Img style={imageStyle} fluid={circleimage.childImageSharp.fluid} alt="Wht If Circle" /> }
-                  </div> */}
                 </div>
                 <div className="columns">
                   <div className="column is-12">
