@@ -15,10 +15,15 @@ import './NavigationMap.scss';
 
 
 const NavigationMap = class extends React.Component {
-  
-  render() {
-    const windowGlobal = typeof window !== 'undefined' && window;
+  constructor(props) {
+    super(props);
+    this.state = {
+      linksMap: [],
+    };
+  }
+  componentDidMount(){
 
+    const windowGlobal = typeof window !== 'undefined' && window;
     const winWidth = windowGlobal.innerWidth;
     const winHeight = windowGlobal.innerHeight;
     const numLinks = 5;
@@ -74,6 +79,13 @@ const NavigationMap = class extends React.Component {
       commulativeWidth += linksMap[i].width;
       linksMap[i+1].left += commulativeWidth;
     }
+
+
+    this.setState({linksMap});
+  }
+
+  render() {
+    const {linksMap} = this.state;
 
     return (
       <div className="navigation-map">
