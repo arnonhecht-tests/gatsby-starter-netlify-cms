@@ -6,6 +6,8 @@ import sceneImage from "../../static/img/desert-360.jpg"
 
 class ThreeTest extends Component{
   componentDidMount(){
+    const windowGlobal = typeof window !== 'undefined' && window;
+
     // const width = this.mount.clientWidth
     // const height = this.mount.clientHeight
     // //ADD SCENE
@@ -31,11 +33,11 @@ class ThreeTest extends Component{
     // this.start()
     this.scene = new THREE.Scene();
     const that = this;
-    this.camera = new THREE.PerspectiveCamera(70,window.innerWidth/window.innerHeight,1,5000);
+    this.camera = new THREE.PerspectiveCamera(70,windowGlobal.innerWidth/windowGlobal.innerHeight,1,5000);
     this.camera.position.set(0,400,1000);
     // this.camera.position.set(0,0,0.1);
     this.renderer = new THREE.WebGLRenderer({antialias:true});
-    this.renderer.setSize(window.innerWidth,window.innerHeight);
+    this.renderer.setSize(windowGlobal.innerWidth,windowGlobal.innerHeight);
     // document.body.appendChild(renderer.domElement);
     this.mount.appendChild(this.renderer.domElement)
     
@@ -98,7 +100,6 @@ renderScene = () => {
 render(){
     return(
       <div
-        style={{ width: '400px', height: '400px' }}
         ref={(mount) => { this.mount = mount }}
       />
     )

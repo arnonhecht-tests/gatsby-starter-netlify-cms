@@ -17,8 +17,10 @@ import './NavigationMap.scss';
 const NavigationMap = class extends React.Component {
   
   render() {
-    const winWidth = window.innerWidth;
-    const winHeight = window.innerHeight;
+    const windowGlobal = typeof window !== 'undefined' && window;
+
+    const winWidth = windowGlobal.innerWidth;
+    const winHeight = windowGlobal.innerHeight;
     const numLinks = 5;
     const startPoint = 65;
     const middleGap = 100;
@@ -69,7 +71,6 @@ const NavigationMap = class extends React.Component {
 
     let commulativeWidth = 0
     for (let i=0; i<linksMap.length-1; i++) {
-      console.log('sdfsd')
       commulativeWidth += linksMap[i].width;
       linksMap[i+1].left += commulativeWidth;
     }

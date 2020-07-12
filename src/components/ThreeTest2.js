@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { GUI } from 'three/examples/jsm/libs/dat.gui.module.js';
+// import { GUI } from 'three/examples/jsm/libs/dat.gui.module.js';
 
 import sceneImage from "../../static/img/desert-360.jpg" 
 
 
 class ThreeTest2 extends Component{
   componentDidMount(){
+      const windowGlobal = typeof window !== 'undefined' && window;
+      const windowRelation = windowGlobal.innerWidth / windowGlobal.innerHeight;
+
     	// CAMERAS
 
-      const camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 100000 );
+      const camera = new THREE.PerspectiveCamera( 70, windowRelation, 1, 100000 );
       this.camera = camera;
       camera.position.set( 0, 0, 1000 );
-      const cameraCube = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 100000 );
+      const cameraCube = new THREE.PerspectiveCamera( 70, windowRelation, 1, 100000 );
       this.cameraCube = cameraCube;
 
       // SCENE
@@ -73,8 +76,8 @@ class ThreeTest2 extends Component{
       const renderer = new THREE.WebGLRenderer();
       this.renderer = renderer;
       renderer.autoClear = false;
-      renderer.setPixelRatio( window.devicePixelRatio );
-      renderer.setSize( window.innerWidth, window.innerHeight );
+      renderer.setPixelRatio( windowGlobal.devicePixelRatio );
+      renderer.setSize( windowGlobal.innerWidth, windowGlobal.innerHeight );
       document.body.appendChild( renderer.domElement );
 
       renderer.outputEncoding = THREE.sRGBEncoding;
@@ -102,18 +105,18 @@ class ThreeTest2 extends Component{
         Refraction: false
       };
 
-      var gui = new GUI();
-      gui.add( params, 'Cube' );
-      // gui.add( params, 'Spherical' );
-      gui.add( params, 'Refraction' ).onChange( function ( value ) {
-        textureCube.mapping = value ? 
-          THREE.CubeRefractionMapping : THREE.CubeReflectionMapping;
+      // var gui = new GUI();
+      // gui.add( params, 'Cube' );
+      // // gui.add( params, 'Spherical' );
+      // gui.add( params, 'Refraction' ).onChange( function ( value ) {
+      //   textureCube.mapping = value ? 
+      //     THREE.CubeRefractionMapping : THREE.CubeReflectionMapping;
 
-        sphereMaterial.needsUpdate = true;
-      });
-      gui.open();
+      //   sphereMaterial.needsUpdate = true;
+      // });
+      // gui.open();
 
-      window.addEventListener( 'resize', function onWindowResize() {
+      windowGlobal.addEventListener( 'resize', function onWindowResize() {
 
 				// camera.aspect = window.innerWidth / window.innerHeight;
 				// camera.updateProjectionMatrix();
@@ -161,7 +164,6 @@ renderScene = () => {
 render(){
     return(
       <div
-        style={{ width: '400px', height: '400px' }}
         ref={(mount) => { this.mount = mount }}
       />
     )
