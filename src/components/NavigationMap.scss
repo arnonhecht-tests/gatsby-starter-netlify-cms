@@ -1,0 +1,97 @@
+.navigation-map {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+
+  .video-map-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      max-width: none; // override all.scss
+      width: auto;
+      height: auto;
+      z-index: -100;
+      transform: translateX(-50%) translateY(-50%);
+      background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
+      background-size: cover;
+      transition: 1s opacity;
+    }
+
+    .logo,
+    .link-container {
+      position: absolute;
+      z-index: 14;
+    }
+
+    .logo {
+      top: 10px;
+      right: 25px;
+      height: 40px;
+      width: 50px;
+    }
+
+    .link-container {
+      height: 200px;
+
+      img {
+        position: absolute;
+        bottom: 0;
+      }
+
+      img,
+      .link-text,
+      .line {
+      }
+      .link-text {
+        // transform: translateY(-50%);
+        max-width: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        opacity: 0;
+      }
+      .line {
+        .point {
+          position: absolute;
+          bottom: 60px;
+          width: 1px;
+          height: 1px;
+          transform: translate(23px);
+          background: red;
+          transition: height 1s ease;
+
+          background: repeating-linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 1px,
+            rgba(0, 0, 0, 1) 1px,
+            rgba(0, 0, 0, 0) 4px
+          );
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        .link-text {
+          transition: 1s ease;
+          opacity: 1;
+        }
+        .point {
+          height: 110px;
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,8 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import ContentPageTemplate from '../components/ContentPageTemplate'
+// import ThreeJS from '../components/ThreeJS'
+import ThreeTest2 from '../components/ThreeTest2'
 
 
 const ParticipatePage = ({ data }) => {
@@ -12,11 +14,13 @@ const ParticipatePage = ({ data }) => {
   
   return (
     <Layout>
-      <ContentPageTemplate
+      <ThreeTest2 />
+      {/* <ThreeJS /> */}
+      {/* <ContentPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
-      />
+      /> */}
     </Layout>
   )
 }

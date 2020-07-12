@@ -6,6 +6,7 @@ import MainEventNavbar from '../components/MainEventNavbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+import {isMobileOnly} from 'react-device-detect';
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -14,7 +15,6 @@ const TemplateWrapper = ({ children }) => {
 
   // a bit hackish - should consider different site
   const isMainEventSite = windowGlobal && windowGlobal.location.href.includes('main-event');
-  const Navigation = isMainEventSite ? MainEventNavbar : Navbar;
 
   return (
     <div className={isMainEventSite ? `event-site` : ''}>
@@ -56,9 +56,19 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <Navigation />
-      <div>{children}</div>
-      <Footer />
+      {
+        isMobileOnly ? (
+          <>
+            <Navbar />
+            <div>{children}</div>
+          </>
+        ) : (
+          <>
+
+            <div>{children}</div>
+          </>
+        )
+      }
     </div>
   )
 }

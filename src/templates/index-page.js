@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
+import NavigationMap from '../components/NavigationMap'
+
 import Header from '../components/Header'
 import Layout from '../components/Layout'
 // import Features from '../components/Features'
@@ -19,55 +21,61 @@ export const IndexPageTemplate = ({
   circleimage,
   description,
   intro,
+  isMobile,
 }) => (
   <div>
-    <Header title={title} subheading={subheading} image={image} />
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  {/* <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div> */}
+    {
+      isMobile ? (
+        <>
+          <Header title={title} subheading={subheading} image={image} />
+          <section className="section section--gradient">
+            <div className="container">
+              <div className="section">
+                <div className="columns">
+                  <div className="column is-10 is-offset-1">
+                    <div className="content">
+                      <div className="content">
 
-                  <PreviewCompatibleImage imageInfo={circleimage} />
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                {/* <Features gridItems={intro.blurbs} /> */}
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/main-event">
-                      Go to Main Event
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest Updates
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
+                        <PreviewCompatibleImage imageInfo={circleimage} />
+                      </div>
+                      <div className="columns">
+                        <div className="column is-12">
+                          <h3 className="has-text-weight-semibold is-size-2">
+                            {heading}
+                          </h3>
+                          <p>{description}</p>
+                        </div>
+                      </div>
+
+                      <div className="columns">
+                        <div className="column is-12 has-text-centered">
+                          <Link className="btn" to="/main-event">
+                            Go to Main Event
+                          </Link>
+                        </div>
+                      </div>
+                      <div className="column is-12">
+                        <h3 className="has-text-weight-semibold is-size-2">
+                          Latest Updates
+                        </h3>
+                        <BlogRoll />
+                        <div className="column is-12 has-text-centered">
+                          <Link className="btn" to="/blog">
+                            Read more
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </section>
+        </>
+      ) : (
+        <NavigationMap/>
+      )
+    }
   </div>
 )
 
