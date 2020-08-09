@@ -1,0 +1,29 @@
+.inner-page-layout {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(201, 186, 162, 1) 100%
+  );
+
+  .left-section {
+    max-height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    z-index: 20;
+
+    > div:first-child {
+      padding-bottom: 30px;
+    }
+
+    .inner-page-content {
+      max-height: 100%;
+      overflow: scroll;
+    }
+  }
+
+  .right-section {
+    z-index: 10;
+  }
+}

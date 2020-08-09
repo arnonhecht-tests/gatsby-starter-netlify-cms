@@ -1,0 +1,22 @@
+@import "../styles/vars";
+
+.site-navigation {
+  .link-text {
+    color: rgba(142, 142, 142, 1);
+    text-transform: uppercase;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .selected {
+    .link-text {
+      color: rgba(12, 42, 42, 1);
+    }
+
+    &.being .link-text {
+      color: $blue;
+    }
+  }
+}

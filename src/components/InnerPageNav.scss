@@ -1,0 +1,63 @@
+.inner-page-nav {
+  position: relative;
+  height: 100vh;
+
+  .image-section,
+  .nav-pane,
+  .logo-section {
+    position: absolute;
+  }
+
+  .gatsby-image-wrapper,
+  .image-section {
+    height: 100%;
+    width: 100%;
+  }
+
+  .image-section {
+    left: 0vw;
+    z-index: 1;
+
+    // clip-path: url(#myClip);
+    picture img {
+      mask-image: url("../../static/img/whtif-logo-mountains-overlay.svg");
+      min-height: 100vh;
+      min-width: 100vw;
+      mask-size: auto 100%;
+      mask-repeat: no-repeat;
+      mask-position: center;
+    }
+  }
+  .logo-section {
+    top: 2vh;
+    right: 3vw;
+    height: 7vh;
+    width: 7vw;
+    z-index: 20;
+  }
+
+  .nav-pane {
+    top: 20vh;
+    left: 15vw;
+    z-index: 20;
+
+    .link-text {
+      text-transform: uppercase;
+      color: rgb(168, 168, 170);
+
+      &.selected {
+        color: rgb(123, 123, 123);
+      }
+    }
+
+    > div {
+      margin-top: 4vh;
+
+      @for $i from 1 through 10 {
+        &:nth-child(n + #{$i}) {
+          margin-right: #{$i * 40}px;
+        }
+      }
+    }
+  }
+}
