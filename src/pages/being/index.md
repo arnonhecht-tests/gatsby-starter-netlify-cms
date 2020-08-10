@@ -1,10 +1,12 @@
 ---
-templateKey: "being-page"
+templateKey: being-page
 path: /being
 title: Being
 teamimage:
   alt: WhtIf team
   image: /img/team.jpg
+  teamimage: /img/agora.jpg
+  teamalt: WhtIf Team
 ---
 
 ### Dream
