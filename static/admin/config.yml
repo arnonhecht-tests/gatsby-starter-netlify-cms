@@ -57,16 +57,6 @@ collections:
                   { label: Alt, name: alt, widget: string },
                 ],
             }
-          - {
-              label: Teamimage,
-              name: teamimage,
-              widget: object,
-              fields:
-                [
-                  { label: Image, name: image, widget: image },
-                  { label: Alt, name: alt, widget: string },
-                ],
-            }
           - { label: Heading, name: heading, widget: string }
           - { label: Subheading, name: subheading, widget: string }
           - {
@@ -165,13 +155,35 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - {
-              label: Teamimage,
-              name: teamimage,
+              label: Navigation Image,
+              name: navimage,
               widget: object,
               fields:
                 [
-                  { label: Team Image, name: image, widget: image },
-                  { label: Team Alt, name: alt, widget: string },
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/being/participate.md"
+        label: "Being - Participate"
+        name: "being-participate"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "being-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
                 ],
             }
       - file: "src/pages/reaching/index.md"

@@ -1,8 +1,8 @@
 ---
-templateKey: "being-page"
+templateKey: being-page
 path: /being/retreats
 title: Being Retreats
-teamimage:
+navimage:
   alt: WhtIf team
   image: /img/team.jpg
 ---
