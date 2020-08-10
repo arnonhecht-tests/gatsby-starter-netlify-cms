@@ -6,11 +6,22 @@ navimage:
   alt: Gatherings
   image: /img/burn.jpg
 ---
+###### Ras-Abu Glum
 
-### Dream
+**location**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ras-Abu Galum (Egyptian Arabic for "gold") is a small town on the southeast coast of the Sinai Peninsula in Egypt, approximately 80 km (50 m.) northeast of Sharm el-Sheikh. Formerly a Bedouin fishing village, Ras-Abu Galum is now considered to be one of Sinai's most treasured hidden lagoons.
 
-### Fear
+Masbat (within Dahab) is a popular diving destination, and there are many (50+) dive centers, located within the area of Ras-Abu Galum. Most of Ras-Abu Galum diving spots are shore dives.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The area of Ras-Abu Galum and Dahab can be divided into three major parts. Masbat, which includes the Bedouin village Asalah, is in the north and south of Masbat is Mashraba, which is more touristic and has considerably more hotels.
+
+In the southwest is Medina which includes the Laguna area, famous for its excellent shallow-water windsurfing.
+
+Our location is a wild isolated blue lagoon discovered by fishermen, many years ago and there is only one dirt road which leads to it.
+
+This place is heart stoppingly beautiful and amazingly interesting, when you meet the locals.
+
+We consider all territories of the world as neutral, inviting all human beings as equals, regardless of the situation and the political status, economic, social and existing political conditions.
+
+We are here to go forward with our vision, of the bringing together through social gatherings, with the aim of enriching all who wish to participate
