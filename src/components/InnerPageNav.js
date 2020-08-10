@@ -1,35 +1,32 @@
 import React, { useState, useEffect }  from 'react'
 import PropTypes from 'prop-types'
-import { useLocation } from '@reach/router';
 import {withResizeDetector} from 'react-resize-detector';
 
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 
 import logo from '../../static/img/whtif-logo.svg';
 
 import './InnerPageNav.scss';
 
-const imageStyle = {};
-const s1 = {fill: 'none', stroke: '#ff0000', strokeWidth: 1, strokeLinecap: 'butt', strokeLinejoin: 'miter', strokeMiterlimit: 4, strokeOpacity: 1, strokeDasharray: '2, 1', strokeDashoffset: 0,}
 
-const InnerPageNav =  ({backgroundImage, navMenu}) => {
+const InnerPageNav =  ({backgroundImage, navMenu, location}) => {
   const [linksMap, setLinksMap] = useState([]);
 
   useEffect(() => {
     setLinksMap(navMenu);
   }, []);
 
-  const location = useLocation();
-  const routeArray = location.pathname.split('/').filter(a => !!a );
+  const routeArray = (location || {pathname: "/dummypath"}).pathname.split('/').filter(a => !!a );
   const currentPage = routeArray[0];
   const currentInnerPage = routeArray[1];
 
   return (
     <div className="inner-page-nav display-flex flex-column">
       <div className="image-section">
-        <Img style={imageStyle} fluid={backgroundImage.image.childImageSharp.fluid} alt="Wht If Circle" /> 
+        <PreviewCompatibleImage imageInfo={backgroundImage} />
       </div>
+
       <Link to='/'>
         <div className="logo-section">
           <img src={logo} alt="whtif logo" />
@@ -64,10 +61,14 @@ const InnerPageNav =  ({backgroundImage, navMenu}) => {
       </svg> */}
 
       <div className="nav-pane display-flex flex-column align-items-end">
-        {
-          linksMap.map(l => (
-            <div key={l.linkTarget}>
-              <Link to={`/${currentPage}/${l.linkTarget}`} className={(currentPage === l.linkTarget ? 'selected' : '') + ` ${l.linkTarget}`}>
+          {
+            linksMap.map(l => (
+              <Link
+                to={`/${currentPage}/${l.linkTarget}`} 
+                path={`/${currentPage}/${l.linkTarget}`} 
+                className={(currentPage === l.linkTarget ? 'selected' : '') + ` ${l.linkTarget}`}
+                key={l.linkTarget}
+              >
                 <div className="link-container display-flex justify-content-center">
                   <div className="line">
                     <div className="point"></div>
@@ -77,9 +78,8 @@ const InnerPageNav =  ({backgroundImage, navMenu}) => {
                   </div>
                 </div>
               </Link>
-            </div>
-          ))
-        }
+            ))
+          }
       </div>
     </div>
   )
@@ -91,4 +91,4 @@ InnerPageNav.propTypes = {
   backgroundImage: oneOfType([object, string]),
 }
 
-export default withResizeDetector(InnerPageNav);
+export default (withResizeDetector(InnerPageNav));

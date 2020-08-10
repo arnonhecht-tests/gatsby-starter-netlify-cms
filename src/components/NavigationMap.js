@@ -38,7 +38,7 @@ const NavigationMap = class extends React.Component {
             linksMap.map(l => (
               <Link to={`/${l.linkTarget}`} key={l.name} >
                 <div className="link-container display-flex justify-content-center" style={{top: l.top, left: l.left, minWidth: l.width }}>
-                  <img src={l.src} style={{minWidth: l.width}} />
+                  <img src={l.src} style={{minWidth: l.width}} alt={l.text} />
                   <div className="line">
                     <div className="point"></div>
                   </div>

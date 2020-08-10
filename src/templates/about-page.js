@@ -1,13 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-const imageStyle = { margin: '30px 10%', ßborderRadius: '5px', height: '100%', width: '100%', }
 
 export const AboutPageTemplate = ({ title, content, circleimage, contentComponent }) => {
   const PageContent = contentComponent || Content

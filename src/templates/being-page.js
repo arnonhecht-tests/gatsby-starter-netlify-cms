@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import InnerPageLayout from '../components/InnerPageLayout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const BeingPageTemplate = ({ content, teamimage, contentComponent }) => {
+export const BeingPageTemplate = ({ content, teamimage, contentComponent, location }) => {
   const PageContent = contentComponent || Content
 
   const beingNavigation = [
@@ -17,7 +17,7 @@ export const BeingPageTemplate = ({ content, teamimage, contentComponent }) => {
   ];
 
   return (
-    <InnerPageLayout navImage={teamimage} navMenu={beingNavigation}>
+    <InnerPageLayout navImage={teamimage} navMenu={beingNavigation} location={location}>
       <div className="display-flex flex-row">
         <PageContent className="content flex-1" content={content} />
       </div>
@@ -33,12 +33,13 @@ BeingPageTemplate.propTypes = {
   contentComponent: func,
 }
 
-const BeingPage = ({ data }) => {
+const BeingPage = ({ data, location }) => {
   const { markdownRemark: post } = data
   
   return (
     <Layout>
       <BeingPageTemplate
+        location={location}
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
@@ -67,7 +68,7 @@ export const BeingPageQuery = graphql`
           image {
             childImageSharp {
               fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid_tracedSVG
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -76,3 +77,4 @@ export const BeingPageQuery = graphql`
     }
   }
 `
+

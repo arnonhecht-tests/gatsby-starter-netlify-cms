@@ -164,6 +164,16 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Teamimage,
+              name: teamimage,
+              widget: object,
+              fields:
+                [
+                  { label: Team Image, name: image, widget: image },
+                  { label: Team Alt, name: alt, widget: string },
+                ],
+            }
       - file: "src/pages/reaching/index.md"
         label: "Reaching"
         name: "reaching"

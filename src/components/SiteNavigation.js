@@ -1,5 +1,4 @@
 import React, { useState, useEffect }  from 'react'
-import { useLocation } from '@reach/router';
 import { Link } from 'gatsby'
 import {withResizeDetector} from 'react-resize-detector';
 
@@ -8,7 +7,7 @@ import navigationService from '../services/navigationService';
 import './SiteNavigation.scss';
 
 
-const SiteNavigation =  () => {
+const SiteNavigation =  ({location}) => {
   const [linksMap, setLinksMap] = useState([]);
 
   useEffect(() => {
@@ -16,7 +15,6 @@ const SiteNavigation =  () => {
     setLinksMap(linksMap);
   }, []);
 
-  const location = useLocation();
   const routeArray = location.pathname.split('/').filter(a => !!a );
   const currentPage = routeArray[0];
 

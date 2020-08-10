@@ -4,13 +4,12 @@ import { BeingPageTemplate } from '../../templates/being-page'
 
 const BeingPagePreview = ({ entry, widgetFor, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
-  console.log(`entry: ${JSON.stringify(entry)}`)
   
   return (
     <BeingPageTemplate
       title={entry.getIn(['data', 'title'])}
       content={widgetFor('body')}
-      circleimage={getAsset(data.circleimage)}
+      teamimage={data.teamimage}
     />
   )
 }
@@ -22,6 +21,7 @@ BeingPagePreview.propTypes = {
     getIn: func,
   }),
   widgetFor: func,
+  getAsset: func,
 }
 
 export default BeingPagePreview;

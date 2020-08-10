@@ -5,7 +5,7 @@ import InnerPageNav from '../components/InnerPageNav'
 
 import './InnerPageLayout.scss'
 
-const InnerPageLayout = ({ children, navImage, navMenu }) => {
+const InnerPageLayout = ({ children, navImage, navMenu, location }) => {
   return (
     <section className="inner-page-layout">
         <div className="display-flex flex-row">
@@ -17,14 +17,14 @@ const InnerPageLayout = ({ children, navImage, navMenu }) => {
                   </>
                 ) : (
                   <>
-                    <SiteNavigation></SiteNavigation>
+                    {location && <SiteNavigation location={location}></SiteNavigation>}
                     <div className="inner-page-content">{children}</div>
                   </>
                 )
               }
           </div>
           <div className="right-section flex-4">
-            <InnerPageNav backgroundImage={navImage} navMenu={navMenu}></InnerPageNav>
+            <InnerPageNav backgroundImage={navImage} navMenu={navMenu} location={location}></InnerPageNav>
           </div>
 
         </div>
