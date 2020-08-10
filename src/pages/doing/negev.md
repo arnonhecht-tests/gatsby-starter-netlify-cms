@@ -6,7 +6,7 @@ navimage:
   alt: Gatherings
   image: /img/burn.jpg
 ---
-###### **WHT IF NEGEV DESERT**
+### **WHT IF NEGEV DESERT**
 
 **Location**
 
@@ -14,13 +14,9 @@ The Negev desert is the name of the vast area located in Israel, in the Middle E
 
 Our project has a number of meeting places among cultures around the world. Negev desert is one of them
 
-
-
 WHT IF is not involved in nationality or religion.
 
 WHT IF is involved in the development of a new culture, whose aim is to bridge and connect among different cultures, who do not generally meet.
-
-
 
 TheNegevis a desert and semi desert region of southern Israel. The region's largest city and administrative capital is Beersheba. At it`s southern end is the Gulf of Aqaba and the resort city of Eilat. It contains several development towns, including Dimona, Arad and Mitzpe Ramon, as well as a number of small Bedouin cities, including Rahat and Tel as-Sabi and Lakiya.
 
