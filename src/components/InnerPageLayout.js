@@ -9,7 +9,7 @@ const InnerPageLayout = ({ children, navImage, navMenu, location }) => {
   return (
     <section className="inner-page-layout">
         <div className="display-flex flex-row">
-          <div className="left-section flex-3">
+          <div className="left-section flex-3 display-flex flex-column">
               {
                 isMobileOnly ? (
                   <>
