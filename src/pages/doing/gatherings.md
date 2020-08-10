@@ -6,7 +6,7 @@ navimage:
   alt: Gatherings
   image: /img/burn.jpg
 ---
-**Gatherings**
+### **Gatherings**
 
 We are human beings, whose operational systems are based on interaction among people that is how we develop, drawing inspiration, motivating and activating, to create positive changes
 
