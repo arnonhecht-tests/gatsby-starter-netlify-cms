@@ -6,7 +6,7 @@ navimage:
   alt: Gatherings
   image: /img/burn.jpg
 ---
-###### Ras-Abu Glum
+### Ras-Abu Glum
 
 **location**
 
