@@ -363,6 +363,52 @@ collections:
                   { label: Image Alt, name: alt, widget: string },
                 ],
             }
+      - file: "src/pages/dreaming/dream-system.md"
+        label: "Dreaming - Dream System"
+        name: "dreaming-dream-system"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "dreaming-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Tags", name: "tags", widget: "list" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/dreaming/global-blog.md"
+        label: "Dreaming - Global Blog"
+        name: "dreaming-global-blog"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "dreaming-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Tags", name: "tags", widget: "list" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

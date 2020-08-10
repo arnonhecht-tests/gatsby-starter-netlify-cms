@@ -5,6 +5,7 @@ import cloudinary from 'netlify-cms-media-library-cloudinary'
 import { BeingPageTemplate } from '../templates/being-page'
 import { ReachingPageTemplate } from '../templates/reaching-page'
 import { DoingPageTemplate } from '../templates/doing-page'
+import { DreamingPageTemplate } from '../templates/dreaming-page'
 
 import InnerPagePreviewFactory from './preview-templates/InnerPagePreviewFactory'
 
@@ -34,6 +35,8 @@ CMS.registerPreviewTemplate('being-about-us', InnerPagePreviewFactory(BeingPageT
 CMS.registerPreviewTemplate('being-retreats', InnerPagePreviewFactory(BeingPageTemplate))
 CMS.registerPreviewTemplate('being-participate', InnerPagePreviewFactory(BeingPageTemplate))
 // CMS.registerPreviewTemplate('reaching', ReachingPagePreview)
+CMS.registerPreviewTemplate('dreaming-dream-system', InnerPagePreviewFactory(DreamingPageTemplate))
+CMS.registerPreviewTemplate('dreaming-global-blog', InnerPagePreviewFactory(DreamingPageTemplate))
 
 
 CMS.registerPreviewTemplate('main-event', MainEventPreview)
