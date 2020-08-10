@@ -10,8 +10,6 @@ import { DreamingPageTemplate } from '../templates/dreaming-page'
 import InnerPagePreviewFactory from './preview-templates/InnerPagePreviewFactory'
 
 import AboutPagePreview from './preview-templates/AboutPagePreview'
-// import BeingPagePreview from './preview-templates/BeingPagePreview'
-// import ReachingPagePreview from './preview-templates/ReachingPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
 import ProductPagePreview from './preview-templates/ProductPagePreview'
 import MainEventPreview from './preview-templates/MainEventPreview'
@@ -24,17 +22,17 @@ CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
 
 /* Inner Pages */
-// CMS.registerPreviewTemplate('being', BeingPagePreview)
+// CMS.registerPreviewTemplate('reaching', ReachingPagePreview)
+CMS.registerPreviewTemplate('reaching', InnerPagePreviewFactory(ReachingPageTemplate))
 CMS.registerPreviewTemplate('doing-negev', InnerPagePreviewFactory(DoingPageTemplate))
 CMS.registerPreviewTemplate('doing-sinai', InnerPagePreviewFactory(DoingPageTemplate))
 CMS.registerPreviewTemplate('doing-gatherings', InnerPagePreviewFactory(DoingPageTemplate))
 CMS.registerPreviewTemplate('doing-retreats', InnerPagePreviewFactory(DoingPageTemplate))
-// CMS.registerPreviewTemplate('being', InnerPagePreviewFactory(BeingPageTemplate))
+// CMS.registerPreviewTemplate('being', BeingPagePreview)
 CMS.registerPreviewTemplate('being-culture', InnerPagePreviewFactory(BeingPageTemplate))
 CMS.registerPreviewTemplate('being-about-us', InnerPagePreviewFactory(BeingPageTemplate))
 CMS.registerPreviewTemplate('being-retreats', InnerPagePreviewFactory(BeingPageTemplate))
 CMS.registerPreviewTemplate('being-participate', InnerPagePreviewFactory(BeingPageTemplate))
-// CMS.registerPreviewTemplate('reaching', ReachingPagePreview)
 CMS.registerPreviewTemplate('dreaming-dream-system', InnerPagePreviewFactory(DreamingPageTemplate))
 CMS.registerPreviewTemplate('dreaming-global-blog', InnerPagePreviewFactory(DreamingPageTemplate))
 
