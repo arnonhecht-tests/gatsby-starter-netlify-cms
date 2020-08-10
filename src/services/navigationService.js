@@ -32,9 +32,9 @@ const getNavigationMap = (windowGlobal) => {
       left: startPoint + gutter * 2 - 50,
       height: 100,
       width: 100,
-      name: "retreats",
+      name: "doing",
       text: "Doing",
-      linkTarget: 'retreats',
+      linkTarget: 'doing/negev',
     },
     {
       src: pyramids,
@@ -44,7 +44,7 @@ const getNavigationMap = (windowGlobal) => {
       width: 150,
       name: "culture",
       text: "Being",
-      linkTarget: 'being',
+      linkTarget: 'being/culture',
     },
     {
       src: children,

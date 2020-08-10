@@ -142,9 +142,163 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/being/index.md"
-        label: "Being"
-        name: "being"
+      # - file: "src/pages/being/index.md"
+      #   label: "Being"
+      #   name: "being"
+      #   fields:
+      #     - {
+      #         label: "Template Key",
+      #         name: "templateKey",
+      #         widget: "hidden",
+      #         default: "being-page",
+      #       }
+      #     - { label: "Title", name: "title", widget: "string" }
+      #     - { label: "Body", name: "body", widget: "markdown" }
+      #     - {
+      #         label: Navigation Image,
+      #         name: navimage,
+      #         widget: object,
+      #         fields:
+      #           [
+      #             { label: Navigation Image, name: image, widget: image },
+      #             { label: Image Alt, name: alt, widget: string },
+      #           ],
+      #       }
+      - file: "src/pages/doing/negev.md"
+        label: "Doing - Negev"
+        name: "doing-negev"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "doing-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/doing/sinai.md"
+        label: "Doing - Sinai"
+        name: "doing-sinai"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "doing-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/doing/gatherings.md"
+        label: "Doing - Gatherings"
+        name: "doing-gatherings"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "doing-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/doing/retreats.md"
+        label: "Doing - Retreats"
+        name: "doing-retreats"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "doing-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/being/culture.md"
+        label: "Being - Culture"
+        name: "being-culture"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "being-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/being/about-us.md"
+        label: "Being - About us"
+        name: "being-about-us"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "being-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/being/retreats.md"
+        label: "Being - Retreats"
+        name: "being-retreats"
         fields:
           - {
               label: "Template Key",

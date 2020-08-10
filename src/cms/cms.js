@@ -4,6 +4,7 @@ import cloudinary from 'netlify-cms-media-library-cloudinary'
 
 import { BeingPageTemplate } from '../templates/being-page'
 import { ReachingPageTemplate } from '../templates/reaching-page'
+import { DoingPageTemplate } from '../templates/doing-page'
 
 import InnerPagePreviewFactory from './preview-templates/InnerPagePreviewFactory'
 
@@ -23,10 +24,16 @@ CMS.registerPreviewTemplate('about', AboutPagePreview)
 
 /* Inner Pages */
 // CMS.registerPreviewTemplate('being', BeingPagePreview)
-CMS.registerPreviewTemplate('being', InnerPagePreviewFactory(BeingPageTemplate))
+CMS.registerPreviewTemplate('doing-negev', InnerPagePreviewFactory(DoingPageTemplate))
+CMS.registerPreviewTemplate('doing-sinai', InnerPagePreviewFactory(DoingPageTemplate))
+CMS.registerPreviewTemplate('doing-gatherings', InnerPagePreviewFactory(DoingPageTemplate))
+CMS.registerPreviewTemplate('doing-retreats', InnerPagePreviewFactory(DoingPageTemplate))
+// CMS.registerPreviewTemplate('being', InnerPagePreviewFactory(BeingPageTemplate))
+CMS.registerPreviewTemplate('being-culture', InnerPagePreviewFactory(BeingPageTemplate))
+CMS.registerPreviewTemplate('being-about-us', InnerPagePreviewFactory(BeingPageTemplate))
+CMS.registerPreviewTemplate('being-retreats', InnerPagePreviewFactory(BeingPageTemplate))
 CMS.registerPreviewTemplate('being-participate', InnerPagePreviewFactory(BeingPageTemplate))
 // CMS.registerPreviewTemplate('reaching', ReachingPagePreview)
-CMS.registerPreviewTemplate('reaching', InnerPagePreviewFactory(ReachingPageTemplate))
 
 
 CMS.registerPreviewTemplate('main-event', MainEventPreview)
