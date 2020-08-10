@@ -54,7 +54,7 @@ const getNavigationMap = (windowGlobal) => {
       width: 100,
       name: "dreaming",
       text: "Dreaming",
-      linkTarget: 'about',
+      linkTarget: 'dreaming/dream-system',
     },
   ];
 
