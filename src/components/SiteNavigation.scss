@@ -1,6 +1,11 @@
 @import "../styles/vars";
 
 .site-navigation {
+  .logo-section img {
+    height: 26px;
+    margin: 0 40px 0 0;
+  }
+
   .link-text {
     color: rgba(142, 142, 142, 1);
     text-transform: uppercase;

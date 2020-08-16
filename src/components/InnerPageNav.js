@@ -5,8 +5,6 @@ import {withResizeDetector} from 'react-resize-detector';
 import { Link } from 'gatsby'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 
-import logo from '../../static/img/whtif-logo.svg';
-
 import './InnerPageNav.scss';
 
 
@@ -26,12 +24,6 @@ const InnerPageNav =  ({backgroundImage, navMenu, location}) => {
       <div className="image-section">
         <PreviewCompatibleImage imageInfo={backgroundImage} />
       </div>
-
-      <Link to='/'>
-        <div className="logo-section">
-          <img src={logo} alt="whtif logo" />
-        </div>
-      </Link>
       
       {/* <svg width="100" height="100">
         <defs>

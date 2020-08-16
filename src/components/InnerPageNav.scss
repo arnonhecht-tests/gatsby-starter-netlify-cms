@@ -5,8 +5,7 @@
   height: 100vh;
 
   .image-section,
-  .nav-pane,
-  .logo-section {
+  .nav-pane {
     position: absolute;
   }
 
@@ -36,13 +35,6 @@
       // mask-repeat: no-repeat;
       // mask-position: center;
     }
-  }
-  .logo-section {
-    top: 2vh;
-    right: 3vw;
-    height: 7vh;
-    width: 7vw;
-    z-index: 20;
   }
 
   .nav-pane {

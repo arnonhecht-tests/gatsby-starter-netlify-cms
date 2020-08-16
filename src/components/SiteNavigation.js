@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import {withResizeDetector} from 'react-resize-detector';
 
 import navigationService from '../services/navigationService';
+import logo from '../../static/img/whtif-logo.svg';
 
 import './SiteNavigation.scss';
 
@@ -19,7 +20,11 @@ const SiteNavigation =  ({location}) => {
   const currentPage = routeArray[0];
 
   return (
-    <div className="site-navigation display-flex flex-row flex-justify-space-between">
+    <div className="site-navigation display-flex flex-row">
+      <Link to='/' className="logo-section">
+        <img src={logo} alt="whtif logo" />
+      </Link>
+      <div className="flex-1 display-flex flex-row flex-justify-space-between">
         {
           linksMap.map(l => (
             <div key={l.name}>
@@ -36,6 +41,7 @@ const SiteNavigation =  ({location}) => {
             </div>
           ))
         }
+      </div>
     </div>
   )
 }
