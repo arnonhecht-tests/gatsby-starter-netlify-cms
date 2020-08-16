@@ -4,8 +4,9 @@ path: /being/culture
 title: Being Culture
 navimage:
   alt: WhtIf team
-  image: /img/team.jpg
+  image: /img/whtifculture.jpg
 ---
+
 ### WHT IF Culture
 
 **INTRO.**
@@ -22,8 +23,6 @@ Yes, imagination is probably the one thing NO ONE can ever take away from you. I
 
 Imagination can heal the world to become a better place, it's where visions start, it's where frequencies connect.\
 Imagination is love. The unconditional kind.
-
-
 
 After being a significant and active part of the Burning Man project and co-founding Midburn (the Israeli official Burn in Israel ) we are asking you to join us, while we offer a new culture that we call WHT IF
 

@@ -4,7 +4,7 @@ path: /being/participate
 title: Being Participate
 navimage:
   alt: WhtIf team
-  image: /img/team.jpg
+  image: /img/getinvolved.jpg
 ---
 
 ### Dream

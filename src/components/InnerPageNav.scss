@@ -1,3 +1,5 @@
+@import "../styles/vars";
+
 .inner-page-nav {
   position: relative;
   height: 100vh;
@@ -10,22 +12,29 @@
 
   .gatsby-image-wrapper,
   .image-section {
-    height: 100%;
+    height: 100vh;
     width: 100%;
   }
 
   .image-section {
-    left: 0vw;
+    // left: -10vw;
     z-index: 1;
 
     // clip-path: url(#myClip);
     picture img {
-      mask-image: url("../../static/img/whtif-logo-mountains-overlay.svg");
-      min-height: 100vh;
-      min-width: 100vw;
-      mask-size: auto 100%;
-      mask-repeat: no-repeat;
-      mask-position: center;
+      // Hack - to fix too wide images
+      object-position: center right !important;
+      width: auto !important;
+      height: 100vh !important;
+      right: 0 !important;
+      left: revert !important;
+
+      // mask-image: url("../../static/img/whtif-logo-mountains-overlay.svg");
+      // min-height: 100vh;
+      // min-width: 100vw;
+      // mask-size: auto 100%;
+      // mask-repeat: no-repeat;
+      // mask-position: center;
     }
   }
   .logo-section {
@@ -38,7 +47,7 @@
 
   .nav-pane {
     top: 20vh;
-    left: 15vw;
+    right: calc(50% + 4vw);
     z-index: 20;
 
     .link-text {
@@ -47,9 +56,9 @@
 
       &.selected {
         color: rgb(123, 123, 123);
+        font-weight: 500;
       }
     }
-
     > a {
       margin-top: 4vh;
 

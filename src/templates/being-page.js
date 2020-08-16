@@ -11,9 +11,8 @@ export const BeingPageTemplate = ({ content, navImage, contentComponent, locatio
 
   const navigationMap = [
     {text: "Wht If culture", linkTarget: 'culture'},
-    {text: "Hi story ", linkTarget: 'about-us'},
+    {text: "History ", linkTarget: 'about-us'},
     {text: "Get involved", linkTarget: 'participate'},
-    {text: "Retreats", linkTarget: 'retreats'},
   ];
 
   return (
