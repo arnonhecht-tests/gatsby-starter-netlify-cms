@@ -4,7 +4,7 @@ path: /being/culture
 title: Being Culture
 navimage:
   alt: WhtIf team
-  image: /img/whtifculture.jpg
+  image: /img/whtifculture.png
 ---
 
 ### WHT IF Culture

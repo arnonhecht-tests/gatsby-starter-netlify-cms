@@ -4,7 +4,7 @@ path: /dreaming/participate
 title: Dreaming System
 navimage:
   alt: Gatherings
-  image: /img/dreamsystem.jpg
+  image: /img/dreamsystem.png
 ---
 
 ### Dream

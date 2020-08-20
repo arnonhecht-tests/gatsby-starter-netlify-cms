@@ -4,7 +4,7 @@ path: /doing/participate
 title: Doing Participate
 navimage:
   alt: Gatherings
-  image: /img/retreats.jpg
+  image: /img/retreats.png
 ---
 
 **RETREATS**

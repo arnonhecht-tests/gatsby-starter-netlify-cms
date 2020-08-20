@@ -4,7 +4,7 @@ path: /doing/participate
 title: Doing Participate
 navimage:
   alt: Gatherings
-  image: /img/whtifnegev.jpg
+  image: /img/whtifnegev.png
 ---
 
 ### **WHT IF NEGEV DESERT**

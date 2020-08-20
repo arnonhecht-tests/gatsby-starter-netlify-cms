@@ -4,7 +4,7 @@ path: /dreaming/participate
 title: Dreaming Blog
 navimage:
   alt: Gatherings
-  image: /img/global.jpg
+  image: /img/global.png
 ---
 
 ### Dream

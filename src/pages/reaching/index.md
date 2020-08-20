@@ -4,7 +4,7 @@ path: /reaching
 title: Reachingggg
 navimage:
   alt: Love
-  image: /img/reaching.jpg
+  image: /img/reaching.png
 ---
 
 ### CONTACT FORM

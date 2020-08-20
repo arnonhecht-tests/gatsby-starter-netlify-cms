@@ -4,7 +4,7 @@ path: /doing/participate
 title: Doing Participate
 navimage:
   alt: Gatherings
-  image: /img/whtifsinai.jpg
+  image: /img/whtifsinai.png
 ---
 
 ### Ras-Abu Glum

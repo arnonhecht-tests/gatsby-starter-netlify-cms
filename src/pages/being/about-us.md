@@ -4,7 +4,7 @@ path: /being/about-us
 title: Being About
 navimage:
   alt: WhtIf team
-  image: /img/history.jpg
+  image: /img/history.png
 ---
 
 ### Dream
