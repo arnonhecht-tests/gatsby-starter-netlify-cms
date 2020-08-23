@@ -1,5 +1,5 @@
 ---
-templateKey: doing-page
+templateKey: doing-page-event
 path: /doing/participate
 title: Doing Participate
 navimage:

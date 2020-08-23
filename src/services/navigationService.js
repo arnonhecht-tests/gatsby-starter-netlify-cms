@@ -66,9 +66,18 @@ const getNavigationMap = (windowGlobal) => {
 
   return linksMap;
 };
+const getDoingNavMap = () => {
+ return [
+    {text: "Location", linkTarget: 'location'},
+    {text: "Guide", linkTarget: 'guide'},
+    {text: "Participate", linkTarget: 'participate'},
+    {text: "Tickets", linkTarget: 'tickets'},
+  ];
+};
 
 const navigationService = {
   getNavigationMap,
+  getDoingNavMap,
 };
 
 export default navigationService;

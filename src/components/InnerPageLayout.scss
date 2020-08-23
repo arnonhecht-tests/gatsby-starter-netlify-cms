@@ -22,9 +22,35 @@
       padding-bottom: 30px;
     }
 
+    .inner-page-content-container {
+      position: relative;
+      max-height: 100%;
+    }
+
     .inner-page-content {
       max-height: 100%;
       overflow: scroll;
+
+      .event-submenu {
+        position: absolute;
+        right: 0;
+        background: rgba(12, 12, 12, 0.1);
+        border: 1px solid rgba(120, 120, 120, 0.1);
+        border-radius: 4px;
+        font-size: 12px;
+
+        > a {
+          margin: 3px 5px;
+        }
+
+        .link-text {
+          color: rgb(132, 134, 132);
+
+          &.selected {
+            color: rgb(107, 96, 148);
+          }
+        }
+      }
     }
   }
 

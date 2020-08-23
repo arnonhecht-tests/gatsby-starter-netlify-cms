@@ -18,7 +18,11 @@ const InnerPageLayout = ({ children, navImage, navMenu, location }) => {
                 ) : (
                   <>
                     {location && <SiteNavigation location={location}></SiteNavigation>}
-                    <div className="inner-page-content">{children}</div>
+                    <div className="inner-page-content-container">
+                      <div className="inner-page-content">
+                        {children}
+                      </div>
+                    </div>
                   </>
                 )
               }
