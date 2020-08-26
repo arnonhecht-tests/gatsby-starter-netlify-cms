@@ -11,6 +11,8 @@ navimage:
 
 **Location**
 
+Sinani desert
+
 The Negev desert is the name of the vast area located in Israel, in the Middle East.
 
 Our project has a number of meeting places among cultures around the world. Negev desert is one of them
