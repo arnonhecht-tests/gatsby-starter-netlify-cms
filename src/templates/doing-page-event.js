@@ -13,14 +13,9 @@ import navigationService from '../services/navigationService';
 export const DoingPageEventTemplate = ({ content, navImage, contentComponent, location }) => {
   const PageContent = contentComponent || Content
 
-  const navigationMap = [
-    {text: "Wht If Negev", linkTarget: 'negev/location'},
-    {text: "Wht If Sinai", linkTarget: 'sinai'},
-    {text: "Gatherings", linkTarget: 'gatherings'},
-    {text: "Retreats", linkTarget: 'retreats'},
-  ];
+  const navigationMap = navigationService.getDoingNavMap();
   
-  const eventNavMap = navigationService.getDoingNavMap();
+  const eventNavMap = navigationService.getDoingEventNavMap();
 
   const routeArray = (location || {pathname: "/dummypath"}).pathname.split('/').filter(a => !!a );
   const currentPage = routeArray[0];

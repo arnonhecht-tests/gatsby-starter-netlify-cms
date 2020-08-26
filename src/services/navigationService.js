@@ -34,7 +34,7 @@ const getNavigationMap = (windowGlobal) => {
       width: 100,
       name: "doing",
       text: "Doing",
-      linkTarget: 'doing/negev',
+      linkTarget: 'doing/negev/location',
     },
     {
       src: pyramids,
@@ -66,7 +66,7 @@ const getNavigationMap = (windowGlobal) => {
 
   return linksMap;
 };
-const getDoingNavMap = () => {
+const getDoingEventNavMap = () => {
  return [
     {text: "Location", linkTarget: 'location'},
     {text: "Guide", linkTarget: 'guide'},
@@ -75,8 +75,18 @@ const getDoingNavMap = () => {
   ];
 };
 
+const getDoingNavMap = () => {
+ return [
+    {text: "Wht If Negev", linkTarget: 'negev/location'},
+    {text: "Wht If Sinai", linkTarget: 'sinai/location'},
+    {text: "Gatherings", linkTarget: 'gatherings'},
+    {text: "Retreats", linkTarget: 'retreats'},
+  ];
+};
+
 const navigationService = {
   getNavigationMap,
+  getDoingEventNavMap,
   getDoingNavMap,
 };
 

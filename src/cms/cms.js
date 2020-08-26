@@ -5,6 +5,7 @@ import cloudinary from 'netlify-cms-media-library-cloudinary'
 import { BeingPageTemplate } from '../templates/being-page'
 import { ReachingPageTemplate } from '../templates/reaching-page'
 import { DoingPageTemplate } from '../templates/doing-page'
+import { DoingPageEventTemplate } from '../templates/doing-page-event'
 import { DreamingPageTemplate } from '../templates/dreaming-page'
 
 import InnerPagePreviewFactory from './preview-templates/InnerPagePreviewFactory'
@@ -24,8 +25,14 @@ CMS.registerPreviewTemplate('about', AboutPagePreview)
 /* Inner Pages */
 // CMS.registerPreviewTemplate('reaching', ReachingPagePreview)
 CMS.registerPreviewTemplate('reaching', InnerPagePreviewFactory(ReachingPageTemplate))
-CMS.registerPreviewTemplate('doing-negev', InnerPagePreviewFactory(DoingPageTemplate))
-CMS.registerPreviewTemplate('doing-sinai', InnerPagePreviewFactory(DoingPageTemplate))
+CMS.registerPreviewTemplate('doing-negev-location', InnerPagePreviewFactory(DoingPageEventTemplate))
+CMS.registerPreviewTemplate('doing-negev-guide', InnerPagePreviewFactory(DoingPageEventTemplate))
+CMS.registerPreviewTemplate('doing-negev-participate', InnerPagePreviewFactory(DoingPageEventTemplate))
+CMS.registerPreviewTemplate('doing-negev-tickets', InnerPagePreviewFactory(DoingPageEventTemplate))
+CMS.registerPreviewTemplate('doing-sinai-location', InnerPagePreviewFactory(DoingPageEventTemplate))
+CMS.registerPreviewTemplate('doing-sinai-guide', InnerPagePreviewFactory(DoingPageEventTemplate))
+CMS.registerPreviewTemplate('doing-sinai-participate', InnerPagePreviewFactory(DoingPageEventTemplate))
+CMS.registerPreviewTemplate('doing-sinai-tickets', InnerPagePreviewFactory(DoingPageEventTemplate))
 CMS.registerPreviewTemplate('doing-gatherings', InnerPagePreviewFactory(DoingPageTemplate))
 CMS.registerPreviewTemplate('doing-retreats', InnerPagePreviewFactory(DoingPageTemplate))
 // CMS.registerPreviewTemplate('being', BeingPagePreview)

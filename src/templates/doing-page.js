@@ -6,15 +6,12 @@ import Layout from '../components/Layout'
 import InnerPageLayout from '../components/InnerPageLayout'
 import Content, { HTMLContent } from '../components/Content'
 
+import navigationService from '../services/navigationService';
+
 export const DoingPageTemplate = ({ content, navImage, contentComponent, location }) => {
   const PageContent = contentComponent || Content
 
-  const navigationMap = [
-    {text: "Wht If Negev", linkTarget: 'negev'},
-    {text: "Wht If Sinai", linkTarget: 'sinai'},
-    {text: "Gatherings", linkTarget: 'gatherings'},
-    {text: "Retreats", linkTarget: 'retreats'},
-  ];
+  const navigationMap = navigationService.getDoingNavMap();
 
   return (
     <InnerPageLayout navImage={navImage} navMenu={navigationMap} location={location}>

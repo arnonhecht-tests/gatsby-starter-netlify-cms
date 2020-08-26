@@ -164,28 +164,28 @@ collections:
       #             { label: Image Alt, name: alt, widget: string },
       #           ],
       #       }
-      - file: "src/pages/doing/negev.md"
-        label: "Doing - Negev"
-        name: "doing-negev"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "doing-page",
-            }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-          - {
-              label: Navigation Image,
-              name: navimage,
-              widget: object,
-              fields:
-                [
-                  { label: Navigation Image, name: image, widget: image },
-                  { label: Image Alt, name: alt, widget: string },
-                ],
-            }
+      # - file: "src/pages/doing/negev.md"
+      #   label: "Doing - Negev"
+      #   name: "doing-negev"
+      #   fields:
+      #     - {
+      #         label: "Template Key",
+      #         name: "templateKey",
+      #         widget: "hidden",
+      #         default: "doing-page",
+      #       }
+      #     - { label: "Title", name: "title", widget: "string" }
+      #     - { label: "Body", name: "body", widget: "markdown" }
+      #     - {
+      #         label: Navigation Image,
+      #         name: navimage,
+      #         widget: object,
+      #         fields:
+      #           [
+      #             { label: Navigation Image, name: image, widget: image },
+      #             { label: Image Alt, name: alt, widget: string },
+      #           ],
+      #       }
       - file: "src/pages/doing/negev/location.md"
         label: "Doing - Negev - Location"
         name: "doing-negev-location"
@@ -208,9 +208,163 @@ collections:
                   { label: Image Alt, name: alt, widget: string },
                 ],
             }
-      - file: "src/pages/doing/sinai.md"
-        label: "Doing - Sinai"
-        name: "doing-sinai"
+      - file: "src/pages/doing/negev/guide.md"
+        label: "Doing - Negev - Guide"
+        name: "doing-negev-guide"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "doing-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/doing/negev/participate.md"
+        label: "Doing - Negev - Participate"
+        name: "doing-negev-participate"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "doing-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/doing/negev/tickets.md"
+        label: "Doing - Negev - Tickets"
+        name: "doing-negev-tickets"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "doing-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      # - file: "src/pages/doing/sinai.md"
+      #   label: "Doing - Sinai"
+      #   name: "doing-sinai"
+      #   fields:
+      #     - {
+      #         label: "Template Key",
+      #         name: "templateKey",
+      #         widget: "hidden",
+      #         default: "doing-page",
+      #       }
+      #     - { label: "Title", name: "title", widget: "string" }
+      #     - { label: "Body", name: "body", widget: "markdown" }
+      #     - {
+      #         label: Navigation Image,
+      #         name: navimage,
+      #         widget: object,
+      #         fields:
+      #           [
+      #             { label: Navigation Image, name: image, widget: image },
+      #             { label: Image Alt, name: alt, widget: string },
+      #           ],
+      #       }
+      - file: "src/pages/doing/sinai/location.md"
+        label: "Doing - Sinai - Location"
+        name: "doing-sinai-location"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "doing-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/doing/sinai/guide.md"
+        label: "Doing - Sinai - Guide"
+        name: "doing-sinai-guide"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "doing-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/doing/sinai/participate.md"
+        label: "Doing - Sinai - Participate"
+        name: "doing-sinai-participate"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "doing-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/doing/sinai/tickets.md"
+        label: "Doing - Sinai - Tickets"
+        name: "doing-sinai-tickets"
         fields:
           - {
               label: "Template Key",
