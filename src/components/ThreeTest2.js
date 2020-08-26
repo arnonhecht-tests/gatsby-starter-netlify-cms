@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 // import { GUI } from 'three/examples/jsm/libs/dat.gui.module.js';
 
-import sceneImage from "../../static/img/desert-360.jpg" 
+// import sceneImage from "../../static/img/desert-360.jpg" 
 
 
 class ThreeTest2 extends Component{
@@ -86,24 +86,24 @@ class ThreeTest2 extends Component{
       controls.minDistance = 500;
       controls.maxDistance = 2500;
 
-      var params = {
-        Cube: function () {
+      // var params = {
+      //   Cube: function () {
 
-          cubeMesh.material = cubeMaterial;
-          cubeMesh.visible = true;
-          sphereMaterial.envMap = textureCube;
-          sphereMaterial.needsUpdate = true;
+      //     cubeMesh.material = cubeMaterial;
+      //     cubeMesh.visible = true;
+      //     sphereMaterial.envMap = textureCube;
+      //     sphereMaterial.needsUpdate = true;
 
-        },
-        Spherical: function () {
+      //   },
+      //   Spherical: function () {
 
-          cubeMesh.visible = false;
-          sphereMaterial.envMap = textureSphere;
-          sphereMaterial.needsUpdate = true;
+      //     cubeMesh.visible = false;
+      //     sphereMaterial.envMap = textureSphere;
+      //     sphereMaterial.needsUpdate = true;
 
-        },
-        Refraction: false
-      };
+      //   },
+      //   Refraction: false
+      // };
 
       // var gui = new GUI();
       // gui.add( params, 'Cube' );

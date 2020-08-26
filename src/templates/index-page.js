@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 
 import NavigationMap from '../components/NavigationMap'
 
@@ -10,7 +9,7 @@ import Layout from '../components/Layout'
 // import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-const imageStyle = { margin: '30px 10%', ßborderRadius: '5px', height: '100%', width: '100%', }
+// const imageStyle = { margin: '30px 10%', ßborderRadius: '5px', height: '100%', width: '100%', }
 
 export const IndexPageTemplate = ({
   image,

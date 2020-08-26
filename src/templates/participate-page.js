@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import { HTMLContent } from '../components/Content'
-import ContentPageTemplate from '../components/ContentPageTemplate'
+// import { HTMLContent } from '../components/Content'
+// import ContentPageTemplate from '../components/ContentPageTemplate'
 // import ThreeJS from '../components/ThreeJS'
 import ThreeTest2 from '../components/ThreeTest2'
 
 
 const ParticipatePage = ({ data }) => {
-  const { markdownRemark: post } = data
+  // const { markdownRemark: post } = data
   
   return (
     <Layout>

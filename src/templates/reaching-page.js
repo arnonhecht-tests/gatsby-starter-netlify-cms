@@ -9,17 +9,8 @@ import Content, { HTMLContent } from '../components/Content'
 export const ReachingPageTemplate = ({ content, navImage, contentComponent, location }) => {
   const PageContent = contentComponent || Content
 
-  const navigationMap = [
-    // {text: "Wht If culture", linkTarget: 'culture'},
-    // {text: "Hi story ", linkTarget: 'about-us'},
-    // {text: "Get involved", linkTarget: 'participate'},
-    // {text: "Retreats", linkTarget: 'retreats'},
-  ];
-
-  // console.log(`content: ${JSON.stringify(content)}`)
-
   return (
-    <InnerPageLayout navImage={navImage} navMenu={navigationMap} location={location}>
+    <InnerPageLayout navImage={navImage} navMenu={[]} location={location}>
       <div className="display-flex flex-row">
         <PageContent className="content flex-1" content={content} />
       </div>
@@ -27,7 +18,7 @@ export const ReachingPageTemplate = ({ content, navImage, contentComponent, loca
   )
 }
 
-const {string, object, bool, oneOfType, func} = PropTypes;
+const {string, object, oneOfType, func} = PropTypes;
 ReachingPageTemplate.propTypes = {
   title: string.isRequired,
   content: string,
@@ -41,7 +32,7 @@ const ReachingPage = ({ data, location }) => {
   return (
     <Layout>
       <ReachingPageTemplate
-        location={location}
+        location={location} 
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
