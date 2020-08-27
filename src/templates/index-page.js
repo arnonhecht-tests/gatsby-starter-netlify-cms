@@ -1,17 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import withSizes from 'react-sizes'
 
 import NavigationMap from '../components/NavigationMap'
-
-import Header from '../components/Header'
 import Layout from '../components/Layout'
-// import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-// const imageStyle = { margin: '30px 10%', ßborderRadius: '5px', height: '100%', width: '100%', }
+import DesertVideo from '../components/DesertVideo'
 
-export const IndexPageTemplate = ({
+import deviceService from '../services/deviceService';
+import linksService from '../services/linksService';
+
+import './index-page.scss'; 
+
+const IndexPageTemplateBare = ({
   image,
   title,
   heading,
@@ -20,34 +22,41 @@ export const IndexPageTemplate = ({
   circleimage,
   description,
   intro,
-  isMobile,
+  smallScreen,
 }) => (
-  <div>
+  <div className="index-page">
     {
-      isMobile ? (
+      smallScreen ? (
         <>
-          <Header title={title} subheading={subheading} image={image} />
+          <DesertVideo />
           <section className="section section--gradient">
             <div className="container">
               <div className="section">
                 <div className="columns">
                   <div className="column is-10 is-offset-1">
                     <div className="content">
-                      <div className="content">
-
-                        <PreviewCompatibleImage imageInfo={circleimage} />
-                      </div>
                       <div className="columns">
                         <div className="column is-12">
-                          <h3 className="has-text-weight-semibold is-size-2">
+                          <hr />
+                          <h6 className="header-text">
                             {heading}
-                          </h3>
-                          <p>{description}</p>
+                          </h6>
+                          <hr />
                         </div>
                       </div>
 
+                      <div className="links-list columns">
+                        {linksService.getTopLevelLinksList().map(l => (
+                          <Link className="btn column text-transform-capitalize" to={l.link} key={l.id}>
+                            {l.text}
+                          </Link>
+                        ))}
+                      </div>
+
+                      <hr className="mb-6" />
+
                       <div className="columns">
-                        <div className="column is-12 has-text-centered">
+                        <div className="column is-12 has-text-centered mt-6">
                           <Link className="btn" to="/main-event">
                             Go to Main Event
                           </Link>
@@ -76,18 +85,22 @@ export const IndexPageTemplate = ({
       )
     }
   </div>
-)
+);
 
+const IndexPageTemplate = withSizes(deviceService.getMapSizesToProps())(IndexPageTemplateBare)
+export  {IndexPageTemplate}; 
+
+const {oneOfType, object, string, shape, array} = PropTypes;
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  circleimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+  image: oneOfType([object, string]),
+  title: string,
+  heading: string,
+  subheading: string,
+  mainpitch: object,
+  circleimage: oneOfType([object, string]),
+  description: string,
+  intro: shape({
+    blurbs: array,
   }),
 }
 
@@ -111,9 +124,9 @@ const IndexPage = ({ data }) => {
 }
 
 IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
+  data: shape({
+    markdownRemark: shape({
+      frontmatter: object,
     }),
   }),
 }

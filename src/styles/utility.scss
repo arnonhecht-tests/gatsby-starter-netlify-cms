@@ -36,8 +36,8 @@
   flex-direction: row;
 }
 
-.flex-row {
-  flex-direction: row;
+.text-transform-capitalize {
+  text-transform: capitalize;
 }
 
 @for $i from 1 through 8 {

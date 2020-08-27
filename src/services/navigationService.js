@@ -66,6 +66,7 @@ const getNavigationMap = (windowGlobal) => {
 
   return linksMap;
 };
+
 const getDoingEventNavMap = () => {
  return [
     {text: "Location", linkTarget: 'location'},

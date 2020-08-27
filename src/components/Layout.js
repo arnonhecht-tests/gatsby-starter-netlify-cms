@@ -1,23 +1,21 @@
 import React from 'react'
+
+import withSizes from 'react-sizes'
 import { Helmet } from 'react-helmet'
+import { withPrefix } from 'gatsby'
+
 // import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-// import MainEventNavbar from '../components/MainEventNavbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
-import { withPrefix } from 'gatsby'
-import {isMobileOnly} from 'react-device-detect';
+// import {isMobileOnly} from 'react-device-detect';
+import deviceService from '../services/deviceService'
 
-const TemplateWrapper = ({ children }) => {
+const Layout = ({ children, smallScreen }) => {
   const { title, description } = useSiteMetadata();
 
-  const windowGlobal = typeof window !== 'undefined' && window
-
-  // a bit hackish - should consider different site
-  const isMainEventSite = windowGlobal && windowGlobal.location.href.includes('main-event');
-
   return (
-    <div className={isMainEventSite ? `event-site` : ''}>
+    <div>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -57,7 +55,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       {
-        isMobileOnly ? (
+        smallScreen ? (
           <>
             <Navbar />
             <div>{children}</div>
@@ -73,4 +71,4 @@ const TemplateWrapper = ({ children }) => {
   )
 }
 
-export default TemplateWrapper
+export default withSizes(deviceService.getMapSizesToProps())(Layout)

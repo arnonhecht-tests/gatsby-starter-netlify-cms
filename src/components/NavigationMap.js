@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import {withResizeDetector} from 'react-resize-detector';
 
+import DesertVideo from '../components/DesertVideo';
 import navigationService from '../services/navigationService';
 
 import logo from '../img/whtif-logo.png';
-import desertVideo from '../../static/img/desert-video.mp4';
 
 import './NavigationMap.scss';
 
@@ -28,9 +28,7 @@ const NavigationMap = class extends React.Component {
     return (
       <div className="navigation-map">
         <div className="video-map-container">
-          <video autoPlay muted loop id="myVideo" >
-            <source src={desertVideo} type="video/mp4"></source>
-          </video>
+          <DesertVideo />
           <Link to="/" className="logo" title="Logo">
               <img src={logo} alt="wht if" />
           </Link>

@@ -1,3 +1,5 @@
+@import "../styles/vars";
+
 .inner-page-layout {
   // background: rgb(255, 255, 255);
   // background: linear-gradient(
@@ -18,10 +20,6 @@
     padding: 20px;
     z-index: 20;
 
-    > div:first-child {
-      padding-bottom: 30px;
-    }
-
     .inner-page-content-container {
       position: relative;
       max-height: 100%;
@@ -32,11 +30,6 @@
       overflow: scroll;
 
       .event-submenu {
-        position: absolute;
-        right: 0;
-        background: rgba(12, 12, 12, 0.1);
-        border: 1px solid rgba(120, 120, 120, 0.1);
-        border-radius: 4px;
         font-size: 12px;
 
         > a {
@@ -51,10 +44,66 @@
           }
         }
       }
+
+      @media only screen and (min-width: $small-screen) {
+        .event-submenu {
+          position: absolute;
+          right: 0;
+          background: rgba(12, 12, 12, 0.1);
+          border: 1px solid rgba(120, 120, 120, 0.1);
+          border-radius: 4px;
+        }
+      }
+
+      @media only screen and (max-width: $small-screen) {
+        .event-submenu {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 0 20px 0;
+        }
+      }
     }
   }
 
   .right-section {
     z-index: 10;
+  }
+
+  @media only screen and (max-width: $small-screen) {
+    .content {
+      padding: 10px;
+    }
+
+    > div:first-child {
+      padding-bottom: 30px;
+    }
+
+    > a {
+      margin: 3px 5px;
+    }
+
+    .link-text {
+      color: rgb(132, 134, 132);
+
+      &.selected {
+        color: rgb(107, 96, 148);
+      }
+    }
+  }
+
+  .mobile-image-section-container {
+    max-width: 50vw;
+
+    .mobile-image-section,
+    .mobile-image-section img {
+      transform: translateX(-45vw);
+      min-width: 141vw;
+    }
+  }
+
+  .page-name {
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
   }
 }

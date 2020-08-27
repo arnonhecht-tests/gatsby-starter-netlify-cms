@@ -1,0 +1,42 @@
+.index-page {
+  .desert-video {
+    width: 100%;
+  }
+
+  hr {
+    margin: 0.3rem 0;
+    height: 3px;
+    background: linear-gradient(
+      to right,
+      rgb(156, 149, 141) 0%,
+      rgb(75, 67, 57) 10%,
+      rgb(156, 149, 141) 15%,
+      rgb(75, 67, 57) 20%,
+      rgb(156, 149, 141) 25%,
+      rgb(75, 67, 57) 30%,
+      rgb(156, 149, 141) 35%,
+      rgb(75, 67, 57) 40%,
+      rgb(156, 149, 141) 45%,
+      rgb(75, 67, 57) 50%,
+      rgb(156, 149, 141) 55%,
+      rgb(75, 67, 57) 60%,
+      rgb(156, 149, 141) 65%,
+      rgb(75, 67, 57) 70%,
+      rgb(156, 149, 141) 75%,
+      rgb(75, 67, 57) 80%,
+      rgb(156, 149, 141) 85%,
+      rgb(75, 67, 57) 90%,
+      rgb(156, 149, 141) 100%
+    );
+  }
+
+  .header-text {
+    margin: 1.3rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .links-list .btn {
+    margin: 10px;
+  }
+}

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-// import github from '../img/github-icon.svg'
-// import logo from '../img/logo.svg'
+
+import linksService from '../services/linksService';
+
 import logo from '../img/whtif-logo.png'
 
 const Navbar = class extends React.Component {
@@ -64,42 +65,11 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/main-event">
-                Main Event
-              </Link>
-              <Link className="navbar-item" to="/about">
-                Culture
-              </Link>
-              <Link className="navbar-item" to="/retreats">
-                Retreats
-              </Link>
-              <Link className="navbar-item" to="/participate">
-                Get Involved
-              </Link>
-              {/* <Link className="navbar-item" to="/products">
-                Products
-              </Link> */}
-              <Link className="navbar-item" to="/blog">
-                News
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              {/* <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link> */}
-            </div>
-            <div className="navbar-end has-text-centered">
-              {/* <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a> */}
+              {linksService.getTopLevelLinksList().map(l => (
+                <Link className="navbar-item column text-transform-capitalize" to={l.link} key={l.id}>
+                  {l.text}
+                </Link>
+              ))}
             </div>
           </div>
         </div>

@@ -1,0 +1,2 @@
+
+export const SMALL_SCREEN_MAX_SIZE = 1024;
