@@ -55,13 +55,14 @@ const IndexPageTemplateBare = ({
 
                       <hr className="mb-6" />
 
-                      <div className="columns">
+                      {/* <div className="columns">
                         <div className="column is-12 has-text-centered mt-6">
                           <Link className="btn" to="/main-event">
                             Go to Main Event
                           </Link>
                         </div>
-                      </div>
+                      </div> */}
+
                       <div className="column is-12">
                         <h3 className="has-text-weight-semibold is-size-2">
                           Latest Updates

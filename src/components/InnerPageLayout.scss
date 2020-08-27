@@ -54,14 +54,14 @@
           border-radius: 4px;
         }
       }
+    }
+  }
 
-      @media only screen and (max-width: $small-screen) {
-        .event-submenu {
-          display: flex;
-          justify-content: space-between;
-          margin: 0 0 20px 0;
-        }
-      }
+  @media only screen and (max-width: $small-screen) {
+    .event-submenu {
+      margin: 40px 10px 20px 10px;
+      display: flex;
+      justify-content: space-between;
     }
   }
 
