@@ -461,6 +461,25 @@ collections:
               default: "being-page",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Prolog", name: "prolog", widget: "string" }
+          - {
+              label: "Nir Preview",
+              name: "nir_story_preview",
+              widget: "string",
+            }
+          - {
+              label: "Ifat Preview",
+              name: "ifat_story_preview",
+              widget: "string",
+            }
+          - {
+              label: "Abdul Preview",
+              name: "abdul_story_preview",
+              widget: "string",
+            }
+          - { label: "Nir", name: "nir_story", widget: "string" }
+          - { label: "Ifat", name: "ifat_story", widget: "string" }
+          - { label: "Abdul", name: "abdul_story", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - {
               label: Navigation Image,

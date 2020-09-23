@@ -59,7 +59,9 @@ export const BeingPageAboutUsTemplate = (props) => {
             </div>
           ))
         }
-        <PageContent className="content flex-1" content={content} />
+        <div className="page-section">
+          <PageContent className="content flex-1" content={content} />
+        </div>
       </div>
     </InnerPageLayout>
   )
