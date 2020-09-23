@@ -1,4 +1,9 @@
 .index-page {
+  background-image: url("/img/sky.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
   .desert-video {
     width: 100%;
   }

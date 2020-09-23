@@ -50,7 +50,12 @@ export const BeingPageAboutUsTemplate = (props) => {
             <div className="page-section story-dropdown" key={sl.name}>
               <div><b>{sl.name}</b>'s story</div>
               <div>{sl.story}</div>
-              <div className="hollow-arrow-wrapper" onClick={() => toggleSelectedStory(sl.name)}>
+              <div className="hollow-arrow-wrapper" 
+                onClick={() => toggleSelectedStory(sl.name)} 
+                onKeyUp={() => this.toggleSelectedStory(sl.name)}
+                role="button"
+                tabIndex={0}
+              >
                 <div className="hollow-arrow down">
                   <div></div>
                 </div>
@@ -74,7 +79,6 @@ BeingPageAboutUsTemplate.propTypes = {
   nirStoryPreview: string.isRequired,
   ifatStoryPreview: string.isRequired,
   abdulStoryPreview: string.isRequired,
-  prolog: string.isRequired,
   nirStory: string.isRequired,
   ifatStory: string.isRequired,
   abdulStory: string.isRequired,

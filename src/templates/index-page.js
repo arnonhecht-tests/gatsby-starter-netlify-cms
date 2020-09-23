@@ -5,7 +5,7 @@ import withSizes from 'react-sizes'
 
 import NavigationMap from '../components/NavigationMap'
 import Layout from '../components/Layout'
-import BlogRoll from '../components/BlogRoll'
+// import BlogRoll from '../components/BlogRoll'
 import DesertVideo from '../components/DesertVideo'
 
 import deviceService from '../services/deviceService';
@@ -47,8 +47,8 @@ const IndexPageTemplateBare = ({
 
                       <div className="links-list columns">
                         {linksService.getTopLevelLinksList().map(l => (
-                          <Link className="btn column text-transform-capitalize" to={l.link} key={l.id}>
-                            {l.text}
+                          <Link className="column" to={l.link} key={l.id}>
+                            <img src={`${l.img}`} alt={l.id} />
                           </Link>
                         ))}
                       </div>
@@ -63,7 +63,7 @@ const IndexPageTemplateBare = ({
                         </div>
                       </div> */}
 
-                      <div className="column is-12">
+                      {/* <div className="column is-12">
                         <h3 className="has-text-weight-semibold is-size-2">
                           Latest Updates
                         </h3>
@@ -73,7 +73,7 @@ const IndexPageTemplateBare = ({
                             Read more
                           </Link>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
