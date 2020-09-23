@@ -8,7 +8,7 @@ import logo from '../../static/img/whtif-logo.svg';
 import './SiteNavigation.scss';
 
 
-const SiteNavigation =  ({location}) => {
+const SiteNavigation =  () => {
   const [linksMap, setLinksMap] = useState([]);
 
   useEffect(() => {
@@ -16,8 +16,6 @@ const SiteNavigation =  ({location}) => {
     setLinksMap(linksMap);
   }, []);
 
-  const routeArray = location.pathname.split('/').filter(a => !!a );
-  const currentPage = routeArray[0];
 
   return (
     <div className="site-navigation display-flex flex-row">
@@ -28,7 +26,7 @@ const SiteNavigation =  ({location}) => {
         {
           linksMap.map(l => (
             <div key={l.name}>
-              <Link to={`/${l.linkTarget}`} className={(currentPage === l.linkTarget ? 'selected' : '') + ` ${l.linkTarget}`}>
+              <Link to={`/${l.linkTarget}`} className={(l.isSelected ? 'selected' : '') + ` ${l.linkTarget}`}>
                 <div className="link-container display-flex justify-content-center">
                   <div className="line">
                     <div className="point"></div>

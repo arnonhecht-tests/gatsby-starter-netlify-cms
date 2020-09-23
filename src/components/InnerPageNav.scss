@@ -4,7 +4,7 @@
   position: relative;
   height: 100vh;
 
-  .image-section,
+  .image-section-wrapper,
   .nav-pane {
     position: absolute;
   }
@@ -12,21 +12,22 @@
   .gatsby-image-wrapper,
   .image-section {
     height: 100vh;
-    width: 100%;
+    // width: 100%;
   }
 
   .image-section {
     // left: -10vw;
     z-index: 1;
+    margin-left: -500px; // to fix too wide images
 
     // clip-path: url(#myClip);
     picture img {
       // Hack - to fix too wide images
-      object-position: center right !important;
-      width: auto !important;
-      height: 100vh !important;
-      right: 0 !important;
-      left: revert !important;
+      // object-position: center right !important;
+      // width: auto !important;
+      // height: 100vh !important;
+      // right: 0 !important;
+      // left: revert !important;
 
       // mask-image: url("../../static/img/whtif-logo-mountains-overlay.svg");
       // min-height: 100vh;
@@ -38,8 +39,9 @@
   }
 
   .nav-pane {
-    top: 20vh;
-    right: calc(50% + 4vw);
+    top: 70px;
+    left: 15vw;
+    // right: calc(50% + 4vw);
     z-index: 20;
 
     .link-text {

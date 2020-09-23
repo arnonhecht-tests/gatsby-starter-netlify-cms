@@ -14,6 +14,8 @@ const getNavigationMap = (windowGlobal) => {
   const startPoint = 65;
   const middleGap = 100;
   const gutter = (winWidth / numLinks) - 165;
+  let currentLocation = windowGlobal.location.pathname;
+  currentLocation = currentLocation.split('/').filter(v => !!v)[0];
 
   const linksMap = [
     {
@@ -59,7 +61,9 @@ const getNavigationMap = (windowGlobal) => {
   ];
 
   let commulativeWidth = 0
+
   for (let i=0; i<linksMap.length-1; i++) {
+    linksMap[i].isSelected = linksMap[i].linkTarget.includes(currentLocation);
     commulativeWidth += linksMap[i].width;
     linksMap[i+1].left += commulativeWidth;
   }
