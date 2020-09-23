@@ -20,8 +20,20 @@
       color: rgba(12, 42, 42, 1);
     }
 
+    &.reaching .link-text {
+      color: $green;
+    }
+
+    &.doing .link-text {
+      color: $purple;
+    }
+
     &.being .link-text {
       color: $blue;
+    }
+
+    &.dreaming .link-text {
+      color: $red;
     }
   }
 }

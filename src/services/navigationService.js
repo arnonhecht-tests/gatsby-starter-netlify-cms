@@ -24,7 +24,7 @@ const getNavigationMap = (windowGlobal) => {
       left: startPoint,
       height: 100,
       width: 100,
-      name: "main-event",
+      name: "reaching",
       text: "Reaching",
       linkTarget: 'reaching',
     },
@@ -44,7 +44,7 @@ const getNavigationMap = (windowGlobal) => {
       left: startPoint + gutter * 3  + middleGap * 3 ,
       height: '150px',
       width: 150,
-      name: "culture",
+      name: "being",
       text: "Being",
       linkTarget: 'being/culture',
     },
@@ -62,10 +62,12 @@ const getNavigationMap = (windowGlobal) => {
 
   let commulativeWidth = 0
 
-  for (let i=0; i<linksMap.length-1; i++) {
+  for (let i=0; i < linksMap.length; i++) {
     linksMap[i].isSelected = linksMap[i].linkTarget.includes(currentLocation);
     commulativeWidth += linksMap[i].width;
-    linksMap[i+1].left += commulativeWidth;
+    if (i < linksMap.length-1) {
+      linksMap[i+1].left += commulativeWidth;
+    }
   }
 
   return linksMap;

@@ -26,7 +26,7 @@ const SiteNavigation =  () => {
         {
           linksMap.map(l => (
             <div key={l.name}>
-              <Link to={`/${l.linkTarget}`} className={(l.isSelected ? 'selected' : '') + ` ${l.linkTarget}`}>
+              <Link to={`/${l.linkTarget}`} className={(l.isSelected ? 'selected' : '') + ` ${l.name}`}>
                 <div className="link-container display-flex justify-content-center">
                   <div className="line">
                     <div className="point"></div>
