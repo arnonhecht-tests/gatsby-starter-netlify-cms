@@ -1,7 +1,7 @@
 ---
 templateKey: reaching-page
 path: /reaching
-title: Reachingggg
+title: Reaching
 navimage:
   alt: Love
   image: /img/reaching.png
