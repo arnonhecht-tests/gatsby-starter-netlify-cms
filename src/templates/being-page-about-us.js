@@ -6,11 +6,13 @@ import Layout from '../components/Layout'
 import InnerPageLayout from '../components/InnerPageLayout'
 import Content, { HTMLContent } from '../components/Content'
 import linksService, {BEING} from '../services/linksService'
+import pageDataMediatorService from '../services/pageDataMediatorService'
 
 export const BeingPageAboutUsTemplate = (props) => {
   const [currentStory, setCurrentStory] = useState('');
-  const { content, prolog, nirStory, ifatStory, abdulStory, nirStoryPreview, ifatStoryPreview, abdulStoryPreview, navImage, contentComponent, location } = props;
+  const { content, prolog, nirStory, ifatStory, abdulStory, nirStoryPreview, ifatStoryPreview, abdulStoryPreview, navImage, mobileNavImage, contentComponent, location } = props;
   const PageContent = contentComponent || Content
+  const pageDataFetcher = pageDataMediatorService.getPageDataFetcher(navImage, mobileNavImage);
   
   const innerNavList = linksService.getTopLevelLinksObj()[BEING].innerNavList;
 
@@ -38,7 +40,7 @@ export const BeingPageAboutUsTemplate = (props) => {
 
 
   return (
-    <InnerPageLayout navImage={navImage} navMenu={innerNavList} location={location}>
+    <InnerPageLayout pageDataFetcher={pageDataFetcher} navImage={navImage} navMenu={innerNavList} location={location}>
       <div className="display-flex flex-column">
         <div className="page-section subpage-header">History</div>
         <div className="page-section">{prolog}</div>
@@ -78,6 +80,7 @@ BeingPageAboutUsTemplate.propTypes = {
   abdulStory: string.isRequired,
   content: string,
   navImage: oneOfType([object, string]),
+  mobileNavImage: oneOfType([object, string]),
   contentComponent: func,
 }
 
@@ -99,6 +102,7 @@ const BeingPageAboutUs = ({ data, location }) => {
         abdulStory={post.frontmatter.abdul_story}
         content={post.html}
         navImage={post.frontmatter.navimage}
+        mobileNavImage={post.frontmatter.mobilenavimage}
       />
     </Layout>
   )
@@ -126,6 +130,16 @@ export const BeingPageAboutUsQuery = graphql`
         ifat_story
         abdul_story
         navimage {
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        mobilenavimage {
           alt
           image {
             childImageSharp {

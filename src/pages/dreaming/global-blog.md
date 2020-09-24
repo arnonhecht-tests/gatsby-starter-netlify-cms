@@ -5,6 +5,9 @@ title: Dreaming Blog
 navimage:
   alt: Gatherings
   image: /img/global.png
+mobilenavimage:
+  alt: WhtIf team
+  image: /img/page-cards/dreaming_triangle.png
 ---
 
 ### Dream

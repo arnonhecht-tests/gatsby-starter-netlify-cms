@@ -5,6 +5,9 @@ title: Doing Participate
 navimage:
   alt: Gatherings
   image: /img/retreats.png
+mobilenavimage:
+  alt: WhtIf team
+  image: /img/page-cards/doing_triangle.png
 ---
 
 **RETREATS**

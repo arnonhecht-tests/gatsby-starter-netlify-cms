@@ -5,6 +5,9 @@ title: Dreaming System
 navimage:
   alt: Gatherings
   image: /img/dreamsystem.png
+mobilenavimage:
+  alt: WhtIf team
+  image: /img/page-cards/dreaming_triangle.png
 ---
 
 ### Dream

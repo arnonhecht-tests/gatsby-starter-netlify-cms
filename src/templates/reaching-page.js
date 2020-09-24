@@ -6,11 +6,15 @@ import Layout from '../components/Layout'
 import InnerPageLayout from '../components/InnerPageLayout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const ReachingPageTemplate = ({ content, navImage, contentComponent, location }) => {
+import pageDataMediatorService from '../services/pageDataMediatorService'
+
+export const ReachingPageTemplate = ({ content, navImage, mobileNavImage, contentComponent, location }) => {
   const PageContent = contentComponent || Content
+  
+  const pageDataFetcher = pageDataMediatorService.getPageDataFetcher(navImage, mobileNavImage);
 
   return (
-    <InnerPageLayout navImage={navImage} navMenu={[]} location={location}>
+    <InnerPageLayout pageDataFetcher={pageDataFetcher} navMenu={[]} location={location}>
       <div className="display-flex flex-row">
         <PageContent className="content flex-1" content={content} />
       </div>
@@ -23,6 +27,7 @@ ReachingPageTemplate.propTypes = {
   title: string.isRequired,
   content: string,
   navImage: oneOfType([object, string]),
+  mobileNavImage: oneOfType([object, string]),
   contentComponent: func,
 }
 
@@ -37,6 +42,7 @@ const ReachingPage = ({ data, location }) => {
         title={post.frontmatter.title}
         content={post.html}
         navImage={post.frontmatter.navimage}
+        mobileNavImage={post.frontmatter.mobilenavimage}
       />
     </Layout>
   )
@@ -62,6 +68,16 @@ export const ReachingPageQuery = graphql`
             childImageSharp {
               fluid(maxWidth: 2048, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+        }
+        mobilenavimage {
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
               }
             }
           }

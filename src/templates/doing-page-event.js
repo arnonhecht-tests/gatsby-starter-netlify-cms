@@ -9,11 +9,13 @@ import InnerPageLayout from '../components/InnerPageLayout'
 import Content, { HTMLContent } from '../components/Content'
 
 import linksService, {DOING} from '../services/linksService'
+import pageDataMediatorService from '../services/pageDataMediatorService'
 
-export const DoingPageEventTemplate = ({ content, navImage, contentComponent, location }) => {
+export const DoingPageEventTemplate = ({ content, navImage, mobileNavImage, contentComponent, location }) => {
   const PageContent = contentComponent || Content
   
   const innerNavList = linksService.getTopLevelLinksObj()[DOING].innerNavList;
+  const pageDataFetcher = pageDataMediatorService.getPageDataFetcher(navImage, mobileNavImage);
   const eventNavMap = linksService.getTopLevelLinksObj()[DOING].innerNavTabNavigationList;
 
   const routeArray = (location || {pathname: "/dummypath"}).pathname.split('/').filter(a => !!a );
@@ -22,7 +24,7 @@ export const DoingPageEventTemplate = ({ content, navImage, contentComponent, lo
   const currentTab = routeArray[2];
 
   return (
-    <InnerPageLayout navImage={navImage} navMenu={innerNavList} location={location}>
+    <InnerPageLayout pageDataFetcher={pageDataFetcher} navMenu={innerNavList} location={location}>
       <div className="display-flex flex-column">
         <div className="event-submenu display-flex flex-row flex-justify-end ">
           {
@@ -51,6 +53,7 @@ DoingPageEventTemplate.propTypes = {
   title: string.isRequired,
   content: string,
   navImage: oneOfType([object, string]),
+  mobileNavImage: oneOfType([object, string]),
   contentComponent: func,
 }
 
@@ -65,6 +68,7 @@ const DoingPageEvent = ({ data, location }) => {
         title={post.frontmatter.title}
         content={post.html}
         navImage={post.frontmatter.navimage}
+        mobileNavImage={post.frontmatter.mobilenavimage}
       />
     </Layout>
   )
@@ -85,6 +89,16 @@ export const DoingPageEventQuery = graphql`
       frontmatter {
         title
         navimage {
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        mobilenavimage {
           alt
           image {
             childImageSharp {

@@ -5,6 +5,9 @@ title: Doing Gatherings
 navimage:
   alt: Gatherings
   image: /img/gatherings.png
+mobilenavimage:
+  alt: WhtIf team
+  image: /img/page-cards/doing_triangle.png
 ---
 
 ### **Gatherings**

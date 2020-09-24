@@ -5,6 +5,9 @@ title: Doing Tickets
 navimage:
   alt: Gatherings
   image: /img/whtifnegev.png
+mobilenavimage:
+  alt: WhtIf team
+  image: /img/page-cards/doing_triangle.png
 ---
 
 ### **WHT IF NEGEV DESERT**

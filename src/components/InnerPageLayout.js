@@ -19,7 +19,7 @@ const getChildrenElement = (children) => (
   </div>
 )
 
-const InnerPageLayout = ({ children, navImage, navMenu, location, smallScreen }) => {
+const InnerPageLayout = ({ children, pageDataFetcher, navMenu, location, smallScreen }) => {
 
   const routeArray = (location || {pathname: "/dummypath"}).pathname.split('/').filter(a => !!a );
   const currentPage = routeArray[0];
@@ -30,37 +30,29 @@ const InnerPageLayout = ({ children, navImage, navMenu, location, smallScreen })
               {
                 smallScreen ? (
                   <div className="display-flex flex-column">
-                    <div className="display-flex flex-row">
-                      <div className="left-section flex-3 display-flex flex-column">
-                        <div className="page-name">{currentPage}</div>
-                        {
-                          navMenu.map(l => (
-                            <Link
-                              to={`/${currentPage}/${l.linkTarget}`} 
-                              path={`/${currentPage}/${l.linkTarget}`} 
-                              className={(currentPage === l.linkTarget ? 'selected' : '') + ` ${l.linkTarget}`}
-                              key={l.linkTarget}
-                            >
-                              <div className="link-container display-flex">
-                                <div className="line">
-                                  <div className="point"></div>
-                                </div>
-                                <div className={`link-text ${currentInnerPage === l.linkTarget ? 'selected' : ''} `}>
-                                  {l.text}
-                                </div>
+                    <PreviewCompatibleImage imageInfo={pageDataFetcher.getNavImage(smallScreen)} />
+                    <div className="inner-pages-row-underline-display">
+                      {
+                        navMenu.map(l => (
+                          <Link
+                            to={`/${currentPage}/${l.linkTarget}`} 
+                            path={`/${currentPage}/${l.linkTarget}`} 
+                            className={(currentPage === l.linkTarget ? 'selected' : '') + ` ${l.linkTarget}`}
+                            key={l.linkTarget}
+                          >
+                            <div className="link-container display-flex">
+                              <div className="line">
+                                <div className="point"></div>
                               </div>
-                            </Link>
-                          ))
-                        }
-                      </div>
-                      <div className="right-section flex-4">
-                        <div className="mobile-image-section-container">
-                          <div className="mobile-image-section">
-                            <PreviewCompatibleImage imageInfo={navImage} />
-                          </div>
-                          </div>
-                      </div>
+                              <div className={`link-text ${currentInnerPage === l.linkTarget ? 'selected' : ''} `}>
+                                {l.text}
+                              </div>
+                            </div>
+                          </Link>
+                        ))
+                      }
                     </div>
+
                     {getChildrenElement(children)}
                   </div>
                 ) : (
@@ -70,7 +62,7 @@ const InnerPageLayout = ({ children, navImage, navMenu, location, smallScreen })
                       {getChildrenElement(children)}
                     </div>
                     <div className="right-section flex-4">
-                      <InnerPageNav backgroundImage={navImage} navMenu={navMenu} location={location}></InnerPageNav>
+                      <InnerPageNav backgroundImage={pageDataFetcher.getNavImage(smallScreen)} navMenu={navMenu} location={location}></InnerPageNav>
                     </div>
                   </div>
                 )

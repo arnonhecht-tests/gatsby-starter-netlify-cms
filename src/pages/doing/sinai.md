@@ -5,7 +5,11 @@ title: Doing Participate
 navimage:
   alt: Gatherings
   image: /img/whtifsinai.png
+mobilenavimage:
+  alt: WhtIf team
+  image: /img/page-cards/doing_triangle.png
 ---
+
 ### Ras-Abu Glum
 
 **location**
@@ -28,10 +32,6 @@ We consider all territories of the world as neutral, inviting all human beings a
 
 We are here to go forward with our vision, of the bringing together through social gatherings, with the aim of enriching all who wish to participate
 
-
-
-
-
 **Guide**
 
 {#id guide}
@@ -52,8 +52,6 @@ We consider all territories of the world as neutral, inviting all human beings a
 
 We are here to go forward with our vision, of the bringing together through social gatherings, with the aim of enriching all who wish to participate
 
-
-
 **Tickets**
 
 {#id tickets}
@@ -73,10 +71,6 @@ This place is heart stoppingly beautiful and amazingly interesting, when you mee
 We consider all territories of the world as neutral, inviting all human beings as equals, regardless of the situation and the political status, economic, social and existing political conditions.
 
 We are here to go forward with our vision, of the bringing together through social gatherings, with the aim of enriching all who wish to participate
-
-
-
-
 
 **Participate**
 

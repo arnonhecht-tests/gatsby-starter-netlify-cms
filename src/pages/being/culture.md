@@ -5,6 +5,9 @@ title: Being Culture
 navimage:
   alt: WhtIf team
   image: /img/whtifculture.png
+mobilenavimage:
+  alt: WhtIf team
+  image: /img/page-cards/being_triangle.png
 ---
 
 ### WHT IF Culture

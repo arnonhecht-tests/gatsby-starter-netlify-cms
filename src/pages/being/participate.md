@@ -5,6 +5,9 @@ title: Being Participate
 navimage:
   alt: WhtIf team
   image: /img/getinvolved.png
+mobilenavimage:
+  alt: WhtIf team
+  image: /img/page-cards/being_triangle.png
 ---
 
 ### Dream

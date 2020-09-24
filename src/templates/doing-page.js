@@ -6,15 +6,17 @@ import Layout from '../components/Layout'
 import InnerPageLayout from '../components/InnerPageLayout'
 import Content, { HTMLContent } from '../components/Content'
 
-import navigationService from '../services/navigationService';
+import linksService, {DOING} from '../services/linksService'
+import pageDataMediatorService from '../services/pageDataMediatorService'
 
-export const DoingPageTemplate = ({ content, navImage, contentComponent, location }) => {
+export const DoingPageTemplate = ({ content, navImage, mobileNavImage, contentComponent, location }) => {
   const PageContent = contentComponent || Content
 
-  const navigationMap = navigationService.getDoingNavMap();
+  const innerNavList = linksService.getTopLevelLinksObj()[DOING].innerNavList;
+  const pageDataFetcher = pageDataMediatorService.getPageDataFetcher(navImage, mobileNavImage);
 
   return (
-    <InnerPageLayout navImage={navImage} navMenu={navigationMap} location={location}>
+    <InnerPageLayout pageDataFetcher={pageDataFetcher} navMenu={innerNavList} location={location}>
       <div className="display-flex flex-row">
         <PageContent className="content flex-1" content={content} />
       </div>
@@ -27,6 +29,7 @@ DoingPageTemplate.propTypes = {
   title: string.isRequired,
   content: string,
   navImage: oneOfType([object, string]),
+  mobileNavImage: oneOfType([object, string]),
   contentComponent: func,
 }
 
@@ -41,6 +44,7 @@ const DoingPage = ({ data, location }) => {
         title={post.frontmatter.title}
         content={post.html}
         navImage={post.frontmatter.navimage}
+        mobileNavImage={post.frontmatter.mobilenavimage}
       />
     </Layout>
   )
@@ -61,6 +65,16 @@ export const DoingPageQuery = graphql`
       frontmatter {
         title
         navimage {
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        mobilenavimage {
           alt
           image {
             childImageSharp {

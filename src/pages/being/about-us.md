@@ -5,6 +5,9 @@ title: Being About
 navimage:
   alt: WhtIf team
   image: /img/history.png
+mobilenavimage:
+  alt: WhtIf team
+  image: /img/page-cards/being_triangle.png
 prolog: >-
   Our story does not have a defined beginning. We are unable to determine exactly when it started, where the first memory was created. We just remember that our story is a meeting between three ,with one common dream
   For a long period of time, we were unable to meet each other with the third one, in our original organic surroundings
