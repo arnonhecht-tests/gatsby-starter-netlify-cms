@@ -1,0 +1,101 @@
+.navbar {
+  &.override {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+
+  &.is-transparent {
+    background-color: transparent;
+    background-image: none;
+  }
+  &:not(.is-transparent) {
+    opacity: 0.95;
+    transition: 0.5s;
+  }
+
+  .menu-item {
+    text-transform: capitalize;
+
+    &:first-child {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  /* Hamburger menu */
+
+  .bm-burger-button {
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    right: 16px;
+    top: 20px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    height: 2px !important;
+    // margin: 0 0 1px 0;
+    background: #373a47;
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    margin: 4px;
+    transform: scale(1.5, 1.5);
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #011725;
+  }
+
+  /*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    // background: rgba(150, 168, 180, 0.95);
+    opacity: 0.8;
+    background-image: url(/img/sky.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    color: black;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(181, 198, 222, 0.3);
+  }
+}
