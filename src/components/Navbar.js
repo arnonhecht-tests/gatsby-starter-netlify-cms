@@ -55,11 +55,11 @@ const Navbar = class extends React.Component {
             </Link> */}
             {/* Hamburger menu */}
             <Menu right width={ '50%' } >
-              <a id="home" className="menu-item" href='/'>
+              <Link className="menu-item" to='/' id="home">
                 <img src={logo} alt="wht if" />
-              </a>
+              </Link>
               {linksService.getTopLevelLinksList().map(l => (
-                <Link className="menu-item" to={l.link} key={l.id}>
+                <Link className="menu-item" to={l.link} key={l.id} id={l.id}>
                   {l.text}
                 </Link>
               ))}
