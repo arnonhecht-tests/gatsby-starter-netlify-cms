@@ -44,7 +44,7 @@ const InnerPageLayout = ({ children, pageDataFetcher, navMenu, location, smallSc
                       <div className="line">
                         <div className="point"></div>
                       </div>
-                      <div className={`link-text ${currentInnerPage === l.linkTarget ? 'selected' : ''} `}>
+                      <div className={`link-text ${l.linkTarget.includes(currentInnerPage) ? 'selected' : ''} `}>
                         {l.text}
                       </div>
                     </div>

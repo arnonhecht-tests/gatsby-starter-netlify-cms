@@ -87,7 +87,8 @@
       color: rgb(132, 134, 132);
 
       &.selected {
-        color: rgb(107, 96, 148);
+        color: rgba(0, 0, 0, 0.73);
+        font-weight: 600;
       }
     }
   }

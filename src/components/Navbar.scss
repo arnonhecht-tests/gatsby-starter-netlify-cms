@@ -6,13 +6,28 @@
     width: 100vw;
   }
 
-  &.is-transparent {
+  &.page-is-at-top {
     background-color: transparent;
     background-image: none;
+    transition: 1.5s;
+
+    .bm-burger-button {
+      opacity: 0.3;
+      width: 13px;
+      height: 13px;
+      transition: 0.5s;
+    }
   }
-  &:not(.is-transparent) {
+  &:not(.page-is-at-top) {
     opacity: 0.95;
     transition: 0.5s;
+
+    .bm-burger-button {
+      opacity: 1;
+      width: 16px;
+      height: 16px;
+      transition: 0.5s;
+    }
   }
 
   .menu-item {
@@ -27,8 +42,6 @@
 
   .bm-burger-button {
     position: fixed;
-    width: 16px;
-    height: 16px;
     right: 16px;
     top: 20px;
   }
