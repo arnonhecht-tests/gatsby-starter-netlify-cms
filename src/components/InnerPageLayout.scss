@@ -1,19 +1,6 @@
 @import "../styles/vars";
 
 .inner-page-layout {
-  // background: rgb(255, 255, 255);
-  // background: linear-gradient(
-  //   90deg,
-  //   rgba(255, 255, 255, 1) 0%,
-  //   rgba(255, 255, 255, 1) 70%,
-  //   rgba(201, 186, 162, 1) 100%
-  // );
-
-  background-image: url("/img/sky.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-
   .subpage-header {
     font-weight: bold;
   }

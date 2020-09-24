@@ -41,7 +41,7 @@ export const BeingPageAboutUsTemplate = (props) => {
 
   return (
     <InnerPageLayout pageDataFetcher={pageDataFetcher} navImage={navImage} navMenu={innerNavList} location={location}>
-      <div className="display-flex flex-column">
+      <div className="content display-flex flex-column">
         <div className="page-section subpage-header">History</div>
         <div className="page-section">{prolog}</div>
         {
