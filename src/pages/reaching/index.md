@@ -4,7 +4,7 @@ path: /reaching
 title: Reaching
 navimage:
   alt: Love
-  image: /img/reaching.png
+  image: /img/clif-view.png
 mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/reaching_triangle.png
