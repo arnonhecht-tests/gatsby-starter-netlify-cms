@@ -23,7 +23,7 @@ export const AboutPageTemplate = ({ title, content, circleimage, contentComponen
                   {/* <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div> */}
-                  <PreviewCompatibleImage imageInfo={circleimage} />
+                  {/* <PreviewCompatibleImage imageInfo={circleimage} /> */}
                   {/* <div className="tile">
                     <Img style={imageStyle} fluid={circleimage.childImageSharp.fluid} alt="Wht If Circle" /> 
                   </div> */}
@@ -40,7 +40,7 @@ export const AboutPageTemplate = ({ title, content, circleimage, contentComponen
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
-  circleimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  // circleimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   contentComponent: PropTypes.func,
 }
 
@@ -53,7 +53,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
-        circleimage={post.frontmatter.circleimage}
+        // circleimage={post.frontmatter.circleimage}
       />
     </Layout>
   )
@@ -73,16 +73,6 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
-        circleimage {
-          alt
-          image {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
       }
     }
   }

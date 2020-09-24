@@ -1,19 +1,11 @@
 
-import reachingImg from '../../static/img/page-cards/reaching.png';
-import doingImg from '../../static/img/page-cards/doing.png';
-import beingImg from '../../static/img/page-cards/being.png';
-import dreamingImg from '../../static/img/page-cards/dreaming.png';
-import reachingTriangleImg from '../../static/img/page-cards/reaching_triangle.png';
-import doingTriangleImg from '../../static/img/page-cards/doing_triangle.png';
-import beingTriangleImg from '../../static/img/page-cards/being_triangle.png';
-import dreamingTriangleImg from '../../static/img/page-cards/dreaming_triangle.png';
-
 export const REACHING = 'reaching';
 export const DOING = 'doing';
 export const BEING = 'being';
 export const DREAMING = 'dreaming';
 
 const linkerize = (l) => `/${l}`;
+const setImg = (linkObj, imgToSet) => {linkObj.img = imgToSet};
 
 const getTopLevelLinksObj = () => {
   const linksObj = {
@@ -21,8 +13,6 @@ const getTopLevelLinksObj = () => {
       id: REACHING,
       text: REACHING,
       link: linkerize(REACHING),
-      img: reachingImg,
-      imgTriangle: reachingTriangleImg,
       innerNavList: [
         {text: "Wht If culture", linkTarget: 'culture'},
         {text: "History ", linkTarget: 'about-us'},
@@ -33,8 +23,6 @@ const getTopLevelLinksObj = () => {
       id: DOING,
       text: DOING,
       link: linkerize(DOING) + '/negev/location',
-      img: doingImg,
-      imgTriangle: doingTriangleImg,
       innerNavList: [
         {text: "Wht If Negev", linkTarget: 'negev/location'},
         {text: "Wht If Sinai", linkTarget: 'sinai/location'},
@@ -52,8 +40,6 @@ const getTopLevelLinksObj = () => {
       id: BEING,
       text: BEING,
       link: linkerize(BEING) + '/culture',
-      img: beingImg,
-      imgTriangle: beingTriangleImg,
       innerNavList: [
         {text: "Wht If culture", linkTarget: 'culture'},
         {text: "History ", linkTarget: 'about-us'},
@@ -64,8 +50,6 @@ const getTopLevelLinksObj = () => {
       id: DREAMING,
       text: DREAMING,
       link: linkerize(DREAMING) + '/dream-system',
-      img: dreamingImg,
-      imgTriangle: dreamingTriangleImg,
       innerNavList: [
         {text: "Dream system", linkTarget: 'dream-system'},
         {text: "Global blog", linkTarget: 'global-blog'},
@@ -81,8 +65,12 @@ const getTopLevelLinksList = () => {
     return accumulator.concat(linksObj[key]);
   }, []);
 }
-const getTopLevelLinksListOrder2 = () => {
+const getTopLevelLinksListOrder2 = (reachingCard, doingCard, beingCard, dreamingCard) => {
   const lo = getTopLevelLinksObj();
+  setImg(lo[REACHING], reachingCard);
+  setImg(lo[DOING], doingCard);
+  setImg(lo[BEING], beingCard);
+  setImg(lo[DREAMING], dreamingCard);
   return [lo[DOING],lo[BEING],lo[DREAMING],lo[REACHING],];
 }
 

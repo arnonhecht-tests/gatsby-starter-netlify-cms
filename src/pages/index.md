@@ -5,6 +5,18 @@ image: /img/desert-sand-dunes-landscape.jpg
 circleimage:
   alt: A close-up of a paper filter filled with ground coffee
   image: /img/whtif-circle.png
+reaching_card:
+  alt: Reaching
+  image: /img/page-cards/reaching.png
+doing_card:
+  alt: Doing
+  image: /img/page-cards/doing.png
+being_card:
+  alt: Being
+  image: /img/page-cards/being.png
+dreaming_card:
+  alt: Dreaming
+  image: /img/page-cards/dreaming.png
 heading: Once a year, ten thougsands of people gather in Nevvada's Black Rock Desert to create Black Rock City, a temporary metropolis dedicated to community, art, self-expression and self-reliance. In this crucible of creativity, all are welcome.
 subheading: Dream Fear Believe Dare Fly Grow Know
 mainpitch:

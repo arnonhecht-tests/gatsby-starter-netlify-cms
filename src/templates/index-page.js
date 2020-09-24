@@ -5,8 +5,8 @@ import withSizes from 'react-sizes'
 
 import NavigationMap from '../components/NavigationMap'
 import Layout from '../components/Layout'
-// import BlogRoll from '../components/BlogRoll'
 import DesertVideo from '../components/DesertVideo'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 
 import deviceService from '../services/deviceService';
 import linksService from '../services/linksService';
@@ -19,7 +19,10 @@ const IndexPageTemplateBare = ({
   heading,
   subheading,
   mainpitch,
-  circleimage,
+  reachingCard,
+  doingCard,
+  beingCard,
+  dreamingCard,
   description,
   intro,
   smallScreen,
@@ -46,16 +49,19 @@ const IndexPageTemplateBare = ({
                       </div>
 
                       <div className="links-list columns">
-                        {linksService.getTopLevelLinksListOrder2().map(l => (
-                          <Link className="column" to={l.link} key={l.id}>
-                            <img src={`${l.img}`} alt={l.id} />
-                            <div className="inner-pages-row-underline-display">
-                              {l.innerNavList.map(inl => (
-                                <div key={inl.linkTarget}>{inl.text}</div>
-                              ))}
-                            </div>
-                          </Link>
-                        ))}
+                        {
+                          linksService.getTopLevelLinksListOrder2(reachingCard, doingCard, beingCard, dreamingCard)
+                          .map(l => (
+                            <Link className="column" to={l.link} key={l.id}>
+                              <PreviewCompatibleImage imageInfo={l.img} />
+                              <div className="inner-pages-row-underline-display">
+                                {l.innerNavList.map(inl => (
+                                  <div key={inl.linkTarget}>{inl.text}</div>
+                                ))}
+                              </div>
+                            </Link>
+                          ))
+                        }
                       </div>
 
                       <hr className="mb-6" />
@@ -103,7 +109,10 @@ IndexPageTemplate.propTypes = {
   heading: string,
   subheading: string,
   mainpitch: object,
-  circleimage: oneOfType([object, string]),
+  reachingCard: oneOfType([object, string]),
+  doingCard: oneOfType([object, string]),
+  beingCard: oneOfType([object, string]),
+  dreamingCard: oneOfType([object, string]),
   description: string,
   intro: shape({
     blurbs: array,
@@ -121,7 +130,10 @@ const IndexPage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
-        circleimage={frontmatter.circleimage}
+        reachingCard={frontmatter.reaching_card}
+        doingCard={frontmatter.doing_card}
+        beingCard={frontmatter.being_card}
+        dreamingCard={frontmatter.dreaming_card}
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
@@ -151,7 +163,37 @@ export const pageQuery = graphql`
             }
           }
         }
-        circleimage {
+        reaching_card {
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        doing_card {
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        being_card {
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        dreaming_card {
           alt
           image {
             childImageSharp {
