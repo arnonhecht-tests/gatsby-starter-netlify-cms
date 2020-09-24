@@ -1,80 +1,73 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import { slide as Menu } from 'react-burger-menu'
+
 import linksService from '../services/linksService';
 
 import logo from '../img/whtif-logo.png'
+import './Navbar.scss'
 
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      windowGlobal: (typeof window !== 'undefined') && window,
+      isScrollAtTop: true,
       active: false,
       navBarActiveClass: '',
     }
   }
-
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
+  componentDidMount() {
+    this.state.windowGlobal.addEventListener('scroll', this.handleScroll, true);
   }
 
-  render() {
+  componentWillUnmount() {
+    this.state.windowGlobal.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = (e) => {
+    const {scrollY} = e.currentTarget;
+    if (scrollY > 0 && this.state.isScrollAtTop) {
+      this.setState({isScrollAtTop: false});
+    } else if(scrollY === 0 && !this.state.isScrollAtTop) {
+      this.setState({isScrollAtTop: true});
+    }
+  }
+
+  showSettings (event) {
+    event.preventDefault();
+  }
+
+  render () {
+    const {isScrollAtTop} = this.state;
+    // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
       <nav
-        className="navbar is-transparent"
+        className={`navbar override ${(isScrollAtTop) ? 'is-transparent' : ''}`}
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
+            {/* <Link to="/" className="navbar-item" title="Logo">
               <img src={logo} alt="wht if" />
-            </Link>
+            </Link> */}
             {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-              onKeyUp={() => this.toggleHamburger()}
-              role="button"
-              tabIndex={0}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
+            <Menu right width={ '50%' } >
+              <a id="home" className="menu-item" href='/'>
+                <img src={logo} alt="wht if" />
+              </a>
               {linksService.getTopLevelLinksList().map(l => (
-                <Link className="navbar-item column text-transform-capitalize" to={l.link} key={l.id}>
+                <Link className="menu-item" to={l.link} key={l.id}>
                   {l.text}
                 </Link>
               ))}
-            </div>
+            </Menu>
           </div>
         </div>
       </nav>
-    )
+    );
   }
 }
 

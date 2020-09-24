@@ -27,6 +27,7 @@
     "node-sass": "^4.14.0",
     "prop-types": "^15.6.0",
     "react": "^16.8.4",
+    "react-burger-menu": "^2.7.1",
     "react-dom": "^16.8.4",
     "react-helmet": "^6.0.0",
     "react-resize-detector": "^5.0.6",
