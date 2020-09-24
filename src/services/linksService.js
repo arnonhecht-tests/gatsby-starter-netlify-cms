@@ -8,10 +8,10 @@ import doingTriangleImg from '../../static/img/page-cards/doing_triangle.png';
 import beingTriangleImg from '../../static/img/page-cards/being_triangle.png';
 import dreamingTriangleImg from '../../static/img/page-cards/dreaming_triangle.png';
 
-const REACHING = 'reaching';
-const DOING = 'doing';
-const BEING = 'being';
-const DREAMING = 'dreaming';
+export const REACHING = 'reaching';
+export const DOING = 'doing';
+export const BEING = 'being';
+export const DREAMING = 'dreaming';
 
 const linkerize = (l) => `/${l}`;
 
@@ -23,6 +23,11 @@ const getTopLevelLinksObj = () => {
       link: linkerize(REACHING),
       img: reachingImg,
       imgTriangle: reachingTriangleImg,
+      innerNavList: [
+        {text: "Wht If culture", linkTarget: 'culture'},
+        {text: "History ", linkTarget: 'about-us'},
+        {text: "Get involved", linkTarget: 'participate'},
+      ], 
     },
     [DOING]: {
       id: DOING,
@@ -30,6 +35,18 @@ const getTopLevelLinksObj = () => {
       link: linkerize(DOING) + '/negev/location',
       img: doingImg,
       imgTriangle: doingTriangleImg,
+      innerNavList: [
+        {text: "Wht If Negev", linkTarget: 'negev/location'},
+        {text: "Wht If Sinai", linkTarget: 'sinai/location'},
+        {text: "Gatherings", linkTarget: 'gatherings'},
+        {text: "Retreats", linkTarget: 'retreats'},
+      ],
+      innerNavTabNavigationList: [
+        {text: "Location", linkTarget: 'location'},
+        {text: "Guide", linkTarget: 'guide'},
+        {text: "Participate", linkTarget: 'participate'},
+        {text: "Tickets", linkTarget: 'tickets'},
+      ],
     },
     [BEING]: {
       id: BEING,
@@ -37,6 +54,11 @@ const getTopLevelLinksObj = () => {
       link: linkerize(BEING) + '/culture',
       img: beingImg,
       imgTriangle: beingTriangleImg,
+      innerNavList: [
+        {text: "Wht If culture", linkTarget: 'culture'},
+        {text: "History ", linkTarget: 'about-us'},
+        {text: "Get involved", linkTarget: 'participate'},
+      ],
     },
     [DREAMING]: {
       id: DREAMING,
@@ -44,6 +66,10 @@ const getTopLevelLinksObj = () => {
       link: linkerize(DREAMING) + '/dream-system',
       img: dreamingImg,
       imgTriangle: dreamingTriangleImg,
+      innerNavList: [
+        {text: "Dream system", linkTarget: 'dream-system'},
+        {text: "Global blog", linkTarget: 'global-blog'},
+      ],
     },
   };
   return linksObj;
@@ -55,10 +81,15 @@ const getTopLevelLinksList = () => {
     return accumulator.concat(linksObj[key]);
   }, []);
 }
+const getTopLevelLinksListOrder2 = () => {
+  const lo = getTopLevelLinksObj();
+  return [lo[DOING],lo[BEING],lo[DREAMING],lo[REACHING],];
+}
 
 const linksService = {
   getTopLevelLinksObj,
   getTopLevelLinksList,
+  getTopLevelLinksListOrder2,
 };
 
 export default linksService;

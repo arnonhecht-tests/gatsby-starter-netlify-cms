@@ -46,9 +46,14 @@ const IndexPageTemplateBare = ({
                       </div>
 
                       <div className="links-list columns">
-                        {linksService.getTopLevelLinksList().map(l => (
+                        {linksService.getTopLevelLinksListOrder2().map(l => (
                           <Link className="column" to={l.link} key={l.id}>
                             <img src={`${l.img}`} alt={l.id} />
+                            <div className="display-flex flex-justify-start inner-pages-description">
+                              {l.innerNavList.map(inl => (
+                                <div key={inl.linkTarget}>{inl.text}</div>
+                              ))}
+                            </div>
                           </Link>
                         ))}
                       </div>

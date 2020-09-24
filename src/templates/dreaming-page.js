@@ -5,17 +5,15 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import InnerPageLayout from '../components/InnerPageLayout'
 import Content, { HTMLContent } from '../components/Content'
+import linksService, {DREAMING} from '../services/linksService'
 
 export const DreamingPageTemplate = ({ content, navImage, contentComponent, location }) => {
   const PageContent = contentComponent || Content
 
-  const navigationMap = [
-    {text: "dream system", linkTarget: 'dream-system'},
-    {text: "global blog", linkTarget: 'global-blog'},
-  ];
+  const innerNavList = linksService.getTopLevelLinksObj()[DREAMING].innerNavList;
 
   return (
-    <InnerPageLayout navImage={navImage} navMenu={navigationMap} location={location}>
+    <InnerPageLayout navImage={navImage} navMenu={innerNavList} location={location}>
       <div className="display-flex flex-row">
         <PageContent className="content flex-1" content={content} />
       </div>

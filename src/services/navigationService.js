@@ -73,28 +73,8 @@ const getNavigationMap = (windowGlobal) => {
   return linksMap;
 };
 
-const getDoingEventNavMap = () => {
- return [
-    {text: "Location", linkTarget: 'location'},
-    {text: "Guide", linkTarget: 'guide'},
-    {text: "Participate", linkTarget: 'participate'},
-    {text: "Tickets", linkTarget: 'tickets'},
-  ];
-};
-
-const getDoingNavMap = () => {
- return [
-    {text: "Wht If Negev", linkTarget: 'negev/location'},
-    {text: "Wht If Sinai", linkTarget: 'sinai/location'},
-    {text: "Gatherings", linkTarget: 'gatherings'},
-    {text: "Retreats", linkTarget: 'retreats'},
-  ];
-};
-
 const navigationService = {
   getNavigationMap,
-  getDoingEventNavMap,
-  getDoingNavMap,
 };
 
 export default navigationService;

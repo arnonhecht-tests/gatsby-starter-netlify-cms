@@ -27,6 +27,9 @@
 .flex-justify-end {
   justify-content: flex-end;
 }
+.flex-justify-start {
+  justify-content: flex-start;
+}
 
 .flex-column {
   flex-direction: column;
@@ -43,59 +46,5 @@
 @for $i from 1 through 8 {
   .flex-#{ $i } {
     flex: $i;
-  }
-}
-
-/* CSS Objects */
-.hollow-arrow {
-  position: relative;
-  width: 20px;
-}
-.hollow-arrow > div,
-.hollow-arrow > div:before,
-.hollow-arrow > div:after {
-  width: 20px;
-  height: 2px;
-  background: grey;
-}
-
-.hollow-arrow > div:before,
-.hollow-arrow > div:after {
-  content: " ";
-  display: block;
-  -webkit-transform: rotate(56deg);
-  -moz-transform: rotate(56deg);
-  -ms-transform: rotate(56deg);
-  transform: rotate(56deg);
-  position: absolute;
-  top: -8px;
-  right: -5px;
-}
-
-.hollow-arrow > div:before {
-  -webkit-transform: rotate(56deg);
-  -moz-transform: rotate(56deg);
-  -ms-transform: rotate(56deg);
-  transform: rotate(56deg);
-  right: -5px;
-}
-.hollow-arrow > div:after {
-  -webkit-transform: rotate(-56deg);
-  -moz-transform: rotate(-56deg);
-  -ms-transform: rotate(-56deg);
-  transform: rotate(-56deg);
-  left: -5px;
-}
-.hollow-arrow.down {
-  transform: rotate(180deg);
-}
-.hollow-arrow-wrapper:hover {
-  cursor: pointer;
-
-  > div,
-  div:before,
-  div:after {
-    background: #a1a0a0;
-    cursor: pointer;
   }
 }

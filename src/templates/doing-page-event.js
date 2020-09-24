@@ -8,14 +8,13 @@ import Layout from '../components/Layout'
 import InnerPageLayout from '../components/InnerPageLayout'
 import Content, { HTMLContent } from '../components/Content'
 
-import navigationService from '../services/navigationService';
+import linksService, {DOING} from '../services/linksService'
 
 export const DoingPageEventTemplate = ({ content, navImage, contentComponent, location }) => {
   const PageContent = contentComponent || Content
-
-  const navigationMap = navigationService.getDoingNavMap();
   
-  const eventNavMap = navigationService.getDoingEventNavMap();
+  const innerNavList = linksService.getTopLevelLinksObj()[DOING].innerNavList;
+  const eventNavMap = linksService.getTopLevelLinksObj()[DOING].innerNavTabNavigationList;
 
   const routeArray = (location || {pathname: "/dummypath"}).pathname.split('/').filter(a => !!a );
   const currentPage = routeArray[0];
@@ -23,7 +22,7 @@ export const DoingPageEventTemplate = ({ content, navImage, contentComponent, lo
   const currentTab = routeArray[2];
 
   return (
-    <InnerPageLayout navImage={navImage} navMenu={navigationMap} location={location}>
+    <InnerPageLayout navImage={navImage} navMenu={innerNavList} location={location}>
       <div className="display-flex flex-column">
         <div className="event-submenu display-flex flex-row flex-justify-end ">
           {

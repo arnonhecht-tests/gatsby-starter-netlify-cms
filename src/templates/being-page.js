@@ -5,18 +5,14 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import InnerPageLayout from '../components/InnerPageLayout'
 import Content, { HTMLContent } from '../components/Content'
+import linksService, {BEING} from '../services/linksService'
 
 export const BeingPageTemplate = ({ content, navImage, contentComponent, location }) => {
   const PageContent = contentComponent || Content
-
-  const navigationMap = [
-    {text: "Wht If culture", linkTarget: 'culture'},
-    {text: "History ", linkTarget: 'about-us'},
-    {text: "Get involved", linkTarget: 'participate'},
-  ];
+  const innerNavList = linksService.getTopLevelLinksObj()[BEING].innerNavList;
 
   return (
-    <InnerPageLayout navImage={navImage} navMenu={navigationMap} location={location}>
+    <InnerPageLayout navImage={navImage} navMenu={innerNavList} location={location}>
       <div className="display-flex flex-row">
         <PageContent className="content flex-1" content={content} />
       </div>

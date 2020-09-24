@@ -5,17 +5,14 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import InnerPageLayout from '../components/InnerPageLayout'
 import Content, { HTMLContent } from '../components/Content'
+import linksService, {BEING} from '../services/linksService'
 
 export const BeingPageAboutUsTemplate = (props) => {
   const [currentStory, setCurrentStory] = useState('');
   const { content, prolog, nirStory, ifatStory, abdulStory, nirStoryPreview, ifatStoryPreview, abdulStoryPreview, navImage, contentComponent, location } = props;
   const PageContent = contentComponent || Content
-
-  const navigationMap = [
-    {text: "Wht If culture", linkTarget: 'culture'},
-    {text: "History ", linkTarget: 'about-us'},
-    {text: "Get involved", linkTarget: 'participate'},
-  ];
+  
+  const innerNavList = linksService.getTopLevelLinksObj()[BEING].innerNavList;
 
   const storiesList = [
     {
@@ -41,7 +38,7 @@ export const BeingPageAboutUsTemplate = (props) => {
 
 
   return (
-    <InnerPageLayout navImage={navImage} navMenu={navigationMap} location={location}>
+    <InnerPageLayout navImage={navImage} navMenu={innerNavList} location={location}>
       <div className="display-flex flex-column">
         <div className="page-section subpage-header">History</div>
         <div className="page-section">{prolog}</div>
@@ -52,9 +49,6 @@ export const BeingPageAboutUsTemplate = (props) => {
               <div>{sl.story}</div>
               <div className="hollow-arrow-wrapper" 
                 onClick={() => toggleSelectedStory(sl.name)} 
-                onKeyUp={() => this.toggleSelectedStory(sl.name)}
-                role="button"
-                tabIndex={0}
               >
                 <div className="hollow-arrow down">
                   <div></div>
