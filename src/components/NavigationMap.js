@@ -2,34 +2,43 @@ import React from 'react'
 import { Link } from 'gatsby'
 import {withResizeDetector} from 'react-resize-detector';
 
+import logo from '../../static/img/whtif-logo.svg';
+
 import DesertVideo from '../components/DesertVideo';
 import navigationService from '../services/navigationService';
-
-import logo from '../img/whtif-logo.png';
+import linksService, {REACHING, DOING, BEING, DREAMING} from '../services/linksService';
 
 import './NavigationMap.scss';
 
-const svgLinkMap = [
+
+let svgLinkMap = [
   {
-    polygonPoints: "711,422 708,422 453,28 710,28 711,422",
-    linkTarget: "reaching",
-    onHover: () => console.log('lalalala'),
-  },{
-    polygonPoints: "693,422 558,422 371,132 433,37 435,34 437,33 439,33 441,33 443,33 444,35 445,38 693,422",
-    linkTarget: "doing",
-    onHover: () => console.log('lalalala'),
-  },{
-    polygonPoints: "34,422 170,422 357,133 295,37 293,36 292,35 290,34 289,34 287,34 285,34 284,34 284,35 282,37 280,40 34,422",
-    linkTarget: "being",
-    onHover: () => console.log('lalalala'),
-  },{
+    id: REACHING,
     polygonPoints: "20,422 12,422 9,26 274,27 20,422",
-    linkTarget: "dreaming",
-    onHover: () => console.log('lalalala'),
+    onHover: setIsHovered,
+  },{
+    id: DOING,
+    polygonPoints: "34,422 170,422 357,133 295,37 293,36 292,35 290,34 289,34 287,34 285,34 284,34 284,35 282,37 280,40 34,422",
+    onHover: setIsHovered,
+  },{
+    id: BEING,
+    polygonPoints: "693,422 558,422 371,132 433,37 435,34 437,33 439,33 441,33 443,33 444,35 445,38 693,422",
+    onHover: setIsHovered,
+  },{
+    id: DREAMING,
+    polygonPoints: "711,422 708,422 453,28 710,28 711,422",
+    onHover: setIsHovered,
   },  
-]
+];
 
+const setIsHovered = (linkObj) => linkObj.isHovered = true;
+const getVideoElement = (elem) => elem ? elem.getElementsByTagName('video')[0] : {};
 
+const linksServiceMap = linksService.getTopLevelLinksObj();
+console.log(`linksServiceMap: ${JSON.stringify(linksServiceMap)}`)
+
+svgLinkMap = svgLinkMap.map(l => ({...l, ...linksServiceMap[l.id]}))
+console.log(`svgLinkMap: ${JSON.stringify(svgLinkMap)}`)
 
 const NavigationMap = class extends React.Component {
   constructor(props) {
@@ -62,29 +71,53 @@ const NavigationMap = class extends React.Component {
   render() {
     const {linksMap, scaleWidth, scaleHeight} = this.state;
     const scaleTransform = `scale(${scaleWidth}, ${scaleHeight}) `;
+    const height = getVideoElement(this.videoContainingDiv).clientHeight;
+    const width = getVideoElement(this.videoContainingDiv).clientWidth;
+    const navMapHeight = (this.navMapDiv || {}).clientHeight || 0;
+    const navMapWidth = (this.navMapDiv || {}).clientWidth || 0;
+    console.log(`navMapHeight: ${navMapHeight} height: ${height} `)
+    
+    const topOffset = ((navMapHeight - height) / 2) || 0;
+    const leftOffset = ((navMapWidth - width) / 2) || 0;
+    console.log(`topOffset: ${topOffset}  `)
 
     return (
-      <div className="navigation-map">
+      <div className="navigation-map" ref={ (navMapDiv) => { this.navMapDiv = navMapDiv } }>
         <div className="video-map-container">
           <div className="image-map-container">
             <img src="./img/desert-video-img.png" />
-            <DesertVideo />
-
+            <div style={{ display: 'inline-block' }}  ref={ (videoContainingDiv) => { this.videoContainingDiv = videoContainingDiv } } >
+              <DesertVideo />
+            </div>
             {/* <DesertMap /> */}
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  width="720" height="450">
               {
                 svgLinkMap.map(l => (
-                  <Link to={`/${l.linkTarget}`} key={l.linkTarget} onMouseEnter={l.onHover}>
+                  <Link to={`${l.link}`} key={l.id} className="link-container"
+                    onMouseEnter={() => {l.isHovered = true; this.setState({}); console.log(`l: ${JSON.stringify(l)}`)}}
+                    onMouseLeave={() => {l.isHovered = false; this.setState({})}} >
                     <polygon points={l.polygonPoints} style={{transform: scaleTransform}}  />
                   </Link>
                 ))
               }
               <polygon className="active-link" points="365,144 545,421 184,421 365,144" style={{transform: scaleTransform}} />
-              {/* <a href="/reaching"><polygon points="711,422 708,422 453,28 710,28 711,422" /></a>
-              <a href="/doing"><polygon points="693,422 558,422 371,132 433,37 435,34 437,33 439,33 441,33 443,33 444,35 445,38 693,422" /></a>
-              <a href="/being"><polygon points="34,422 170,422 357,133 295,37 293,36 292,35 290,34 289,34 287,34 285,34 284,34 284,35 282,37 280,40 34,422" /></a>
-              <a href="/dreaming"><polygon points="20,422 12,422 9,26 274,27 20,422" /></a> */}
             </svg>
+            <div className="link-description-container display-flex flex-justify-space-between">
+              {
+                svgLinkMap.map(l => (
+                  <div className={`link-description ${l.isHovered ? 'is-hovered' : ''}`} key={l.text}>
+                    <div className="link-description-text">
+                      {l.text}
+                    </div>
+                    <div className="link-subpages-description-text">
+                      {
+                        (l.innerNavList || []).map(nLink => (<div key={nLink.text}>{nLink.text}</div>))
+                      }
+                    </div>
+                  </div>
+                ))
+              }
+            </div>  
             {/* <DesertMapLeft />
             <DesertMapCenterLeft />
             <DesertMapRight />
@@ -104,11 +137,11 @@ const NavigationMap = class extends React.Component {
           {/* <Link to="/" className="logo" title="Logo">
               <img src={logo} alt="wht if" />
           </Link> */}
-          {/* {
-            linksMap.map(l => (
-              <Link to={`/${l.linkTarget}`} key={l.name} >
+          <div className="desert-objects" style={{height, width, top: topOffset, left: leftOffset}}>
+            {
+              linksMap.map(l => (
                 <div className={`link-container display-flex justify-content-center ${l.isSelected ? 'is-selected' : ''}`} 
-                  style={{top: l.top, left: l.left, minWidth: l.width }}
+                  key={l.name}
                 >
                   <img src={l.src} style={{minWidth: l.width}} alt={l.text} />
                   <div className="line">
@@ -118,9 +151,10 @@ const NavigationMap = class extends React.Component {
                     {l.text}
                   </div>
                 </div>
-              </Link>
-            ))
-          } */}
+              ))
+            }
+          </div>
+          <img src={logo} alt="WhtIf Logo" className="whtif-logo" />
         </div>
       </div>
     )

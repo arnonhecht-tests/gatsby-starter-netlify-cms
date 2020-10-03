@@ -1,3 +1,5 @@
+@import "../styles/vars";
+
 .navigation-map {
   position: fixed;
   right: 0;
@@ -23,9 +25,9 @@
       height: auto;
       z-index: -100;
       transform: translateX(-50%) translateY(-50%);
-      // background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
       background-size: cover;
       transition: 1s opacity;
+      display: inline-block;
     }
 
     .image-map-container {
@@ -33,73 +35,87 @@
       height: 100vh;
       width: 100vw;
 
-      img {
-        opacity: 0;
-      }
-      // .image-map {
-      //   z-index: 99991;
-      //   position: absolute;
-      //   top: 0;
-      //   left: 0;
-      //   transform: scale(0.5);
-      //   // height: auto;
-      //   // max-width: 100%;
-      //   // min-width: 2880px;
-      //   // min-height: 1800px;
-      //   // min-width: 300px;
-      //   // min-height: 300px;
-      //   height: 2000px;
-      //   width: 2000px;
-
-      //   area {
-      //     z-index: 99999;
-      //     transform: scale(0.5);
-      //     // display: inline;
-      //     background-color: red;
-      //     // min-width: 100px;
-      //     // min-height: 100px;
-      //     height: 2000px;
-      //     width: 2000px;
-      //   }
-      // }
-
-      // .svg-map-segment {
-      // background-color: transparent;
       svg {
         position: absolute;
-        // top: 8%;
-        // left: 8%;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(1.2);
-        // height: 100vh;
-        // width: 100vw;
         height: 100%;
         width: 100%;
-        // transform: translate(34%, 36%) scale(1.5);
-        background-color: red;
-        opacity: 0.2;
+        transform: translate(-50%, -50%) scale(1.2);
+        z-index: 99999;
+        // filter: drop-shadow(4px 4px 14px rgba(0, 0, 0, 0.9));
 
         polygon {
-          opacity: 0.3;
+          opacity: 0.05;
+          transition: 0.3s;
 
           &:not(.active-link) {
             &:hover {
-              opacity: 0.7;
+              opacity: 0.3;
+              transition: 0.3s;
             }
           }
         }
-        // height: 100%;
-        // width: auto;
-        // height: 600px;
-        // width: 1880px;
-
-        // background-color: transparent;
-        z-index: 99999;
-        // height: 200px;
-        // width: 200px;
+        .link-container {
+          &:nth-child(1) polygon:hover {
+            fill: $green;
+          }
+          &:nth-child(2) polygon:hover {
+            fill: $purple;
+          }
+          &:nth-child(3) polygon:hover {
+            fill: $blue;
+          }
+          &:nth-child(4) polygon:hover {
+            fill: $red;
+          }
+        }
       }
-      // }
+
+      .link-description-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 999999;
+        pointer-events: none;
+        color: $secondary-text;
+
+        .link-description {
+          margin: 10% 3% 0 5%;
+
+          &:first-child {
+            margin: 10% 0 0 10%;
+          }
+          &:last-child {
+            margin: 10% 10% 0 0;
+          }
+
+          &:not(.is-hovered) {
+            opacity: 0;
+            transition: 0.3s;
+          }
+          &.is-hovered {
+            opacity: 1;
+            transition: 0.3s;
+          }
+          .link-description-text {
+            margin: 0 0 4px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+          }
+          .link-subpages-description-text {
+            font-size: 10px;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      img {
+        opacity: 0;
+      }
     }
 
     .logo,
@@ -115,20 +131,37 @@
       width: 50px;
     }
 
+    .desert-objects {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      > :nth-child(1) {
+        top: 39%;
+        left: 6%;
+      }
+      > :nth-child(2) {
+        top: 44%;
+        left: 23%;
+      }
+      > :nth-child(3) {
+        top: 44%;
+        left: 69%;
+      }
+      > :nth-child(4) {
+        top: 38%;
+        left: 86%;
+      }
+    }
     .link-container {
-      height: 200px;
+      height: 100px;
 
       img {
         position: absolute;
         bottom: 0;
       }
 
-      img,
-      .link-text,
-      .line {
-      }
       .link-text {
-        // transform: translateY(-50%);
         max-width: 50px;
         text-align: center;
         text-transform: uppercase;
@@ -167,5 +200,13 @@
         }
       }
     }
+  }
+  .whtif-logo {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    height: auto;
+    width: 4em;
+    transform: translate(-8%, 0);
   }
 }
