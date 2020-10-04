@@ -85,19 +85,20 @@ const NavigationMap = class extends React.Component {
       <div className="navigation-map" ref={ (navMapDiv) => { this.navMapDiv = navMapDiv } }>
         <div className="video-map-container">
           <div className="image-map-container">
-            <img src="./img/desert-video-img.png" />
+          <img src="./img/desert-image.png" className="dummy-img-for-size" />
+
             <div style={{ display: 'inline-block' }}  ref={ (videoContainingDiv) => { this.videoContainingDiv = videoContainingDiv } } >
               <DesertVideo />
             </div>
             {/* <DesertMap /> */}
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  width="720" height="450">
 
-          <defs>
-          <linearGradient id="MyGradient" gradientTransform="rotate(90)">
-            <stop offset="25%" stop-color="#FF6" />
-            <stop offset="95%" stop-color="#000000" />
-          </linearGradient>
-          </defs>
+              <defs>
+                <linearGradient id="MyGradient" gradientTransform="rotate(90)">
+                  <stop offset="25%" stopColor="#FF6" />
+                  <stop offset="95%" stopColor="#000000" />
+                </linearGradient>
+              </defs>
               {
                 svgLinkMap.map(l => (
                   <Link to={`${l.link}`} key={l.id} className="link-container"
@@ -164,6 +165,7 @@ const NavigationMap = class extends React.Component {
           </div>
           <img src={logo} alt="WhtIf Logo" className="whtif-logo" />
         </div>
+        <img src="./img/desert-image.png" className="bg-rescue" />
       </div>
     )
   }

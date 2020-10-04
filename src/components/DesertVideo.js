@@ -1,6 +1,6 @@
 
 import React from 'react';
-import desertVideo from '../../static/img/desert-video.mp4';
+import desertVideo from '../../static/img/desert-video-hd.mp4';
 
 const DesertVideo = () => {
 
