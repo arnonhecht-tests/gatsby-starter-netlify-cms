@@ -46,39 +46,60 @@
         width: 100%;
         transform: translate(-50%, -50%) scale(1.2);
         z-index: 99999;
-        // filter: drop-shadow(4px 4px 14px rgba(0, 0, 0, 0.9));
 
         polygon {
-          opacity: 0.1;
           transition: 0.3s;
-          fill: url(#MyGradient);
+
+          &:not(:hover),
+          &.unhovereable-mask {
+            opacity: 0.1;
+            transition: 0.3s;
+            fill: url(#MyGradient);
+          }
 
           &:not(.unhovereable-mask) {
             &:hover {
-              opacity: 0.5;
               transition: 0.3s;
+              opacity: 0.5;
+
+              @keyframes changeOpacity {
+                from {
+                  opacity: 0.4;
+                  filter: url(#hue);
+                }
+
+                to {
+                  opacity: 0.5;
+                  filter: url(#hue);
+                }
+              }
+              animation-delay: 1s;
+              animation-duration: 2s;
+              animation-name: changeOpacity;
+              animation-iteration-count: infinite;
+              animation-direction: alternate-reverse;
             }
           }
         }
         .link-container:hover {
           &:nth-child(1) polygon {
             fill: url(#GreenGradient);
-            filter: url(#hue);
+            // filter: url(#hue);
             // fill: $green;
           }
           &:nth-child(2) polygon {
             fill: url(#PurpleGradient);
-            filter: url(#hue);
+            // filter: url(#hue);
             // fill: $purple;
           }
           &:nth-child(3) polygon {
             fill: url(#BlueGradient);
-            filter: url(#hue);
+            // filter: url(#hue);
             // fill: $blue;
           }
           &:nth-child(4) polygon {
             fill: url(#RedGradient);
-            filter: url(#hue);
+            // filter: url(#hue);
             // fill: $red;
           }
         }
