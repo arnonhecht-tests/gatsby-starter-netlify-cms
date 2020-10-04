@@ -53,13 +53,11 @@
   }
 
   @media only screen and (max-width: $small-screen) {
-    $upper-padding: 5px;
-
     .navigation-section {
-      padding: 0 $upper-padding;
+      padding: 0 5px;
     }
     .event-submenu {
-      margin: 10px $upper-padding 20px;
+      margin: 10px 2px 20px;
       max-width: 80px;
 
       a {
@@ -79,7 +77,14 @@
 
   @media only screen and (max-width: $small-screen) {
     .content {
-      padding: 10px;
+      padding: 6px;
+      font-size: 0.6em;
+
+      // remove paragraph spacing
+      p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
     }
 
     > div:first-child {
