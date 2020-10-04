@@ -6,15 +6,17 @@ import Layout from '../components/Layout'
 import InnerPageLayout from '../components/InnerPageLayout'
 import Content, { HTMLContent } from '../components/Content'
 
+import linksService, {REACHING} from '../services/linksService'
 import pageDataMediatorService from '../services/pageDataMediatorService'
 
 export const ReachingPageTemplate = ({ content, navImage, mobileNavImage, contentComponent, location }) => {
   const PageContent = contentComponent || Content
   
+  const innerNavList = linksService.getTopLevelLinksObj()[REACHING].innerNavList;
   const pageDataFetcher = pageDataMediatorService.getPageDataFetcher(navImage, mobileNavImage);
 
   return (
-    <InnerPageLayout pageDataFetcher={pageDataFetcher} navMenu={[]} location={location}>
+    <InnerPageLayout pageDataFetcher={pageDataFetcher} navMenu={innerNavList} location={location} longLinkLines={true}>
       <div className="display-flex flex-row">
         <PageContent className="content flex-1" content={content} />
       </div>

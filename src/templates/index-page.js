@@ -55,7 +55,7 @@ const IndexPageTemplateBare = ({
                             <Link className="column" to={l.link} key={l.id}>
                               <PreviewCompatibleImage imageInfo={l.img} />
                               <div className="inner-pages-row-underline-display">
-                                {l.innerNavList.map(inl => (
+                                {l.innerNavList.slice(0,4).map(inl => (
                                   <div key={inl.linkTarget}>{inl.text}</div>
                                 ))}
                               </div>

@@ -428,6 +428,28 @@ collections:
                   { label: Image Alt, name: alt, widget: string },
                 ],
             }
+      - file: "src/pages/being/whtis-whtif.md"
+        label: "Being - Wht is Wht if"
+        name: "whtis-whtif"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "being-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
       - file: "src/pages/being/culture.md"
         label: "Being - Culture"
         name: "being-culture"
@@ -535,9 +557,97 @@ collections:
                   { label: Image Alt, name: alt, widget: string },
                 ],
             }
-      - file: "src/pages/reaching/index.md"
-        label: "Reaching"
-        name: "reaching"
+      - file: "src/pages/reaching/volunteer.md"
+        label: "Reaching - volunteer"
+        name: "reaching-volunteer"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "reaching-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/reaching/change-makers.md"
+        label: "Reaching - Change Makers"
+        name: "change-makers"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "reaching-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/reaching/empower.md"
+        label: "Reaching - Empower"
+        name: "empower"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "reaching-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/reaching/contact.md"
+        label: "Reaching - Contact"
+        name: "contact"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "reaching-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Navigation Image,
+              name: navimage,
+              widget: object,
+              fields:
+                [
+                  { label: Navigation Image, name: image, widget: image },
+                  { label: Image Alt, name: alt, widget: string },
+                ],
+            }
+      - file: "src/pages/reaching/faq.md"
+        label: "Reaching - FAQ"
+        name: "faq"
         fields:
           - {
               label: "Template Key",

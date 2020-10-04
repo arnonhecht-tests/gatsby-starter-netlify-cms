@@ -19,7 +19,7 @@ const getChildrenElement = (children) => (
   </div>
 )
 
-const InnerPageLayout = ({ children, pageDataFetcher, navMenu, location, smallScreen }) => {
+const InnerPageLayout = ({ children, pageDataFetcher, navMenu, location, smallScreen, longLinkLines = false }) => {
 
   const routeArray = (location || {pathname: "/dummypath"}).pathname.split('/').filter(a => !!a );
   const currentPage = routeArray[0];
@@ -30,9 +30,9 @@ const InnerPageLayout = ({ children, pageDataFetcher, navMenu, location, smallSc
       {
         smallScreen ? (
           <div className="display-flex flex-column">
-            <div className="navigation-section">
+            <div className={`navigation-section`}>
               <PreviewCompatibleImage imageInfo={pageDataFetcher.getNavImage(smallScreen)} />
-              <div className="inner-pages-row-underline-display">
+              <div className={`inner-pages-row-underline-display  ${longLinkLines ? 'long-link-lines' : ''}`}>
                 {
                   navMenu.map(l => (
                     <Link

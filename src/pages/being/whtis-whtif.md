@@ -1,10 +1,10 @@
 ---
 templateKey: being-page
-path: /being/culture
-title: Being Culture
+path: /being/whtis-whtif
+title: Wht is Wht if
 navimage:
   alt: WhtIf team
-  image: /img/culture.png
+  image: /img/whtis-whtif.png
 mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/being_triangle.png
@@ -25,7 +25,7 @@ Imagination.
 Yes, imagination is probably the one thing NO ONE can ever take away from you. It is yours from the second you were born to the second you pass away.
 
 Imagination can heal the world to become a better place, it's where visions start, it's where frequencies connect.\
-Imagination is love. The unconditional kind.
+Imagination is love. The unconditional kind.ß
 
 After being a significant and active part of the Burning Man project and co-founding Midburn (the Israeli official Burn in Israel ) we are asking you to join us, while we offer a new culture that we call WHT IF
 

@@ -12,11 +12,13 @@ const getTopLevelLinksObj = () => {
     [REACHING]: {
       id: REACHING,
       text: REACHING,
-      link: linkerize(REACHING),
+      link: linkerize(REACHING) + '/volunteers',
       innerNavList: [
-        {text: "Wht If culture", linkTarget: 'culture'},
-        {text: "History ", linkTarget: 'about-us'},
-        {text: "Get involved", linkTarget: 'participate'},
+        {text: "Volunteers", linkTarget: 'volunteers'},
+        {text: "Change Makers", linkTarget: 'change-makers'},
+        {text: "Empower WHT ", linkTarget: 'empower'},
+        {text: "Contact Form ", linkTarget: 'contact'},
+        {text: "F & Q ", linkTarget: 'faq'},
       ], 
     },
     [DOING]: {
@@ -39,11 +41,11 @@ const getTopLevelLinksObj = () => {
     [BEING]: {
       id: BEING,
       text: BEING,
-      link: linkerize(BEING) + '/culture',
+      link: linkerize(BEING) + '/whtis-whtif',
       innerNavList: [
+        {text: "Wht is Wht If", linkTarget: 'whtis-whtif'},
         {text: "Wht If culture", linkTarget: 'culture'},
         {text: "History ", linkTarget: 'about-us'},
-        {text: "Get involved", linkTarget: 'participate'},
       ],
     },
     [DREAMING]: {
