@@ -18,6 +18,10 @@
 
 body {
   font-family: "Kohinoor-Book", Fallback, sans-serif;
+  background-image: url(/img/sky.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content {
@@ -44,7 +48,11 @@ body {
 
 @media only screen and (max-width: $small-screen) {
   body {
-    background-color: rgb(241, 231, 220);
+    background-color: rgb(255, 255, 255);
+    background-image: url(/img/sky-mobile.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .section {
