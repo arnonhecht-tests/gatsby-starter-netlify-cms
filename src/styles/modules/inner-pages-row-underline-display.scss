@@ -4,9 +4,6 @@
   display: flex;
   justify-content: flex-start;
   text-transform: uppercase;
-  // font-size: 11px;
-  font-size: 0.6em;
-  // letter-spacing: -0.4px;
   color: $secondary-text;
 
   &:not(.long-link-lines) {

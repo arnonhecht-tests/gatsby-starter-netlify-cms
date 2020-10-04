@@ -57,7 +57,7 @@
       padding: 0 5px;
     }
     .event-submenu {
-      margin: 10px 2px 20px;
+      margin: 7px 2px 0;
       max-width: 80px;
 
       a {
@@ -69,6 +69,10 @@
         border-radius: 4px;
       }
     }
+    .inner-pages-row-underline-display {
+      margin: 0 0 0 0;
+      font-size: 0.7em;
+    }
   }
 
   .right-section {
@@ -79,7 +83,7 @@
     min-height: 200vh; // for image background on pages with no content
 
     .content {
-      padding: 6px;
+      padding: 13px 6px 6px 6px;
       font-size: 0.6em;
 
       // remove paragraph spacing
@@ -102,7 +106,6 @@
 
       &.selected {
         color: rgba(0, 0, 0, 0.73);
-        font-weight: 600;
       }
     }
   }
