@@ -1,5 +1,25 @@
 @import "../styles/vars";
 
+@import url(//db.onlinewebfonts.com/c/a2518a14de7de124ac4770b88a5daaf4?family=Kohinoor-Book);
+@font-face {
+  font-family: "Kohinoor-Book";
+  src: url("//db.onlinewebfonts.com/t/a2518a14de7de124ac4770b88a5daaf4.eot");
+  src: url("//db.onlinewebfonts.com/t/a2518a14de7de124ac4770b88a5daaf4.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/a2518a14de7de124ac4770b88a5daaf4.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/a2518a14de7de124ac4770b88a5daaf4.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/a2518a14de7de124ac4770b88a5daaf4.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/a2518a14de7de124ac4770b88a5daaf4.svg#Kohinoor-Book")
+      format("svg");
+}
+
+body {
+  font-family: "Kohinoor-Book", Fallback, sans-serif;
+}
+
 .content {
   .taglist {
     list-style: none;

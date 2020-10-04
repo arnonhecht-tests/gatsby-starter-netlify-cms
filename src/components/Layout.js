@@ -17,6 +17,7 @@ const Layout = ({ children, smallScreen }) => {
   return (
     <div>
       <Helmet>
+        <link href="//db.onlinewebfonts.com/c/a2518a14de7de124ac4770b88a5daaf4?family=Kohinoor-Book" rel="stylesheet" type="text/css"/>
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
