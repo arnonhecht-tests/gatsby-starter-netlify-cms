@@ -12,6 +12,7 @@ heading: >-
   WHT IF we tell you that in one ancient exotic desert, a creative community of
   change-makers is gathering for 5 nights and days ?
 
+
   WHT IF we ask you to close your eyes for just one moment and visualize that place? WHT IF this place exists?
 
   The distance between you and that place is up to your will, to ask - WHT IF
