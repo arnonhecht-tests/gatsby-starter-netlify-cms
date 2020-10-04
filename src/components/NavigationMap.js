@@ -88,13 +88,6 @@ const NavigationMap = class extends React.Component {
             </div>
             {/* <DesertMap /> */}
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  width="720" height="450">
-
-              <defs>
-                <linearGradient id="MyGradient" gradientTransform="rotate(90)">
-                  <stop offset="25%" stopColor="#FF6" />
-                  <stop offset="95%" stopColor="#000000" />
-                </linearGradient>
-              </defs>
               {
                 svgLinkMap.map(l => (
                   <Link to={`${l.link}`} key={l.id} className="link-container"
@@ -106,6 +99,13 @@ const NavigationMap = class extends React.Component {
               }
 	            <polygon className="unhovereable-mask" points="364,123 303,28 426,28 364,123" style={{transform: scaleTransform}} />
               <polygon className="unhovereable-mask" points="365,144 545,421 184,421 365,144" style={{transform: scaleTransform}} />
+
+              <defs>
+                <linearGradient id="MyGradient" gradientTransform="rotate(90)">
+                  <stop offset="25%" stopColor="#FF6" />
+                  <stop offset="95%" stopColor="#000000" />
+                </linearGradient>
+              </defs>
             </svg>
             <div className="link-description-container display-flex flex-justify-space-between">
               {
