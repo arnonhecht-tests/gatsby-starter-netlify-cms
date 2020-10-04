@@ -8,12 +8,17 @@ navimage:
 mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/dreaming_triangle.png
+tags:
+  - Global Blog
 ---
+### **GLOBAL BLOG**
 
-### Dream
+The WHT IF community is a global community. Our community members live all over the world
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We draw inspiration from each other from our life stories, from the insights, from the successes and also from failures.
 
-### Fear
+Your story is important. This is what motivates us for participation, achievement and fulfillment
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Here you can share your story with all of us.
+
+Here too, we will update you on all that's happening in our activities and from time to time we will write and update on events, retreats, cooperation that is happening right now
