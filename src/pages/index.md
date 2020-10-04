@@ -1,30 +1,20 @@
 ---
+reaching_card:
+  alt: Reaching
+  image: /img/page-cards/reaching.png
 templateKey: index-page
 title: Wht Iffff
 image: /img/desert-sand-dunes-landscape.jpg
 circleimage:
   alt: A close-up of a paper filter filled with ground coffee
   image: /img/whtif-circle.png
-reaching_card:
-  alt: Reaching
-  image: /img/page-cards/reaching.png
-doing_card:
-  alt: Doing
-  image: /img/page-cards/doing.png
-being_card:
-  alt: Being
-  image: /img/page-cards/being.png
-dreaming_card:
-  alt: Dreaming
-  image: /img/page-cards/dreaming.png
-heading:
-  WHT IF we tell you that in one ancient exotic desert, a creative community
-  of change-makers is gathering
-  for 5 nights and days ?
-  WHT IF we ask you to close your eyes for just one moment and visualize that place?
-  WHT IF this place exists?
-  The distance between you and that
-  place is up to your will, to ask - WHT IF
+heading: >-
+  WHT IF we tell you that in one ancient exotic desert, a creative community of
+  change-makers is gathering for 5 nights and days ?
+
+  WHT IF we ask you to close your eyes for just one moment and visualize that place? WHT IF this place exists?
+
+  The distance between you and that place is up to your will, to ask - WHT IF
 subheading: Dream Fear Believe Dare Fly Grow Know
 mainpitch:
   title: Why Kaldi
@@ -33,8 +23,6 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
-description: This year's main event is going to be the first.. don't miss on it
-
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -70,6 +58,16 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+dreaming_card:
+  alt: Dreaming
+  image: /img/page-cards/dreaming.png
+being_card:
+  alt: Being
+  image: /img/page-cards/being.png
+doing_card:
+  alt: Doing
+  image: /img/page-cards/doing.png
+description: This year's main event is going to be the first.. don't miss on it
 main:
   heading: Great coffee with no compromises
   description: >
