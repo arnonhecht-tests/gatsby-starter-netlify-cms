@@ -7,7 +7,7 @@ navimage:
   image: /img/empower.png
 mobilenavimage:
   alt: WhtIf team
-  image: /img/page-cards/being_triangle.png
+  image: /img/page-cards/reaching_triangle.png
 ---
 
 ### WHT IF Culture

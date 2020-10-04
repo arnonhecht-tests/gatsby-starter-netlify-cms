@@ -7,7 +7,7 @@ navimage:
   image: /img/change-makers.png
 mobilenavimage:
   alt: WhtIf team
-  image: /img/page-cards/being_triangle.png
+  image: /img/page-cards/reaching_triangle.png
 ---
 
 ### CHANGE MAKERS - Civic Engagement

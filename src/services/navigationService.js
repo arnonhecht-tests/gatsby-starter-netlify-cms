@@ -26,7 +26,7 @@ const getNavigationMap = (windowGlobal) => {
       width: 100,
       name: "reaching",
       text: "Reaching",
-      linkTarget: 'reaching',
+      linkTarget: 'reaching/volunteer',
     },
     {
       src: camels,
@@ -46,7 +46,7 @@ const getNavigationMap = (windowGlobal) => {
       width: 150,
       name: "being",
       text: "Being",
-      linkTarget: 'being/culture',
+      linkTarget: 'being/whtis-whtif',
     },
     {
       src: children,
