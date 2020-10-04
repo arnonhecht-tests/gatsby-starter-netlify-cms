@@ -57,7 +57,7 @@ collections:
                   { label: Alt, name: alt, widget: string },
                 ],
             }
-          - { label: Heading, name: heading, widget: string }
+          - { label: Whtif Prolog, name: heading, widget: text }
           - { label: Subheading, name: subheading, widget: string }
           - {
               label: Mainpitch,
