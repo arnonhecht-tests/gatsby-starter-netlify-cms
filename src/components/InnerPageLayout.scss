@@ -76,6 +76,8 @@
   }
 
   @media only screen and (max-width: $small-screen) {
+    min-height: 200vh; // for image background on pages with no content
+
     .content {
       padding: 6px;
       font-size: 0.6em;
