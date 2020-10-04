@@ -17,7 +17,14 @@ being_card:
 dreaming_card:
   alt: Dreaming
   image: /img/page-cards/dreaming.png
-heading: Once a year, ten thougsands of people gather in Nevvada's Black Rock Desert to create Black Rock City, a temporary metropolis dedicated to community, art, self-expression and self-reliance. In this crucible of creativity, all are welcome.
+heading:
+  WHT IF we tell you that in one ancient exotic desert, a creative community
+  of change-makers is gathering
+  for 5 nights and days ?
+  WHT IF we ask you to close your eyes for just one moment and visualize that place?
+  WHT IF this place exists?
+  The distance between you and that
+  place is up to your will, to ask - WHT IF
 subheading: Dream Fear Believe Dare Fly Grow Know
 mainpitch:
   title: Why Kaldi

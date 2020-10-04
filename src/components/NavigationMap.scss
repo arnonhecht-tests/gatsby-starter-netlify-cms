@@ -55,23 +55,31 @@
 
           &:not(.unhovereable-mask) {
             &:hover {
-              opacity: 0.2;
+              opacity: 0.5;
               transition: 0.3s;
             }
           }
         }
-        .link-container {
-          &:nth-child(1) polygon:hover {
-            fill: $green;
+        .link-container:hover {
+          &:nth-child(1) polygon {
+            fill: url(#GreenGradient);
+            filter: url(#hue);
+            // fill: $green;
           }
-          &:nth-child(2) polygon:hover {
-            fill: $purple;
+          &:nth-child(2) polygon {
+            fill: url(#PurpleGradient);
+            filter: url(#hue);
+            // fill: $purple;
           }
-          &:nth-child(3) polygon:hover {
-            fill: $blue;
+          &:nth-child(3) polygon {
+            fill: url(#BlueGradient);
+            filter: url(#hue);
+            // fill: $blue;
           }
-          &:nth-child(4) polygon:hover {
-            fill: $red;
+          &:nth-child(4) polygon {
+            fill: url(#RedGradient);
+            filter: url(#hue);
+            // fill: $red;
           }
         }
       }

@@ -101,9 +101,30 @@ const NavigationMap = class extends React.Component {
               <polygon className="unhovereable-mask" points="365,144 545,421 184,421 365,144" style={{transform: scaleTransform}} />
 
               <defs>
+                <filter id="hue">
+                  <feColorMatrix in="SourceGraphic"
+                      type="hueRotate"
+                      values="2" />
+                </filter>
+                <linearGradient id="GreenGradient" gradientTransform="rotate(90)">
+                  <stop offset="10%" stop-color="transparent"></stop>
+                  <stop offset="44%" stop-color="#4c8443"></stop>
+                </linearGradient>
+                <linearGradient id="RedGradient" gradientTransform="rotate(90)">
+                  <stop offset="10%" stop-color="transparent"></stop>
+                  <stop offset="44%" stop-color="#ad3433"></stop>
+                </linearGradient>
+                <linearGradient id="BlueGradient" gradientTransform="rotate(90)">
+                  <stop offset="10%" stop-color="transparent"></stop>
+                  <stop offset="50%" stop-color="#1d264e"></stop>
+                </linearGradient>
+                <linearGradient id="PurpleGradient" gradientTransform="rotate(90)">
+                  <stop offset="10%" stop-color="transparent"></stop>
+                  <stop offset="50%" stop-color="#4a3c7f"></stop>
+                </linearGradient>
                 <linearGradient id="MyGradient" gradientTransform="rotate(90)">
-                  <stop offset="25%" stopColor="#FF6" />
-                  <stop offset="95%" stopColor="#000000" />
+                  <stop offset="23%" stopColor="#FF6" />
+                  <stop offset="94%" stopColor="#000000" />
                 </linearGradient>
               </defs>
             </svg>
