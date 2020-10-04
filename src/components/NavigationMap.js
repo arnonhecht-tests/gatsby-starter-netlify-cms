@@ -15,23 +15,19 @@ let svgLinkMap = [
   {
     id: REACHING,
     polygonPoints: "20,422 12,422 9,26 274,27 20,422",
-    onHover: setIsHovered,
   },{
     id: DOING,
     polygonPoints: "34,422 170,422 357,133 295,37 293,36 292,35 290,34 289,34 287,34 285,34 284,34 284,35 282,37 280,40 34,422",
-    onHover: setIsHovered,
   },{
     id: BEING,
     polygonPoints: "693,422 558,422 371,132 433,37 435,34 437,33 439,33 441,33 443,33 444,35 445,38 693,422",
-    onHover: setIsHovered,
   },{
     id: DREAMING,
     polygonPoints: "711,422 708,422 453,28 710,28 711,422",
-    onHover: setIsHovered,
   },  
 ];
 
-const setIsHovered = (linkObj) => linkObj.isHovered = true;
+
 const getVideoElement = (elem) => elem ? elem.getElementsByTagName('video')[0] : {};
 
 const linksServiceMap = linksService.getTopLevelLinksObj();
@@ -102,8 +98,8 @@ const NavigationMap = class extends React.Component {
               {
                 svgLinkMap.map(l => (
                   <Link to={`${l.link}`} key={l.id} className="link-container"
-                    onMouseEnter={() => {l.isHovered = true; this.setState({}); console.log(`l: ${JSON.stringify(l)}`)}}
-                    onMouseLeave={() => {l.isHovered = false; this.setState({})}} >
+                    onMouseEnter={() => {l.isHovered = true; this.setState({});}}
+                    onMouseLeave={() => {l.isHovered = false; this.setState({});}} >
                     <polygon points={l.polygonPoints} style={{transform: scaleTransform}}  />
                   </Link>
                 ))
