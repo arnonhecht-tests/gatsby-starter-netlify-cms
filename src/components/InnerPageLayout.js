@@ -30,27 +30,29 @@ const InnerPageLayout = ({ children, pageDataFetcher, navMenu, location, smallSc
       {
         smallScreen ? (
           <div className="display-flex flex-column">
-            <PreviewCompatibleImage imageInfo={pageDataFetcher.getNavImage(smallScreen)} />
-            <div className="inner-pages-row-underline-display">
-              {
-                navMenu.map(l => (
-                  <Link
-                    to={`/${currentPage}/${l.linkTarget}`} 
-                    path={`/${currentPage}/${l.linkTarget}`} 
-                    className={(currentPage === l.linkTarget ? 'selected' : '') + ` ${l.linkTarget}`}
-                    key={l.linkTarget}
-                  >
-                    <div className="link-container display-flex">
-                      <div className="line">
-                        <div className="point"></div>
+            <div className="navigation-section">
+              <PreviewCompatibleImage imageInfo={pageDataFetcher.getNavImage(smallScreen)} />
+              <div className="inner-pages-row-underline-display">
+                {
+                  navMenu.map(l => (
+                    <Link
+                      to={`/${currentPage}/${l.linkTarget}`} 
+                      path={`/${currentPage}/${l.linkTarget}`} 
+                      className={(currentPage === l.linkTarget ? 'selected' : '') + ` ${l.linkTarget}`}
+                      key={l.linkTarget}
+                    >
+                      <div className="link-container display-flex">
+                        <div className="line">
+                          <div className="point"></div>
+                        </div>
+                        <div className={`link-text ${l.linkTarget.includes(currentInnerPage) ? 'selected' : ''} `}>
+                          {l.text}
+                        </div>
                       </div>
-                      <div className={`link-text ${l.linkTarget.includes(currentInnerPage) ? 'selected' : ''} `}>
-                        {l.text}
-                      </div>
-                    </div>
-                  </Link>
-                ))
-              }
+                    </Link>
+                  ))
+                }
+              </div>
             </div>
 
             {getChildrenElement(children)}

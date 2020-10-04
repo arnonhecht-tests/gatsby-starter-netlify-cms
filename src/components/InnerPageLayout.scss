@@ -31,38 +31,50 @@
       overflow: scroll;
 
       .event-submenu {
-        font-size: 12px;
-
         > a {
           margin: 3px 5px;
         }
 
         .link-text {
-          color: rgb(132, 134, 132);
+          color: $secondary-text;
 
           &.selected {
-            color: rgb(107, 96, 148);
+            color: $main-text;
           }
         }
       }
 
       @media only screen and (min-width: $small-screen) {
         .event-submenu {
-          position: absolute;
-          right: 0;
-          background: rgba(12, 12, 12, 0.1);
-          border: 1px solid rgba(120, 120, 120, 0.1);
-          border-radius: 4px;
+          margin: 0 0 15px 0;
+          //   position: absolute;
+          //   right: 0;
+          //   background: rgba(12, 12, 12, 0.1);
+          //   border: 1px solid rgba(120, 120, 120, 0.1);
+          //   border-radius: 4px;
         }
       }
     }
   }
 
   @media only screen and (max-width: $small-screen) {
+    $upper-padding: 5px;
+
+    .navigation-section {
+      padding: 0 $upper-padding;
+    }
     .event-submenu {
-      margin: 40px 10px 20px 10px;
-      display: flex;
-      justify-content: space-between;
+      margin: 10px $upper-padding 20px;
+      max-width: 80px;
+
+      a {
+        margin: 2px;
+        padding: 2px 5px;
+        font-size: 0.6em;
+        border: 1px solid white;
+        background-color: rgb(189, 211, 218);
+        border-radius: 4px;
+      }
     }
   }
 

@@ -26,7 +26,7 @@ export const DoingPageEventTemplate = ({ content, navImage, mobileNavImage, cont
   return (
     <InnerPageLayout pageDataFetcher={pageDataFetcher} navMenu={innerNavList} location={location}>
       <div className="display-flex flex-column">
-        <div className="event-submenu display-flex flex-row flex-justify-end ">
+        <div className="event-submenu display-flex flex-column">
           {
               eventNavMap.map(l => (
                 <Link
@@ -35,9 +35,9 @@ export const DoingPageEventTemplate = ({ content, navImage, mobileNavImage, cont
                   className={(currentPage === l.linkTarget ? 'selected' : '') + ` ${l.linkTarget}`}
                   key={l.linkTarget}
                 >
-                  <div className={`link-text ${currentTab === l.linkTarget ? 'selected' : ''} `}>
+                  <span className={`link-text ${currentTab === l.linkTarget ? 'selected' : ''} `}>
                     {l.text}
-                  </div>
+                  </span>
                 </Link>
               ))
             }
