@@ -1,6 +1,8 @@
 @import "../styles/vars";
 
 .navigation-map {
+  $poly-transition: 1s;
+
   position: fixed;
   right: 0;
   bottom: 0;
@@ -48,18 +50,18 @@
         z-index: 99999;
 
         polygon {
-          transition: 0.3s;
+          transition: $poly-transition;
 
           &:not(:hover),
           &.unhovereable-mask {
             opacity: 0.1;
-            transition: 0.3s;
+            transition: $poly-transition;
             fill: url(#MyGradient);
           }
 
           &:not(.unhovereable-mask) {
             &:hover {
-              transition: 0.3s;
+              transition: $poly-transition;
               opacity: 0.5;
 
               @keyframes changeOpacity {
@@ -78,6 +80,7 @@
               animation-name: changeOpacity;
               animation-iteration-count: infinite;
               animation-direction: alternate-reverse;
+              animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
             }
           }
         }
@@ -128,11 +131,11 @@
 
           &:not(.is-hovered) {
             opacity: 0;
-            transition: 0.3s;
+            transition: $poly-transition;
           }
           &.is-hovered {
             opacity: 1;
-            transition: 0.3s;
+            transition: $poly-transition;
           }
           .link-description-text {
             margin: 0 0 4px;
@@ -202,25 +205,25 @@
         font-size: 0.8em;
         opacity: 0;
       }
-      .line {
-        .point {
-          position: absolute;
-          bottom: 60px;
-          width: 1px;
-          height: 1px;
-          transform: translate(23px);
-          background: red;
-          transition: height 1s ease;
+      // .line {
+      //   .point {
+      //     position: absolute;
+      //     bottom: 60px;
+      //     width: 1px;
+      //     height: 1px;
+      //     transform: translate(23px);
+      //     background: red;
+      //     transition: height 1s ease;
 
-          background: repeating-linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 1) 1px,
-            rgba(0, 0, 0, 1) 1px,
-            rgba(0, 0, 0, 0) 4px
-          );
-        }
-      }
+      //     background: repeating-linear-gradient(
+      //       0deg,
+      //       rgba(0, 0, 0, 0),
+      //       rgba(0, 0, 0, 1) 1px,
+      //       rgba(0, 0, 0, 1) 1px,
+      //       rgba(0, 0, 0, 0) 4px
+      //     );
+      //   }
+      // }
 
       &:hover {
         cursor: pointer;
