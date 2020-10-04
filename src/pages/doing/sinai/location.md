@@ -9,9 +9,6 @@ mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/doing_triangle.png
 ---
-
-### **WHT IF NEGEV DESERT**
-
 **Location**
 
 Sinani desert
