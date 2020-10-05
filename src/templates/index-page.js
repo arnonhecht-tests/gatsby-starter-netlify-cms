@@ -42,7 +42,15 @@ const IndexPageTemplateBare = ({
                         <div className="column is-12">
                           <hr />
                           <h6 className="header-text">
-                            {heading}
+                            <p>WHT IF we tell you that in one ancient </p>
+                            <p>exotic desert, a creative community</p>
+                            <p> of change-makers is gathering </p>
+                            <p>for 5 nights and days ?</p>
+                            <p>WHT IF we ask you to close your eyes for </p>
+                            <p>just one moment and visualize that place?</p>
+                            <p>WHT IF this place exists?</p>
+                            <p>The distance between you and that</p>
+                            <p> place is up to your will, to ask - WHT IF</p>
                           </h6>
                           <hr />
                         </div>
@@ -54,10 +62,13 @@ const IndexPageTemplateBare = ({
                           .map(l => (
                             <Link className="column" to={l.link} key={l.id}>
                               <PreviewCompatibleImage imageInfo={l.img} />
-                              <div className="inner-pages-row-underline-display">
-                                {l.innerNavList.slice(0,4).map(inl => (
+                              <div className={`inner-pages-row-underline-display ${l.innerNavList.length > 3 ? 'long-link-lines' : ''}`}>
+                                {l.innerNavList.map(inl => (
                                   <div key={inl.linkTarget}>{inl.text}</div>
                                 ))}
+                                {/* {l.innerNavList.slice(0,4).map(inl => (
+                                  <div key={inl.linkTarget}>{inl.text}</div>
+                                ))} */}
                               </div>
                             </Link>
                           ))

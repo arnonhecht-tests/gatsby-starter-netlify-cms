@@ -2,18 +2,17 @@
 
 .inner-pages-row-underline-display {
   display: flex;
-  justify-content: flex-start;
   text-transform: uppercase;
   color: $secondary-text;
 
   &:not(.long-link-lines) {
+    justify-content: flex-start;
+
     > *:not(:last-child) {
-      margin: 0 12px 0 0;
+      margin: 0 14px 0 0;
     }
   }
   &.long-link-lines {
-    > *:not(:last-child) {
-      margin: 0 6px 0 0;
-    }
+    justify-content: space-between;
   }
 }
