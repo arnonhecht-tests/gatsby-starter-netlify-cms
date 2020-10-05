@@ -54,10 +54,10 @@
 
   @media only screen and (max-width: $small-screen) {
     .navigation-section {
-      padding: 0 5px;
+      padding: 30px 5px 0 5px;
     }
     .event-submenu {
-      margin: 7px 2px 0;
+      margin: 7px 2px 0 7px;
       max-width: 80px;
 
       a {
@@ -70,7 +70,7 @@
       }
     }
     .inner-pages-row-underline-display {
-      margin: 0 0 0 0;
+      margin: 0 0 0 5px;
       font-size: 0.7em;
     }
   }
@@ -83,7 +83,7 @@
     min-height: 200vh; // for image background on pages with no content
 
     .content {
-      padding: 13px 6px 6px 6px;
+      padding: 13px 6px 6px 10px;
       font-size: 0.7em;
 
       // remove paragraph spacing

@@ -10,7 +10,7 @@ mobilenavimage:
   image: /img/page-cards/reaching_triangle.png
 ---
 
-### Volunteer
+### VOLUNTEER
 
 There are many channels of participation in the WHT IF project
 We consider the value of participation, as a significant value, which contributes to our transformation

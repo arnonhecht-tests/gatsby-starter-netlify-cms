@@ -10,7 +10,7 @@ mobilenavimage:
   image: /img/page-cards/doing_triangle.png
 ---
 
-### **Gatherings**
+### **GATHERINGS**
 
 We are human beings, whose operational systems are based on interaction among people that is how we develop, drawing inspiration, motivating and activating, to create positive changes
 
