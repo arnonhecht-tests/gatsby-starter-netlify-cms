@@ -16,8 +16,8 @@ const getTopLevelLinksObj = () => {
       innerNavList: [
         {text: "Volunteers", linkTarget: 'volunteers'},
         {text: "Change Makers", linkTarget: 'change-makers'},
-        {text: "Empower", linkTarget: 'empower'},
-        {text: "Contact ", linkTarget: 'contact'},
+        {text: "Empower", desktopText: "Empoer Wht If", linkTarget: 'empower'},
+        {text: "Contact ", desktopText: "Contact Form", linkTarget: 'contact'},
         {text: "F & Q ", linkTarget: 'faq'},
       ], 
     },

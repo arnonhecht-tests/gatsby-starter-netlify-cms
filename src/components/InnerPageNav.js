@@ -66,7 +66,7 @@ const InnerPageNav =  ({backgroundImage, navMenu, location}) => {
                     <div className="point"></div>
                   </div>
                   <div className={`link-text ${l.linkTarget.includes(currentInnerPage) ? 'selected' : ''} `}>
-                    {l.text}
+                    {l.desktopText || l.text}
                   </div>
                 </div>
               </Link>
