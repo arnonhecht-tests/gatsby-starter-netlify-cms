@@ -107,20 +107,20 @@ const NavigationMap = class extends React.Component {
                       values="2" />
                 </filter>
                 <linearGradient id="GreenGradient" gradientTransform="rotate(90)">
-                  <stop offset="10%" stop-color="transparent"></stop>
-                  <stop offset="44%" stop-color="#4c8443"></stop>
+                  <stop offset="10%" stopColor="transparent"></stop>
+                  <stop offset="44%" stopColor="#4c8443"></stop>
                 </linearGradient>
                 <linearGradient id="RedGradient" gradientTransform="rotate(90)">
-                  <stop offset="10%" stop-color="transparent"></stop>
-                  <stop offset="44%" stop-color="#ad3433"></stop>
+                  <stop offset="10%" stopColor="transparent"></stop>
+                  <stop offset="44%" stopColor="#ad3433"></stop>
                 </linearGradient>
                 <linearGradient id="BlueGradient" gradientTransform="rotate(90)">
-                  <stop offset="10%" stop-color="transparent"></stop>
-                  <stop offset="50%" stop-color="#1d264e"></stop>
+                  <stop offset="10%" stopColor="transparent"></stop>
+                  <stop offset="50%" stopColor="#1d264e"></stop>
                 </linearGradient>
                 <linearGradient id="PurpleGradient" gradientTransform="rotate(90)">
-                  <stop offset="10%" stop-color="transparent"></stop>
-                  <stop offset="50%" stop-color="#4a3c7f"></stop>
+                  <stop offset="10%" stopColor="transparent"></stop>
+                  <stop offset="50%" stopColor="#4a3c7f"></stop>
                 </linearGradient>
                 <linearGradient id="MyGradient" gradientTransform="rotate(90)">
                   <stop offset="23%" stopColor="#FF6" />
