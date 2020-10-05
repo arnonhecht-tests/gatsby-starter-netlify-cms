@@ -45,7 +45,7 @@ const getTopLevelLinksObj = () => {
       innerNavList: [
         {text: "Wht is Wht If", linkTarget: 'whtis-whtif'},
         {text: "Wht If culture", linkTarget: 'culture'},
-        {text: "History ", linkTarget: 'about-us'},
+        {text: "History", linkTarget: 'about-us'},
       ],
     },
     [DREAMING]: {
