@@ -9,24 +9,25 @@ mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/doing_triangle.png
 ---
-
 **RETREATS**
 
-(Quote by John de Ruiter)
+> If you want to awaken all of humanity, awaken all of yourself - Lao Tzu
 
-**Introduction**
+### Introduction
 
 From the moment of birth we are nourished and groomed in cultures which programme us so much, even to the level of “how to dream” Even there, where we are supposed to be imaginative with far reaching and uninhibited visions, there too, we are fed with rules and regulations. Allowed and Forbidden.
 
 Therefore our awareness of our plenty, is limited and restricted, so that we dream mostly in secret and continue day by day, living in a reality which distances us from our true essence. Our element.
 
-Most of us work at jobs which don`t broaden our scope, while our hidden and revealed talents are unable to be expressed.
+Most of us work at jobs which don't broaden our scope, while our hidden and revealed talents are unable to be expressed.
 
-We work around the clock and not for ourselves. Our ability to be different and authentic has been extinguished. We`ve declared social and cultural rules, which shut down instead of opening up.
+We work around the clock and not for ourselves. Our ability to be different and authentic has been extinguished. We've declared social and cultural rules, which shut down instead of opening up.
 
 Nature has been ruined, our attitude towards animals and ecological systems have become blinded. The main reason being, that we have become slaves to other people`s dreams, while in our core essence, we are creatures of dreams and fulfillment.
 
-**Why Retreat**
+
+
+### Why Retreat
 
 The interpretation of the word retreat is “withdraw”, meaning to withdraw temporarily for a period of time, to a neutral/noise free place, in order to undergo a significant procedure of self-redeeming, from the reality of your life in the future and in the course of time after the procedure. In retreats, as part of the WHT IF culture, we enhance new dream consciousness.
 
