@@ -11,7 +11,7 @@ import Content, { HTMLContent } from '../components/Content'
 import linksService, {DOING} from '../services/linksService'
 import pageDataMediatorService from '../services/pageDataMediatorService'
 
-export const DoingPageEventTemplate = ({ content, navImage, mobileNavImage, contentComponent, location }) => {
+export const DoingPageEventTemplate = ({ subtitle, content, navImage, mobileNavImage, contentComponent, location }) => {
   const PageContent = contentComponent || Content
   
   const innerNavList = linksService.getTopLevelLinksObj()[DOING].innerNavList;
@@ -26,6 +26,13 @@ export const DoingPageEventTemplate = ({ content, navImage, mobileNavImage, cont
   return (
     <InnerPageLayout pageDataFetcher={pageDataFetcher} navMenu={innerNavList} location={location}>
       <div className="display-flex flex-column">
+        {
+          subtitle ? (
+            <div className="content event-subtitle">
+              <h3>{subtitle}</h3>
+            </div>
+          ) : null
+        }
         <div className="event-submenu display-flex flex-column">
           {
               eventNavMap.map(l => (
@@ -51,6 +58,7 @@ export const DoingPageEventTemplate = ({ content, navImage, mobileNavImage, cont
 const {string, object, oneOfType, func} = PropTypes;
 DoingPageEventTemplate.propTypes = {
   title: string.isRequired,
+  subtitle: string,
   content: string,
   navImage: oneOfType([object, string]),
   mobileNavImage: oneOfType([object, string]),
@@ -66,6 +74,7 @@ const DoingPageEvent = ({ data, location }) => {
         location={location}
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        subtitle={post.frontmatter.subtitle}
         content={post.html}
         navImage={post.frontmatter.navimage}
         mobileNavImage={post.frontmatter.mobilenavimage}
@@ -88,6 +97,7 @@ export const DoingPageEventQuery = graphql`
       html
       frontmatter {
         title
+        subtitle
         navimage {
           alt
           image {

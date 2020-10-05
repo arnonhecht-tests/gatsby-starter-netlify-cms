@@ -42,7 +42,8 @@ export const BeingPageAboutUsTemplate = (props) => {
   return (
     <InnerPageLayout pageDataFetcher={pageDataFetcher} navImage={navImage} navMenu={innerNavList} location={location}>
       <div className="content display-flex flex-column">
-        <div className="page-section subpage-header">HISTORY</div>
+        <h3>HISTORY</h3>
+        {/* <div className="page-section subpage-header">HISTORY</div> */}
         <div className="page-section">{prolog}</div>
         {
           storiesList.map(sl => (
@@ -56,7 +57,7 @@ export const BeingPageAboutUsTemplate = (props) => {
                   <div></div>
                 </div>
               </div>
-              {sl.name === currentStory ? (<div>{sl.story}</div>) : null}
+              {<div className={`story-content ${sl.name === currentStory && 'show'}`}>{sl.story}</div>}
             </div>
           ))
         }

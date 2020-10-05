@@ -9,7 +9,8 @@ mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/doing_triangle.png
 ---
-**RETREATS**
+
+### **RETREATS**
 
 > If you want to awaken all of humanity, awaken all of yourself - Lao Tzu
 
@@ -24,8 +25,6 @@ Most of us work at jobs which don't broaden our scope, while our hidden and reve
 We work around the clock and not for ourselves. Our ability to be different and authentic has been extinguished. We've declared social and cultural rules, which shut down instead of opening up.
 
 Nature has been ruined, our attitude towards animals and ecological systems have become blinded. The main reason being, that we have become slaves to other people`s dreams, while in our core essence, we are creatures of dreams and fulfillment.
-
-
 
 ### Why Retreat
 

@@ -11,9 +11,9 @@ mobilenavimage:
 tags:
   - Dream System
 ---
-### **Dream System**
 
-\
+### **DERAM SYSTEM**
+
 We are here to fulfill ourselves,we are here to dream, to dare, to travel far, to face challenges but above all, we are here to fulfill dreams.
 
 The Dream System is an open technological system, which was developed in Sweden, as an open source, whose aim is to provide accessibility to wishes, aspirations and dreams of humans and for humans
@@ -40,7 +40,7 @@ There are cultures which are more liberal and those who are less liberal. In our
 
 The imagination is the dream, our ability to shut our eyes or open them, as widely as possible and dream.
 
-The first step is so important in a world which decreases our ability to dream, day by day, therefore we encourage everyone who chooses to be part of the WHT IF, to dream as much as possible and encourage dreaming in all others and venture into a journey of fulfillment
+The first step is so important in a world which decreases our ability to dream, day by day, therefore we encourage everyone who chooses to be part of the WHT IF, to dream as much as possible and encourage dreaming in all others and venture into a journey of fulfillment.
 
 ### Step two; Sharing the dream
 
@@ -72,4 +72,4 @@ From the moment you have posted your dream into the Dream System, thousands of c
 
 You may choose with whom you wish to collaborate and even contact them through the system
 
-At this stage, you can form a team, mobilize resources to define and design your dream and emerge to fulfill your dream
+At this stage, you can form a team, mobilize resources to define and design your dream and emerge to fulfill your dream.

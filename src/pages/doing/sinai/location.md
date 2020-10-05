@@ -2,6 +2,7 @@
 templateKey: doing-page-event
 path: /doing/location
 title: Doing Location
+subtitle: WHT IF SINAI
 navimage:
   alt: Gatherings
   image: /img/whtifnegev.png
@@ -9,6 +10,7 @@ mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/doing_triangle.png
 ---
+
 **Location**
 
 Ras-Abu Galum (Egyptian Arabic for "gold") is a small town on the southeast coast of the Sinai Peninsula in Egypt, approximately 80 km (50 m.) northeast of Sharm el-Sheikh. Formerly a Bedouin fishing village, Ras-Abu Galum is now considered to be one of Sinai's most treasured hidden lagoons.

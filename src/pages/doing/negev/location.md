@@ -2,6 +2,7 @@
 templateKey: doing-page-event
 path: /doing/location
 title: Doing Location
+subtitle: WHT IF NEGEV
 navimage:
   alt: Gatherings
   image: /img/whtifnegev.png
@@ -9,6 +10,7 @@ mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/doing_triangle.png
 ---
+
 **Location**
 
 The Negev desert is the name of the vast area located in Israel, in the Middle East.

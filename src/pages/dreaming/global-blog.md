@@ -11,7 +11,8 @@ mobilenavimage:
 tags:
   - Global Blog
 ---
-### **Global Blog**
+
+### **GLOBAL BLOG**
 
 The WHT IF community is a global community. Our community members live all over the world.
 
