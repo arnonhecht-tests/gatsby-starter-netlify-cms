@@ -2,13 +2,15 @@
 templateKey: doing-page-event
 path: /doing/tickets
 title: Doing Tickets
+subtitle: WHT IF SINAI
 navimage:
   alt: Gatherings
-  image: /img/whtifnegev.png
+  image: /img/whtifsinai.png
 mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/doing_triangle.png
 ---
+
 **Tickets**
 
 WHT IF is an all embracing global community project, whose aim is to make a positive difference in the world, through meetings between different cultures, with the understanding the the majority of the income from the sale of the tickets is to be channelled for the sake of fulfilling the vision and support of our global community

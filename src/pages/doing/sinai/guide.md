@@ -2,13 +2,15 @@
 templateKey: doing-page-event
 path: /doing/guide
 title: Doing Guide
+subtitle: WHT IF SINAI
 navimage:
   alt: Gatherings
-  image: /img/whtifnegev.png
+  image: /img/whtifsinai.png
 mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/doing_triangle.png
 ---
+
 **Guide**
 
 “A BETTER YOU IS THE BEST OF US”.

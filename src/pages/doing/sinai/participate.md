@@ -2,13 +2,15 @@
 templateKey: doing-page-event
 path: /doing/participate
 title: Doing Participate
+subtitle: WHT IF SINAI
 navimage:
   alt: Gatherings
-  image: /img/whtifnegev.png
+  image: /img/whtifsinai.png
 mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/doing_triangle.png
 ---
+
 **Participate**
 
 WHT IF is not an annual event. WHT IF is a new culture, which we are humbly offering to the world. We are a global community spread out all over the globe

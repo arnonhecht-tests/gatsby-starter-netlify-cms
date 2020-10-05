@@ -5,7 +5,7 @@ title: Doing Location
 subtitle: WHT IF SINAI
 navimage:
   alt: Gatherings
-  image: /img/whtifnegev.png
+  image: /img/whtifsinai.png
 mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/doing_triangle.png
