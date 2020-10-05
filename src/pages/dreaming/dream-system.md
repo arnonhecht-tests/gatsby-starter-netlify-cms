@@ -30,15 +30,9 @@ Imagine a single place, that centers all our dreams together, like an imaginary 
 
 Imagine yourself stepping through this museum, learning and recognizing all the dreams of our community and when you feel you have met the dream you wish to promote, all you need to do, is to support the idea, give it love and we will provide the resources.
 
-
-
 Confusing ? Here it is Step by Step
 
-
-
-Step one; The right to dream
-
-
+### Step one; The right to dream
 
 There are hundreds of cultures around the world, but most of them are unknown to us. Each culture has it`s own laws and rules of behaviour.
 
@@ -48,11 +42,7 @@ The imagination is the dream, our ability to shut our eyes or open them, as wide
 
 The first step is so important in a world which decreases our ability to dream, day by day, therefore we encourage everyone who chooses to be part of the WHT IF, to dream as much as possible and encourage dreaming in all others and venture into a journey of fulfillment
 
-
-
-Step two; Sharing the dream
-
-
+### Step two; Sharing the dream
 
 The Dream System is open and accessible to everyone. Once you have registered in the system you can browse through our virtual dream museum and also write your own personal dream, which will be seen by all the other participants.
 
@@ -62,11 +52,7 @@ Behind the dream system, there's a team of volunteers, who integrate all the lov
 
 Describing the dream is simple and the system will guide you step by step, in writing the dream.
 
-
-
-Step three; Setting up a fulfillment team
-
-
+### Step three; Setting up a fulfillment team
 
 You have published your dream and you have written and posted it in the system
 
@@ -80,11 +66,7 @@ We believe in meetings between cultures that don't usually meet.
 
 Therefore the system will guide you easily, in describing your needs and these will be accessible to all who log on to read about your dream
 
-
-
-Step four ; Managing the dream
-
-
+### Step four ; Managing the dream
 
 From the moment you have posted your dream into the Dream System, thousands of community members, from all over the world can view it and offer their help and services
 
