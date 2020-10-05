@@ -48,7 +48,7 @@ export const BeingPageAboutUsTemplate = (props) => {
           storiesList.map(sl => (
             <div className="page-section story-dropdown" key={sl.name}>
               <div><b>{sl.name}</b>'s story</div>
-              <div>{sl.story}</div>
+              <div>{sl.storyPreview}</div>
               <div className="hollow-arrow-wrapper" 
                 onClick={() => toggleSelectedStory(sl.name)} 
               >
