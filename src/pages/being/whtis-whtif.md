@@ -9,28 +9,12 @@ mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/being_triangle.png
 ---
+WHT IF is anything you wish it to be .A resting space,allowing you to leave your comfort zone, through meeting with cultures you've never met before. A place which creates social bonding, with the belief on human ability to arouse inspiration between one another in mutual creativity.
 
-### WHT IF Culture
+Our aim is to reach self realization and empowerment. We believe that the best way to leave our comfort zone is by meeting up with those who differ from us, but believe in the same goal.
 
-**INTRO.**
+Imagine a remote and desolate space, where behavioral rules change. Imagine a space where there are normative rules for creativity, in art or any other content you wish to bring with you.
 
-What is everything and nothing?\
-What is really the one thing that drives us?\
-Which makes us break through our boundaries?\
-Dreams?\
-When was the last time you came across a challenge and tried something different as a solution?
+We are coming to do good, to make a difference, to do good and to improve on what is less positive
 
-Imagination.
-
-Yes, imagination is probably the one thing NO ONE can ever take away from you. It is yours from the second you were born to the second you pass away.
-
-Imagination can heal the world to become a better place, it's where visions start, it's where frequencies connect.\
-Imagination is love. The unconditional kind.ß
-
-After being a significant and active part of the Burning Man project and co-founding Midburn (the Israeli official Burn in Israel ) we are asking you to join us, while we offer a new culture that we call WHT IF
-
-If we have the courage to imagine, that if we allow ourselves to look beyond reason and reality, if we can go past our fears - we can give birth to the WHT IF.
-
-**The WHT IF is not just a way of thinking, nor a way of living, it's an energy each human carries.\
-WHT IF can be implemented in ANY world of humankind. The WHT IF is probably the most ancient conception of all time, this is how fire was discovered, that's the source of Neil Armstrong’s words : “One small step for man, One giant leap for mankind.'' It's the reason Martin Luther King said“IHave a Dream”.\
-WHT IFis why we are a progressing society, this is what makes us positive and optimistic. It's our only chance for hope and for connecting cultures.**
+It is simple to implement WHI IF at home, at work and mainly in spaces like ours.
