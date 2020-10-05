@@ -83,11 +83,20 @@ mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/being_triangle.png
 ---
+We - Ifat and Nir met when we were working together on the Midburn Project in 2012
 
-### Dream
+(The second largest Burning Man regional event in the world)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Even then we shared a common dream --- To create spaces enabling different cultures to meet up. It was clear to us, from our experiences ,that gatherings like this awakens inspiration, motivating action, which brings us yet another step closer to the dream
 
-### Fear
+The dream was significant but the challenges only intensified. Nothing prepared us for what was about to happen.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We planned our fifth trip to Wadi Ram, one of the most special and magical places on earth.
+
+There is something so powerful about the red desert of Jordan.
+
+At that time we were part of the foundation of a small clandestine community, most of whom feared to be discovered. We called them”the change makers”. We met in secret in Wadi Ram or Petra, once every few months, celebrating the freedom of being able to look at one another, with forbidden eyes. Simple conversations around a tribal campfire.
+
+Looks of hope and the pair of words, which kept repeating itself over and over again
+
+WHT IF?
