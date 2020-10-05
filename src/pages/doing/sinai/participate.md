@@ -9,29 +9,18 @@ mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/doing_triangle.png
 ---
-
-### **WHT IF NEGEV DESERT**
-
 **Participate**
 
-The Negev desert is the name of the vast area located in Israel, in the Middle East.
+WHT IF is not an annual event. WHT IF is a new culture, which we are humbly offering to the world. We are a global community spread out all over the globe
 
-Our project has a number of meeting places among cultures around the world. Negev desert is one of them
+We believe that leaving your comfort zone is critical for our development
 
-WHT IF is not involved in nationality or religion.
+We believe in strengthening social connections in which we will flourish, bringing beneficial and positive influences on ourselves and those around us.
 
-WHT IF is involved in the development of a new culture, whose aim is to bridge and connect among different cultures, who do not generally meet.
+There are numerous channels in which to integrate
 
-TheNegevis a desert and semi desert region of southern Israel. The region's largest city and administrative capital is Beersheba. At it`s southern end is the Gulf of Aqaba and the resort city of Eilat. It contains several development towns, including Dimona, Arad and Mitzpe Ramon, as well as a number of small Bedouin cities, including Rahat and Tel as-Sabi and Lakiya.
+Come and be part of the Change-makers Community
 
-The origin of the word 'Negev' is from the root denoting 'dry'. In the Bible, the wordNegevis also used for the direction 'south'; some English-language translations use the spelling "Negeb".
+Imagine how fascinating it could be, meeting cultures you never knew about, with a person you never met before
 
-The Negev is a rocky desert. It is a mélange of brown, rocky, dusty mountains interrupted by wadis (dry riverbeds that bloom briefly after rain) and deep craters. It can be split into five different ecological regions.
-
-Nomadic life in the Negev dates back at least 4,000 years and perhaps as much as 7,000 years.
-
-The first urbanized settlements were established by a combination of Canaanite, Amalekite, Amorite, Nabataean and Edomite groups circa 2000 BCE .PharaonicEgypt is credited with introducing copper mining and smelting in both the Negev and the Sinai between 1400 and 1300 BCE.
-
-We consider all territories of the world as neutral, inviting all human beings as equals, regardless of the situation and political status, economic, social or existing political condition
-
-We are here to go forward with our vision, of bringing together, through social gatherings, with the aim of enriching all who choose to participate
+We invite you to take a deep breath for a moment, leave your comfort zone and embark on a journey which starts right ‘“here”.
