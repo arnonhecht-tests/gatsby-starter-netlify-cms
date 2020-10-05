@@ -19,9 +19,9 @@ WHT IF is not involved in nationality or religion.
 
 WHT IF is involved in the development of a new culture, whose aim is to bridge and connect among different cultures, who do not generally meet.
 
-TheNegevis a desert and semi desert region of southern Israel. The region's largest city and administrative capital is Beersheba. At it`s southern end is the Gulf of Aqaba and the resort city of Eilat. It contains several development towns, including Dimona, Arad and Mitzpe Ramon, as well as a number of small Bedouin cities, including Rahat and Tel as-Sabi and Lakiya.
+The **Negev** is a desert and semi desert region of southern Israel. The region's largest city and administrative capital is Beersheba. At it's southern end is the Gulf of Aqaba and the resort city of Eilat. It contains several development towns, including Dimona, Arad and Mitzpe Ramon, as well as a number of small Bedouin cities, including Rahat and Tel as-Sabi and Lakiya.
 
-The origin of the word 'Negev' is from the root denoting 'dry'. In the Bible, the wordNegevis also used for the direction 'south'; some English-language translations use the spelling "Negeb".
+The origin of the word 'Negev' is from the root denoting 'dry'. In the Bible, the word Negevis also used for the direction 'south'; some English-language translations use the spelling "**Negeb**".
 
 The Negev is a rocky desert. It is a mélange of brown, rocky, dusty mountains interrupted by wadis (dry riverbeds that bloom briefly after rain) and deep craters. It can be split into five different ecological regions.
 
@@ -31,4 +31,4 @@ The first urbanized settlements were established by a combination of Canaanite, 
 
 We consider all territories of the world as neutral, inviting all human beings as equals, regardless of the situation and political status, economic, social or existing political condition
 
-We are here to go forward with our vision, of bringing together, through social gatherings, with the aim of enriching all who choose to participate
+We are here to go forward with our vision, of bringing together, through social gatherings, with the aim of enriching all who choose to participate.
