@@ -11,9 +11,9 @@ mobilenavimage:
 tags:
   - Global Blog
 ---
-### **GLOBAL BLOG**
+### **Global Blog**
 
-The WHT IF community is a global community. Our community members live all over the world
+The WHT IF community is a global community. Our community members live all over the world.
 
 We draw inspiration from each other from our life stories, from the insights, from the successes and also from failures.
 
@@ -23,11 +23,9 @@ Here you can share your story with all of us.
 
 Here too, we will update you on all that's happening in our activities and from time to time we will write and update on events, retreats, cooperation that is happening right now
 
-
-
 ### **Get involved**
 
-WHT IFis not an annual event. WHT IF is a new culture, which we are humbly offering to the world. We are a global community spread out all over the globe
+WHT IF is not an annual event. WHT IF is a new culture, which we are humbly offering to the world. We are a global community spread out all over the globe
 
 We believe that leaving your comfort zone is critical for our development
 
