@@ -26,7 +26,7 @@ const getNavigationMap = (windowGlobal) => {
       width: 100,
       name: "reaching",
       text: "Reaching",
-      linkTarget: 'reaching/volunteer',
+      linkTarget: 'reaching/volunteers',
     },
     {
       src: camels,
