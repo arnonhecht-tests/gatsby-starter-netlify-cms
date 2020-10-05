@@ -61,5 +61,9 @@ body {
 
   .column {
     padding: 0.3rem 0;
+
+    &:not(.is-desktop) {
+      display: block;
+    }
   }
 }

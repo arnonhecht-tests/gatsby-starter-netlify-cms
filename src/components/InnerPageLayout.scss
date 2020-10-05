@@ -53,27 +53,20 @@
     text-transform: capitalize;
   }
 
-  @media only screen and (max-width: $small-screen) {
-    .navigation-section {
-      padding: 30px 5px 0 5px;
-    }
-    .event-submenu {
-      margin: 7px 2px 0 7px;
-      max-width: 80px;
+  .mobile-image-section-container {
+    max-width: 50vw;
 
-      a {
-        margin: 2px;
-        padding: 2px 5px;
-        font-size: 0.6em;
-        border: 1px solid white;
-        background-color: rgb(189, 211, 218);
-        border-radius: 4px;
-      }
+    .mobile-image-section,
+    .mobile-image-section img {
+      transform: translateX(-45vw);
+      min-width: 141vw;
     }
-    .inner-pages-row-underline-display {
-      margin: 0 0 0 5px;
-      font-size: 0.7em;
-    }
+  }
+
+  .page-name {
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
   }
 
   .right-section {
@@ -97,8 +90,30 @@
     }
   }
 
-  @media only screen and (max-width: $small-screen) {
+  /* MOBILE & Tablet */
+  @media only screen and (max-width: $medium-screen) {
     min-height: 200vh; // for image background on pages with no content
+
+    .navigation-section {
+      padding: 30px 5px 0 5px;
+    }
+    .event-submenu {
+      margin: 7px 2px 0 7px;
+      max-width: 80px;
+
+      a {
+        margin: 2px;
+        padding: 2px 5px;
+        font-size: 0.6em;
+        border: 1px solid white;
+        background-color: rgb(189, 211, 218);
+        border-radius: 4px;
+      }
+    }
+    .inner-pages-row-underline-display {
+      margin: 0 0 0 5px;
+      font-size: 0.7em;
+    }
 
     .content {
       padding: 13px 6px 6px 10px;
@@ -132,20 +147,19 @@
     }
   }
 
-  .mobile-image-section-container {
-    max-width: 50vw;
+  /* Only Tablet - not mobile */
+  @media only screen and (max-width: $medium-screen) and (min-width: $small-screen) {
+    padding: 20px 10px;
 
-    .mobile-image-section,
-    .mobile-image-section img {
-      transform: translateX(-45vw);
-      min-width: 141vw;
+    .content {
+      padding: 13px 6px 6px 10px;
+      font-size: 1.2em;
     }
-  }
 
-  .page-name {
-    padding-bottom: 10px;
-    text-transform: capitalize;
-    font-weight: bold;
+    .inner-pages-row-underline-display {
+      margin: 0 0 0 5px;
+      font-size: 1.2em;
+    }
   }
 }
 

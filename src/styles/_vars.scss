@@ -7,10 +7,11 @@ $green: rgb(76, 132, 67);
 $blue: rgb(29, 38, 78);
 $red: rgb(173, 52, 51);
 
-/* Screen Size Breakpoints */
+/* Screen Size Breakpoints - by Bootstrap */
 $screen-xs: 576px;
 $screen-sm: 767px;
-$screen-md: 991px;
+$screen-md: 1024px; //991px;
 $screen-lg: 1999px;
 
-$small-screen: 1024px;
+$small-screen: $screen-sm;
+$medium-screen: $screen-md;
