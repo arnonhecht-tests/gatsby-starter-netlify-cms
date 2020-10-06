@@ -12,6 +12,7 @@ const getTopLevelLinksObj = () => {
     [REACHING]: {
       id: REACHING,
       text: REACHING,
+      rootLink: linkerize(REACHING),
       link: linkerize(REACHING) + '/volunteers',
       innerNavList: [
         {text: "Volunteers", linkTarget: 'volunteers'},
@@ -24,6 +25,7 @@ const getTopLevelLinksObj = () => {
     [DOING]: {
       id: DOING,
       text: DOING,
+      rootLink: linkerize(DOING),
       link: linkerize(DOING) + '/negev/location',
       innerNavList: [
         {text: "Wht If Negev", linkTarget: 'negev/location'},
@@ -41,6 +43,7 @@ const getTopLevelLinksObj = () => {
     [BEING]: {
       id: BEING,
       text: BEING,
+      rootLink: linkerize(BEING),
       link: linkerize(BEING) + '/whtis-whtif',
       innerNavList: [
         {text: "Wht is Wht If", linkTarget: 'whtis-whtif'},
@@ -51,6 +54,7 @@ const getTopLevelLinksObj = () => {
     [DREAMING]: {
       id: DREAMING,
       text: DREAMING,
+      rootLink: linkerize(DREAMING),
       link: linkerize(DREAMING) + '/dream-system',
       innerNavList: [
         {text: "Dream system", linkTarget: 'dream-system'},

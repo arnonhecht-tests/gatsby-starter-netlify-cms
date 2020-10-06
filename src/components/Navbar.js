@@ -54,7 +54,7 @@ const Navbar = class extends React.Component {
               <img src={logo} alt="wht if" />
             </Link>
             {/* Hamburger menu */}
-            <Menu right width={ '56%' } isOpen={ true } >
+            <Menu right width={ '56%' }>
               <Link className="menu-item logo" to='/' id="home">
                 <img src={logo} alt="wht if" />
               </Link>
@@ -62,15 +62,15 @@ const Navbar = class extends React.Component {
                 <div key={l.id}>
                   <Link className="menu-item" to={l.link}id={l.id}>
                     {l.text}
+                    {
+                      l.innerNavList.map(innerItem => (
+                        <div className="inner-link" key={innerItem.linkTarget} >
+                          {innerItem.text}
+                        </div>
+                      ))
+                    }
                   </Link>
-                  {
-                    l.innerNavList.map(innerItem => (
-                      <Link className="inner-link" to={innerItem.linkTarget} key={innerItem.linkTarget} >
-                        {innerItem.text}
-                      </Link>
-                    ))
-                  }
-                  </div>
+                </div>  
               ))}
             </Menu>
           </div>
