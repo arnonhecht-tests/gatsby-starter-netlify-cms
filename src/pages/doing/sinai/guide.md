@@ -10,7 +10,6 @@ mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/doing_triangle.png
 ---
-
 **Guide**
 
 “A BETTER YOU IS THE BEST OF US”.
@@ -51,7 +50,7 @@ Ownership-we are fully responsible over our thoughts, intentions and actions. Ou
 
 Most conflicts are resolved by first taking responsibility, which inspires others to do the same.
 
-## The desert elements- Extreme conditions
+### The desert elements- Extreme conditions
 
 The Negev region is arid. receiving very little rain due to its location to the east of the[Sahara](https://en.wikipedia.org/wiki/Sahara)(as opposed to the Mediterranean which lies to the west of Israel), and extreme temperatures due to its location 31 degrees north. However the northernmost areas of the Negev, are semi-arid. The usual rainfall total from June through October is zero. Snow and frost are rare in the northern Negev, and snow and frost are unknown in the vicinity of Eilat in the southernmost Negev.
 
@@ -63,7 +62,7 @@ It takes nearly everyone a day or so to acclimate to the desert climate. DRINK W
 
 Consuming alcohol, caffeine or other drugs increases risk of dehydration.
 
-## Air
+### Air
 
 WHT IF location can be subject to sudden bouts of fierce, unpredictable weather. wind gusts prowl the location and can produce strong winds The desert wind can whip up to speeds exceeding 35 mph in an instant, If you’re caught in a strong wind gust :
 
