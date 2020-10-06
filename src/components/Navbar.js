@@ -72,6 +72,11 @@ const Navbar = class extends React.Component {
                   </Link>
                 </div>  
               ))}
+              <div className="bottom-nav">
+                <Link to="/terms" className="terms ">
+                  Terms & Conditions
+                </Link>
+              </div>
             </Menu>
           </div>
         </div>

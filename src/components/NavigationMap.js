@@ -182,6 +182,9 @@ const NavigationMap = class extends React.Component {
             }
           </div>
           <img src={logo} alt="WhtIf Logo" className="whtif-logo" />
+          <Link to="/terms" className="terms">
+            Terms and Conditions
+          </Link>
         </div>
         <img src="./img/desert-image.png" className="bg-rescue" />
       </div>
