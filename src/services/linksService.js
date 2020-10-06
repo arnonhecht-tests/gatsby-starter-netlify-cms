@@ -8,7 +8,6 @@ const linkerize = (l) => `/${l}`;
 const setImg = (linkObj, imgToSet) => {linkObj.img = imgToSet};
 
 const getTopLevelLinksObj = () => {
-
   const linksObj = {
     [REACHING]: {
       id: REACHING,
@@ -86,6 +85,7 @@ const getTopLevelLinksList = (windowGlobal) => {
 
   return linksList;
 }
+
 const getTopLevelLinksListOrder2 = (reachingCard, doingCard, beingCard, dreamingCard) => {
   const lo = getTopLevelLinksObj();
   setImg(lo[REACHING], reachingCard);
