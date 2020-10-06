@@ -16,7 +16,22 @@ abdul_story_preview: "I was born in Amman, Jordan on January 6th 1983. I'm the
   lot of connections . Brought up in a house  that taught me that not everyone
   is equal. Most of my environment as a kid growing up in Amman, practiced hate
   sometimes towards others. "
-nir_story: “There is freedom waiting for you, On the breezes of the sky"....
+nir_story: Hi!  So I'm sure we should know each other, I'm Nir Adan, I'm 44, and
+  I live in a small house I built myself surrounded by green & nature. I am a
+  dad to Ofek (13) and Noam (9). I am a  nativedesert soul, it's where I grew
+  up, where My dad would take me flying as he was a pilot back then. Let's face
+  it - the world is sick. That's the truth unfortunately. I was born into a
+  military family, my grandfather was a famous general and a great leader, Dad a
+  fighter pilot, it was only clear I would follow in those footsteps and so I
+  did as expected and joined the army to an elite unit and escorted 3 different
+  prime ministers as a personal security agent until . . . My journey in life
+  took a turning point when I came to understand the power of “WHT IF” - a state
+  of mind, a way of thinking if you want of just going out of your comfort zone.
+  All those led me to  believe in  transformation through participation, meeting
+  it for the first time at the Burning man project in Nevada USA.. This led me
+  to be a co-founder and CEO (for 7 years) of Midburn - the second largest
+  burning man regional project in the world. Since then EVERYTHING has changed
+  in my head and mostly - in my heart.
 ifat_story: I am Ifat Golan, 44 years old, born and raised in a small village in
   Israel, my parents were farmers, so I grew up between the flowers, trees and
   plantations. This was a period when we worked together with our neighbors from
