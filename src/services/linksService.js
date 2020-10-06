@@ -8,6 +8,7 @@ const linkerize = (l) => `/${l}`;
 const setImg = (linkObj, imgToSet) => {linkObj.img = imgToSet};
 
 const getTopLevelLinksObj = () => {
+
   const linksObj = {
     [REACHING]: {
       id: REACHING,
@@ -62,14 +63,28 @@ const getTopLevelLinksObj = () => {
       ],
     },
   };
+
   return linksObj;
 }
 
-const getTopLevelLinksList = () => {
+const getTopLevelLinksList = (windowGlobal) => {
+
+  let currentLocation = windowGlobal ? windowGlobal.location.pathname : null;
+  currentLocation = currentLocation ? currentLocation.split('/').filter(v => !!v)[0] : null;
+
   const linksObj = getTopLevelLinksObj();
-  return Object.keys(linksObj).reduce((accumulator, key) => {
-    return accumulator.concat(linksObj[key]);
+  
+  const linksList = Object.keys(linksObj).reduce((accumulator, key) => {
+      return accumulator.concat(linksObj[key]);
   }, []);
+
+  if (currentLocation) {
+    for (let i=0; i < linksList.length; i++) {
+      linksList[i].isSelected = linksList[i].link.includes(currentLocation);
+    }
+  }
+
+  return linksList;
 }
 const getTopLevelLinksListOrder2 = (reachingCard, doingCard, beingCard, dreamingCard) => {
   const lo = getTopLevelLinksObj();

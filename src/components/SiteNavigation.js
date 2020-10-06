@@ -13,7 +13,7 @@ const SiteNavigation =  () => {
 
   useEffect(() => {
     // const linksMap = navigationService.getNavigationMap(typeof window !== 'undefined' && window);
-    const linksMap = linksService.getTopLevelLinksList();
+    const linksMap = linksService.getTopLevelLinksList((typeof window !== 'undefined') && window);
     setLinksMap(linksMap);
   }, []);
 
@@ -27,7 +27,7 @@ const SiteNavigation =  () => {
         {
           linksMap.map(l => (
             <div key={l.id}>
-              <Link to={`${l.link}`} className={(l.isSelected ? 'selected' : '') + ` ${l.name}`}>
+              <Link to={`${l.link}`} className={(l.isSelected ? 'selected' : '') + ` ${l.id}`}>
                 <div className="link-container display-flex justify-content-center">
                   <div className="line">
                     <div className="point"></div>
