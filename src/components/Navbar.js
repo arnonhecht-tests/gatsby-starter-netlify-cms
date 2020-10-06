@@ -50,18 +50,27 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            {/* <Link to="/" className="navbar-item" title="Logo">
+            <Link to="/" className="navbar-item" title="Logo">
               <img src={logo} alt="wht if" />
-            </Link> */}
+            </Link>
             {/* Hamburger menu */}
-            <Menu right width={ '50%' } >
-              <Link className="menu-item" to='/' id="home">
+            <Menu right width={ '56%' } isOpen={ true } >
+              <Link className="menu-item logo" to='/' id="home">
                 <img src={logo} alt="wht if" />
               </Link>
               {linksService.getTopLevelLinksList().map(l => (
-                <Link className="menu-item" to={l.link} key={l.id} id={l.id}>
-                  {l.text}
-                </Link>
+                <div key={l.id}>
+                  <Link className="menu-item" to={l.link}id={l.id}>
+                    {l.text}
+                  </Link>
+                  {
+                    l.innerNavList.map(innerItem => (
+                      <Link className="inner-link" to={innerItem.linkTarget} key={innerItem.linkTarget} >
+                        {innerItem.text}
+                      </Link>
+                    ))
+                  }
+                  </div>
               ))}
             </Menu>
           </div>

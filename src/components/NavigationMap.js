@@ -5,6 +5,7 @@ import {withResizeDetector} from 'react-resize-detector';
 import logo from '../../static/img/logo-thin.png';
 
 import DesertVideo from '../components/DesertVideo';
+
 import navigationService from '../services/navigationService';
 import linksService, {REACHING, DOING, BEING, DREAMING} from '../services/linksService';
 
@@ -31,10 +32,10 @@ let svgLinkMap = [
 const getVideoElement = (elem) => elem ? elem.getElementsByTagName('video')[0] : {};
 
 const linksServiceMap = linksService.getTopLevelLinksObj();
-console.log(`linksServiceMap: ${JSON.stringify(linksServiceMap)}`)
+// console.log(`linksServiceMap: ${JSON.stringify(linksServiceMap)}`)
 
 svgLinkMap = svgLinkMap.map(l => ({...l, ...linksServiceMap[l.id]}))
-console.log(`svgLinkMap: ${JSON.stringify(svgLinkMap)}`)
+// console.log(`svgLinkMap: ${JSON.stringify(svgLinkMap)}`)
 
 const NavigationMap = class extends React.Component {
   constructor(props) {
@@ -170,9 +171,9 @@ const NavigationMap = class extends React.Component {
                   key={l.name}
                 >
                   <img src={l.src} style={{minWidth: l.width}} alt={l.text} />
-                  <div className="line">
+                  {/* <div className="line">
                     <div className="point"></div>
-                  </div>
+                  </div> */}
                   <div className="link-text">
                     {l.text}
                   </div>

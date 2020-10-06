@@ -1,3 +1,5 @@
+@import "../styles/vars";
+
 .navbar {
   &.override {
     position: fixed;
@@ -30,11 +32,18 @@
     }
   }
 
+  .menu-item,
+  .inner-link {
+    text-transform: uppercase;
+    color: $secondary-text;
+  }
   .menu-item {
-    text-transform: capitalize;
+    margin: -1px 0 0 0;
 
-    &:first-child {
-      margin: 0 0 20px 0;
+    &.logo {
+      width: 63%;
+      height: auto;
+      margin: 1px 0 7px 2px;
     }
     &:focus,
     &:hover {
@@ -43,6 +52,14 @@
       outline-offset: 0;
       outline: 0;
     }
+  }
+
+  .inner-link {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 1px;
+    line-height: 1.3em;
+    font-size: 0.4em;
   }
 
   /* Hamburger menu */
@@ -93,7 +110,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2.5em 1.5em 0;
+    padding: 1.4em 3.1em 0;
     font-size: 1.15em;
   }
 
@@ -104,18 +121,21 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   /* Wrapper for item list */
   .bm-item-list {
+    padding: 0;
     color: #b8b7ad;
-    padding: 0.8em;
   }
 
   /* Individual item */
   .bm-item {
     display: inline-block;
+    margin: 0 0 10px 0;
     color: black;
   }
 
   /* Styling of overlay */
   .bm-overlay {
+    top: 0;
+    left: 0;
     background: rgba(181, 198, 222, 0.3);
   }
 }
