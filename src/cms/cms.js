@@ -7,13 +7,11 @@ import { ReachingPageTemplate } from '../templates/reaching-page'
 import { DoingPageTemplate } from '../templates/doing-page'
 import { DoingPageEventTemplate } from '../templates/doing-page-event'
 import { DreamingPageTemplate } from '../templates/dreaming-page'
+import { InfoPageTemplate } from '../templates/info-page'
 
 import InnerPagePreviewFactory from './preview-templates/InnerPagePreviewFactory'
 
 import AboutPagePreview from './preview-templates/AboutPagePreview'
-import BlogPostPreview from './preview-templates/BlogPostPreview'
-import ProductPagePreview from './preview-templates/ProductPagePreview'
-import MainEventPreview from './preview-templates/MainEventPreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 
 CMS.registerMediaLibrary(uploadcare)
@@ -48,7 +46,10 @@ CMS.registerPreviewTemplate('being-participate', InnerPagePreviewFactory(BeingPa
 CMS.registerPreviewTemplate('dreaming-dream-system', InnerPagePreviewFactory(DreamingPageTemplate))
 CMS.registerPreviewTemplate('dreaming-global-blog', InnerPagePreviewFactory(DreamingPageTemplate))
 
+CMS.registerPreviewTemplate('terms', InnerPagePreviewFactory(InfoPageTemplate))
 
-CMS.registerPreviewTemplate('main-event', MainEventPreview)
-CMS.registerPreviewTemplate('products', ProductPagePreview)
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
+
+
+// CMS.registerPreviewTemplate('main-event', MainEventPreview)
+// CMS.registerPreviewTemplate('products', ProductPagePreview)
+// CMS.registerPreviewTemplate('blog', BlogPostPreview)

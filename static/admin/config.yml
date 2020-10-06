@@ -496,3 +496,10 @@ collections:
                   { label: Image Alt, name: alt, widget: string },
                 ],
             }
+      - file: "src/pages/terms.md"
+        label: "Terms and Conditions"
+        name: "terms"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Tags", name: "tags", widget: "list" }
