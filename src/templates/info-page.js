@@ -6,8 +6,6 @@ import Layout from '../components/Layout'
 import InnerPageLayout from '../components/InnerPageLayout'
 import Content, { HTMLContent } from '../components/Content'
 
-import './info-page.scss'; 
-
 import pageDataMediatorService from '../services/pageDataMediatorService'
 
 export const TermsAndConditionsTemplate = ({ title, navImage, mobileNavImage, content, contentComponent, location }) => {
