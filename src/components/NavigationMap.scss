@@ -1,12 +1,12 @@
 @import "../styles/vars";
 
-$z-index-0: -100;
-$z-index-1: 14;
-$z-index-2: 99999;
-$z-index-3: 999999;
-
 .navigation-map {
   $poly-transition: 1s;
+
+  $z-index-0: -100;
+  $z-index-1: 14;
+  $z-index-2: 99999;
+  $z-index-3: 999999;
 
   position: fixed;
   right: 0;
