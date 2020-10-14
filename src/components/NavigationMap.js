@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import {withResizeDetector} from 'react-resize-detector';
 
-import logo from '../../static/img/logo-thin.png';
+import logo from '../../static/img/whtif-logo-with-text.png';
 
 import DesertVideo from '../components/DesertVideo';
 

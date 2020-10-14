@@ -10,6 +10,7 @@ mobilenavimage:
   alt: WhtIf team
   image: /img/page-cards/doing_triangle.png
 ---
+
 **Guide**
 
 “A BETTER YOU IS THE BEST OF US”.
@@ -72,13 +73,13 @@ Be alert for moving objects.
 
 Most importantly - stake down your temporary home, place a heavy weight inside your tent and tie down anything that can fly.
 
-## Water
+### Water
 
 There is no need to bring your own water! But you are more than welcome to do so. We will have water available for you.
 
 If you do wish to bring your own water then You will need 1 gallon of water per person per day for drinking. Always carry a full water bottle when you leave your tent.
 
-## Build your home away from home
+### Build your home away from home
 
 All options are open for you.
 
@@ -89,7 +90,7 @@ Some homes have a private toilet and shower facilities but most homes are comfor
 
 RV’s are always a great option, our team would love to assist you with infrastructures like electricity, gas and water.
 
-## Stay Healthy
+### Stay Healthy
 
 The first thing you should practice while planning your WHT IF experience is being responsible. getting to the desert sick is probably not such a good idea.
 
@@ -103,7 +104,7 @@ We also have medical patrol moving around to assist you and take care of your he
 If by any chance you need a hospital - we can support your transportation and assist. don't wait for the last minute, if you don't feel well - come to the medical space. Please make sure you have proper medical insurance.\
 If you suffer from any medical condition please carry a note on yourself at all times which describes your medical condition.
 
-# Be Hygienic
+### Be Hygienic
 
 Please! We know how it feels to get to an amazing social amusement park but don't forget to keep clean. Wash your hands at every chance, sanitize your hands and always clean your cooking equipment, keep your food fresh and cooled (you can get ice in the center).\
 Always Carry with you alco-gel, toilet paper, and a plastic bag for trash.

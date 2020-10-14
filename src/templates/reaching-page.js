@@ -16,7 +16,7 @@ export const ReachingPageTemplate = ({ content, navImage, mobileNavImage, conten
   const pageDataFetcher = pageDataMediatorService.getPageDataFetcher(navImage, mobileNavImage);
 
   return (
-    <InnerPageLayout pageDataFetcher={pageDataFetcher} navMenu={innerNavList} location={location} longLinkLines={true}>
+    <InnerPageLayout pageDataFetcher={pageDataFetcher} navMenu={innerNavList} location={location}>
       <div className="display-flex flex-row">
         <PageContent className="content flex-1" content={content} />
       </div>

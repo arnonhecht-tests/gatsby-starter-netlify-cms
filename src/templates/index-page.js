@@ -11,6 +11,7 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import deviceService from '../services/deviceService';
 import linksService from '../services/linksService';
 
+import whtifYouDream from '../../static/img/whtif-you-dream.png';
 import './index-page.scss'; 
 
 const IndexPageTemplateBare = ({
@@ -31,7 +32,10 @@ const IndexPageTemplateBare = ({
     {
       smallScreen ? (
         <>
-          <DesertVideo />
+          <div className="video-container">
+            <DesertVideo />
+            <img src={whtifYouDream} className="whtif-you-dream" />
+          </div>
           <section className="section section--gradient">
             <div className="container">
               <div className="section">
@@ -58,7 +62,7 @@ const IndexPageTemplateBare = ({
 
                       <div className="links-list columns">
                         {
-                          linksService.getTopLevelLinksListOrder2(reachingCard, doingCard, beingCard, dreamingCard)
+                          linksService.getMobileTopLevelLinksList(reachingCard, doingCard, beingCard, dreamingCard)
                           .map(l => (
                             <Link className="column" to={l.link} key={l.id}>
                               <PreviewCompatibleImage imageInfo={l.img} />

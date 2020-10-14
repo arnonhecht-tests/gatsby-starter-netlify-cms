@@ -51,7 +51,7 @@ Ownership-we are fully responsible over our thoughts, intentions and actions. Ou
 
 Most conflicts are resolved by first taking responsibility, which inspires others to do the same.
 
-## The desert elements- Extreme conditions
+### The desert elements- Extreme conditions
 
 The Negev region is arid. receiving very little rain due to its location to the east of the[Sahara](https://en.wikipedia.org/wiki/Sahara)(as opposed to the Mediterranean which lies to the west of Israel), and extreme temperatures due to its location 31 degrees north. However the northernmost areas of the Negev, are semi-arid. The usual rainfall total from June through October is zero. Snow and frost are rare in the northern Negev, and snow and frost are unknown in the vicinity of Eilat in the southernmost Negev.
 
@@ -63,7 +63,7 @@ It takes nearly everyone a day or so to acclimate to the desert climate. DRINK W
 
 Consuming alcohol, caffeine or other drugs increases risk of dehydration.
 
-## Air
+### Air
 
 WHT IF location can be subject to sudden bouts of fierce, unpredictable weather. wind gusts prowl the location and can produce strong winds The desert wind can whip up to speeds exceeding 35 mph in an instant, If you’re caught in a strong wind gust :
 
@@ -73,13 +73,13 @@ Be alert for moving objects.
 
 Most importantly - stake down your temporary home, place a heavy weight inside your tent and tie down anything that can fly.
 
-## Water
+### Water
 
 There is no need to bring your own water! But you are more than welcome to do so. We will have water available for you.
 
 If you do wish to bring your own water then You will need 1 gallon of water per person per day for drinking. Always carry a full water bottle when you leave your tent.
 
-## Build your home away from home
+### Build your home away from home
 
 All options are open for you.
 
@@ -90,7 +90,7 @@ Some homes have a private toilet and shower facilities but most homes are comfor
 
 RV’s are always a great option, our team would love to assist you with infrastructures like electricity, gas and water.
 
-## Stay Healthy
+### Stay Healthy
 
 The first thing you should practice while planning your WHT IF experience is being responsible. getting to the desert sick is probably not such a good idea.
 
@@ -104,7 +104,7 @@ We also have medical patrol moving around to assist you and take care of your he
 If by any chance you need a hospital - we can support your transportation and assist. don't wait for the last minute, if you don't feel well - come to the medical space. Please make sure you have proper medical insurance.\
 If you suffer from any medical condition please carry a note on yourself at all times which describes your medical condition.
 
-# Be Hygienic
+### Be Hygienic
 
 Please! We know how it feels to get to an amazing social amusement park but don't forget to keep clean. Wash your hands at every chance, sanitize your hands and always clean your cooking equipment, keep your food fresh and cooled (you can get ice in the center).\
 Always Carry with you alco-gel, toilet paper, and a plastic bag for trash.

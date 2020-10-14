@@ -17,9 +17,9 @@ const getTopLevelLinksObj = () => {
       innerNavList: [
         {text: "Volunteers", linkTarget: 'volunteers'},
         {text: "Change Makers", linkTarget: 'change-makers'},
-        {text: "Empower", desktopText: "Empower Wht If", linkTarget: 'empower'},
-        {text: "Contact ", desktopText: "Contact Form", linkTarget: 'contact'},
-        {text: "F&Q ", linkTarget: 'faq'},
+        // {text: "Empower", desktopText: "Empower Wht If", linkTarget: 'empower'},
+        // {text: "Contact ", desktopText: "Contact Form", linkTarget: 'contact'},
+        // {text: "F&Q ", linkTarget: 'faq'},
       ], 
     },
     [DOING]: {
@@ -86,7 +86,8 @@ const getTopLevelLinksList = (windowGlobal) => {
   return linksList;
 }
 
-const getTopLevelLinksListOrder2 = (reachingCard, doingCard, beingCard, dreamingCard) => {
+
+const getMobileTopLevelLinksList = (reachingCard, doingCard, beingCard, dreamingCard) => {
   const lo = getTopLevelLinksObj();
   setImg(lo[REACHING], reachingCard);
   setImg(lo[DOING], doingCard);
@@ -98,7 +99,7 @@ const getTopLevelLinksListOrder2 = (reachingCard, doingCard, beingCard, dreaming
 const linksService = {
   getTopLevelLinksObj,
   getTopLevelLinksList,
-  getTopLevelLinksListOrder2,
+  getMobileTopLevelLinksList,
 };
 
 export default linksService;

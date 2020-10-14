@@ -5,6 +5,17 @@
     width: 100%;
   }
 
+  .video-container {
+    position: relative;
+
+    .whtif-you-dream {
+      position: absolute;
+      top: 42%;
+      left: 50%;
+      transform: translate(-47%, -50%) scale(0.8);
+    }
+  }
+
   hr {
     margin: 0.4rem 0;
     height: 3px;

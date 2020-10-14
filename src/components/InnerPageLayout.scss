@@ -1,6 +1,8 @@
 @import "../styles/vars";
 
 .inner-page-layout {
+  overflow: hidden; // fix bug of tiny scroll on pages with a lot of content
+
   .subpage-header {
     font-weight: bold;
   }
@@ -108,17 +110,17 @@
       padding: 30px 5px 0 5px;
     }
     .event-submenu {
-      margin: 7px 2px 0 7px;
+      margin: -8px 2px 0 10px;
       max-width: 80px;
+      font-size: 0.8em;
 
-      a {
-        margin: 2px;
-        padding: 2px 5px;
-        font-size: 0.7em;
-        border: 1px solid white;
-        background-color: rgb(189, 211, 218);
-        border-radius: 4px;
-      }
+      // a {
+      //   margin: 2px;
+      //   padding: 2px 5px;
+      //   border: 1px solid white;
+      //   background-color: rgb(189, 211, 218);
+      //   border-radius: 4px;
+      // }
     }
     .inner-pages-row-underline-display {
       margin: 0 0 0 5px;
@@ -152,10 +154,6 @@
         color: rgba(0, 0, 0, 0.73);
       }
     }
-
-    .event-subtitle {
-      display: none;
-    }
   }
 
   /* Only Tablet - not mobile */
@@ -179,8 +177,7 @@ blockquote {
   font-family: Open Sans;
   font-style: italic;
   color: #555555;
-  padding: 1.2em 12px 1.2em 50px;
-  border-left: 8px solid #78c0a8;
+  padding: 1.2em 12px 1.2em 10px;
   line-height: 1.6;
   position: relative;
 }

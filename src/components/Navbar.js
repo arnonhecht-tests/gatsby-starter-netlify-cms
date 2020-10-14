@@ -5,7 +5,7 @@ import { slide as Menu } from 'react-burger-menu'
 
 import linksService from '../services/linksService';
 
-import logo from '../img/whtif-logo.png'
+import logo from '../../static/img/whtif-logo-with-text.png'
 import './Navbar.scss'
 
 const Navbar = class extends React.Component {
@@ -58,7 +58,7 @@ const Navbar = class extends React.Component {
               <Link className="menu-item logo" to='/' id="home">
                 <img src={logo} alt="wht if" />
               </Link>
-              {linksService.getTopLevelLinksList().map(l => (
+              {linksService.getMobileTopLevelLinksList().map(l => (
                 <div key={l.id}>
                   <Link className="menu-item" to={l.link}id={l.id}>
                     {l.text}
