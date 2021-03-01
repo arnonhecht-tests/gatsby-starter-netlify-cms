@@ -32,7 +32,7 @@
     "react-helmet": "^6.0.0",
     "react-resize-detector": "^5.0.6",
     "react-sizes": "^2.0.0",
-    "three": "^0.117.1",
+    "three": "^0.125.0",
     "uuid": "^7.0.0"
   },
   "keywords": [
